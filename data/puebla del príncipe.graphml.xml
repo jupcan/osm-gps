@@ -1,0 +1,4314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="junction" attr.type="string" for="edge" id="d14" />
+  <key attr.name="geometry" attr.type="string" for="edge" id="d13" />
+  <key attr.name="length" attr.type="string" for="edge" id="d12" />
+  <key attr.name="oneway" attr.type="string" for="edge" id="d11" />
+  <key attr.name="highway" attr.type="string" for="edge" id="d10" />
+  <key attr.name="name" attr.type="string" for="edge" id="d9" />
+  <key attr.name="ref" attr.type="string" for="edge" id="d8" />
+  <key attr.name="osmid" attr.type="string" for="edge" id="d7" />
+  <key attr.name="osmid" attr.type="string" for="node" id="d6" />
+  <key attr.name="x" attr.type="string" for="node" id="d5" />
+  <key attr.name="y" attr.type="string" for="node" id="d4" />
+  <key attr.name="streets_per_node" attr.type="string" for="graph" id="d3" />
+  <key attr.name="simplified" attr.type="string" for="graph" id="d2" />
+  <key attr.name="crs" attr.type="string" for="graph" id="d1" />
+  <key attr.name="name" attr.type="string" for="graph" id="d0" />
+  <graph edgedefault="directed">
+    <node id="2974604667">
+      <data key="d4">38.5684342</data>
+      <data key="d5">-2.9264757</data>
+      <data key="d6">2974604667</data>
+    </node>
+    <node id="2974604671">
+      <data key="d4">38.569054</data>
+      <data key="d5">-2.9247377</data>
+      <data key="d6">2974604671</data>
+    </node>
+    <node id="2974604691">
+      <data key="d4">38.5703872</data>
+      <data key="d5">-2.9246821</data>
+      <data key="d6">2974604691</data>
+    </node>
+    <node id="2974604694">
+      <data key="d4">38.5704557</data>
+      <data key="d5">-2.924381</data>
+      <data key="d6">2974604694</data>
+    </node>
+    <node id="2974604702">
+      <data key="d4">38.570704</data>
+      <data key="d5">-2.9247917</data>
+      <data key="d6">2974604702</data>
+    </node>
+    <node id="2979830192">
+      <data key="d4">38.5663346</data>
+      <data key="d5">-2.9292665</data>
+      <data key="d6">2979830192</data>
+    </node>
+    <node id="2979830193">
+      <data key="d4">38.566358</data>
+      <data key="d5">-2.9291086</data>
+      <data key="d6">2979830193</data>
+    </node>
+    <node id="2979830196">
+      <data key="d4">38.566514</data>
+      <data key="d5">-2.9287463</data>
+      <data key="d6">2979830196</data>
+    </node>
+    <node id="2979830197">
+      <data key="d4">38.5665713</data>
+      <data key="d5">-2.9281273</data>
+      <data key="d6">2979830197</data>
+    </node>
+    <node id="2979830198">
+      <data key="d4">38.5667125</data>
+      <data key="d5">-2.9297925</data>
+      <data key="d6">2979830198</data>
+    </node>
+    <node id="2979830199">
+      <data key="d4">38.5667672</data>
+      <data key="d5">-2.9284827</data>
+      <data key="d6">2979830199</data>
+    </node>
+    <node id="2979830201">
+      <data key="d4">38.5669264</data>
+      <data key="d5">-2.9287353</data>
+      <data key="d6">2979830201</data>
+    </node>
+    <node id="2979830202">
+      <data key="d4">38.5669973</data>
+      <data key="d5">-2.929537</data>
+      <data key="d6">2979830202</data>
+    </node>
+    <node id="2979830203">
+      <data key="d4">38.5670969</data>
+      <data key="d5">-2.9276974</data>
+      <data key="d6">2979830203</data>
+    </node>
+    <node id="2979830204">
+      <data key="d4">38.5672438</data>
+      <data key="d5">-2.9293158</data>
+      <data key="d6">2979830204</data>
+    </node>
+    <node id="2979830205">
+      <data key="d4">38.5673571</data>
+      <data key="d5">-2.9310358</data>
+      <data key="d6">2979830205</data>
+    </node>
+    <node id="2979830206">
+      <data key="d4">38.5674407</data>
+      <data key="d5">-2.9283018</data>
+      <data key="d6">2979830206</data>
+    </node>
+    <node id="2979830207">
+      <data key="d4">38.567464</data>
+      <data key="d5">-2.9273733</data>
+      <data key="d6">2979830207</data>
+    </node>
+    <node id="2979830208">
+      <data key="d4">38.5676502</data>
+      <data key="d5">-2.9307749</data>
+      <data key="d6">2979830208</data>
+    </node>
+    <node id="2979830209">
+      <data key="d4">38.5676764</data>
+      <data key="d5">-2.9244382</data>
+      <data key="d6">2979830209</data>
+    </node>
+    <node id="2979830213">
+      <data key="d4">38.567756</data>
+      <data key="d5">-2.9288563</data>
+      <data key="d6">2979830213</data>
+    </node>
+    <node id="2979830214">
+      <data key="d4">38.5677832</data>
+      <data key="d5">-2.9318578</data>
+      <data key="d6">2979830214</data>
+    </node>
+    <node id="2979830218">
+      <data key="d4">38.5678088</data>
+      <data key="d5">-2.9279805</data>
+      <data key="d6">2979830218</data>
+    </node>
+    <node id="2979830221">
+      <data key="d4">38.5679997</data>
+      <data key="d5">-2.9269005</data>
+      <data key="d6">2979830221</data>
+    </node>
+    <node id="2979830223">
+      <data key="d4">38.5681204</data>
+      <data key="d5">-2.9285294</data>
+      <data key="d6">2979830223</data>
+    </node>
+    <node id="2979830224">
+      <data key="d4">38.5683307</data>
+      <data key="d5">-2.927524</data>
+      <data key="d6">2979830224</data>
+    </node>
+    <node id="2979830225">
+      <data key="d4">38.5683493</data>
+      <data key="d5">-2.9240626</data>
+      <data key="d6">2979830225</data>
+    </node>
+    <node id="2979830228">
+      <data key="d4">38.5684274</data>
+      <data key="d5">-2.9274394</data>
+      <data key="d6">2979830228</data>
+    </node>
+    <node id="2979830230">
+      <data key="d4">38.5686243</data>
+      <data key="d5">-2.9280772</data>
+      <data key="d6">2979830230</data>
+    </node>
+    <node id="2979830231">
+      <data key="d4">38.5686803</data>
+      <data key="d5">-2.9259095</data>
+      <data key="d6">2979830231</data>
+    </node>
+    <node id="2979830232">
+      <data key="d4">38.5687212</data>
+      <data key="d5">-2.9228715</data>
+      <data key="d6">2979830232</data>
+    </node>
+    <node id="2979830235">
+      <data key="d4">38.5687854</data>
+      <data key="d5">-2.9255017</data>
+      <data key="d6">2979830235</data>
+    </node>
+    <node id="2979830236">
+      <data key="d4">38.5688093</data>
+      <data key="d5">-2.9297429</data>
+      <data key="d6">2979830236</data>
+    </node>
+    <node id="2979830237">
+      <data key="d4">38.5688213</data>
+      <data key="d5">-2.9229996</data>
+      <data key="d6">2979830237</data>
+    </node>
+    <node id="2979830238">
+      <data key="d4">38.5689946</data>
+      <data key="d5">-2.9258826</data>
+      <data key="d6">2979830238</data>
+    </node>
+    <node id="2979830239">
+      <data key="d4">38.5690616</data>
+      <data key="d5">-2.9233069</data>
+      <data key="d6">2979830239</data>
+    </node>
+    <node id="2979830240">
+      <data key="d4">38.5691851</data>
+      <data key="d5">-2.9283956</data>
+      <data key="d6">2979830240</data>
+    </node>
+    <node id="2979830241">
+      <data key="d4">38.5692156</data>
+      <data key="d5">-2.9293795</data>
+      <data key="d6">2979830241</data>
+    </node>
+    <node id="2979830242">
+      <data key="d4">38.5692128</data>
+      <data key="d5">-2.9262707</data>
+      <data key="d6">2979830242</data>
+    </node>
+    <node id="2979830243">
+      <data key="d4">38.5692338</data>
+      <data key="d5">-2.9275325</data>
+      <data key="d6">2979830243</data>
+    </node>
+    <node id="2979830244">
+      <data key="d4">38.5693821</data>
+      <data key="d5">-2.92875</data>
+      <data key="d6">2979830244</data>
+    </node>
+    <node id="2979830245">
+      <data key="d4">38.5694533</data>
+      <data key="d5">-2.9273342</data>
+      <data key="d6">2979830245</data>
+    </node>
+    <node id="2979830246">
+      <data key="d4">38.5695328</data>
+      <data key="d5">-2.9253118</data>
+      <data key="d6">2979830246</data>
+    </node>
+    <node id="2979830247">
+      <data key="d4">38.569539</data>
+      <data key="d5">-2.9281095</data>
+      <data key="d6">2979830247</data>
+    </node>
+    <node id="2979830248">
+      <data key="d4">38.5695703</data>
+      <data key="d5">-2.9290654</data>
+      <data key="d6">2979830248</data>
+    </node>
+    <node id="2979830250">
+      <data key="d4">38.5695857</data>
+      <data key="d5">-2.9239943</data>
+      <data key="d6">2979830250</data>
+    </node>
+    <node id="2979830252">
+      <data key="d4">38.5696762</data>
+      <data key="d5">-2.9271332</data>
+      <data key="d6">2979830252</data>
+    </node>
+    <node id="2979830253">
+      <data key="d4">38.5697252</data>
+      <data key="d5">-2.9220696</data>
+      <data key="d6">2979830253</data>
+    </node>
+    <node id="2979830255">
+      <data key="d4">38.5698708</data>
+      <data key="d5">-2.925717</data>
+      <data key="d6">2979830255</data>
+    </node>
+    <node id="2979830256">
+      <data key="d4">38.5698928</data>
+      <data key="d5">-2.9287782</data>
+      <data key="d6">2979830256</data>
+    </node>
+    <node id="2979830257">
+      <data key="d4">38.5699828</data>
+      <data key="d5">-2.9268631</data>
+      <data key="d6">2979830257</data>
+    </node>
+    <node id="2979830258">
+      <data key="d4">38.5700362</data>
+      <data key="d5">-2.9259153</data>
+      <data key="d6">2979830258</data>
+    </node>
+    <node id="2979830259">
+      <data key="d4">38.5701003</data>
+      <data key="d5">-2.9238454</data>
+      <data key="d6">2979830259</data>
+    </node>
+    <node id="2979830260">
+      <data key="d4">38.5701731</data>
+      <data key="d5">-2.9293135</data>
+      <data key="d6">2979830260</data>
+    </node>
+    <node id="2979830261">
+      <data key="d4">38.570355</data>
+      <data key="d5">-2.9283645</data>
+      <data key="d6">2979830261</data>
+    </node>
+    <node id="2979830263">
+      <data key="d4">38.5704318</data>
+      <data key="d5">-2.9285047</data>
+      <data key="d6">2979830263</data>
+    </node>
+    <node id="2979844080">
+      <data key="d4">38.5643131</data>
+      <data key="d5">-2.9271267</data>
+      <data key="d6">2979844080</data>
+    </node>
+    <node id="2979844082">
+      <data key="d4">38.5652245</data>
+      <data key="d5">-2.9262783</data>
+      <data key="d6">2979844082</data>
+    </node>
+    <node id="2979844083">
+      <data key="d4">38.5654848</data>
+      <data key="d5">-2.9257563</data>
+      <data key="d6">2979844083</data>
+    </node>
+    <node id="2979844085">
+      <data key="d4">38.5656536</data>
+      <data key="d5">-2.9287546</data>
+      <data key="d6">2979844085</data>
+    </node>
+    <node id="2979844087">
+      <data key="d4">38.5658688</data>
+      <data key="d5">-2.9231642</data>
+      <data key="d6">2979844087</data>
+    </node>
+    <node id="2979844088">
+      <data key="d4">38.5659253</data>
+      <data key="d5">-2.9259239</data>
+      <data key="d6">2979844088</data>
+    </node>
+    <node id="2979844090">
+      <data key="d4">38.5659546</data>
+      <data key="d5">-2.9261726</data>
+      <data key="d6">2979844090</data>
+    </node>
+    <node id="2979844093">
+      <data key="d4">38.5660417</data>
+      <data key="d5">-2.925109</data>
+      <data key="d6">2979844093</data>
+    </node>
+    <node id="2979844094">
+      <data key="d4">38.5660425</data>
+      <data key="d5">-2.9267065</data>
+      <data key="d6">2979844094</data>
+    </node>
+    <node id="2979844095">
+      <data key="d4">38.5660651</data>
+      <data key="d5">-2.9240121</data>
+      <data key="d6">2979844095</data>
+    </node>
+    <node id="2979844100">
+      <data key="d4">38.5661494</data>
+      <data key="d5">-2.9272185</data>
+      <data key="d6">2979844100</data>
+    </node>
+    <node id="2979844102">
+      <data key="d4">38.566141</data>
+      <data key="d5">-2.9271666</data>
+      <data key="d6">2979844102</data>
+    </node>
+    <node id="2979844103">
+      <data key="d4">38.5661816</data>
+      <data key="d5">-2.9271884</data>
+      <data key="d6">2979844103</data>
+    </node>
+    <node id="2979844104">
+      <data key="d4">38.5662744</data>
+      <data key="d5">-2.9272321</data>
+      <data key="d6">2979844104</data>
+    </node>
+    <node id="2979844106">
+      <data key="d4">38.566315</data>
+      <data key="d5">-2.9268751</data>
+      <data key="d6">2979844106</data>
+    </node>
+    <node id="2979844108">
+      <data key="d4">38.5664443</data>
+      <data key="d5">-2.928258</data>
+      <data key="d6">2979844108</data>
+    </node>
+    <node id="2979844109">
+      <data key="d4">38.566463</data>
+      <data key="d5">-2.9265743</data>
+      <data key="d6">2979844109</data>
+    </node>
+    <node id="2979844112">
+      <data key="d4">38.5668227</data>
+      <data key="d5">-2.9271263</data>
+      <data key="d6">2979844112</data>
+    </node>
+    <node id="2979844114">
+      <data key="d4">38.5668731</data>
+      <data key="d5">-2.9259867</data>
+      <data key="d6">2979844114</data>
+    </node>
+    <node id="2979844122">
+      <data key="d4">38.5674998</data>
+      <data key="d5">-2.9273417</data>
+      <data key="d6">2979844122</data>
+    </node>
+    <node id="2979844123">
+      <data key="d4">38.5675459</data>
+      <data key="d5">-2.9249434</data>
+      <data key="d6">2979844123</data>
+    </node>
+    <node id="2979844125">
+      <data key="d4">38.5681042</data>
+      <data key="d5">-2.9268083</data>
+      <data key="d6">2979844125</data>
+    </node>
+    <node id="2984176631">
+      <data key="d4">38.5479341</data>
+      <data key="d5">-2.9272647</data>
+      <data key="d6">2984176631</data>
+    </node>
+    <node id="2984177287">
+      <data key="d4">38.5595897</data>
+      <data key="d5">-2.9263162</data>
+      <data key="d6">2984177287</data>
+    </node>
+    <node id="2984177298">
+      <data key="d4">38.562154</data>
+      <data key="d5">-2.9255208</data>
+      <data key="d6">2984177298</data>
+    </node>
+    <node id="2984177310">
+      <data key="d4">38.5640961</data>
+      <data key="d5">-2.9254968</data>
+      <data key="d6">2984177310</data>
+    </node>
+    <node id="2984177322">
+      <data key="d4">38.5644977</data>
+      <data key="d5">-2.9255419</data>
+      <data key="d6">2984177322</data>
+    </node>
+    <node id="2984177327">
+      <data key="d4">38.5645725</data>
+      <data key="d5">-2.9251247</data>
+      <data key="d6">2984177327</data>
+    </node>
+    <node id="2984177330">
+      <data key="d4">38.5646248</data>
+      <data key="d5">-2.9236526</data>
+      <data key="d6">2984177330</data>
+    </node>
+    <node id="2984177339">
+      <data key="d4">38.5648416</data>
+      <data key="d5">-2.9256014</data>
+      <data key="d6">2984177339</data>
+    </node>
+    <node id="2984177340">
+      <data key="d4">38.5648552</data>
+      <data key="d5">-2.9262861</data>
+      <data key="d6">2984177340</data>
+    </node>
+    <node id="2984177341">
+      <data key="d4">38.5648793</data>
+      <data key="d5">-2.9214987</data>
+      <data key="d6">2984177341</data>
+    </node>
+    <node id="2984177342">
+      <data key="d4">38.5649742</data>
+      <data key="d5">-2.9256271</data>
+      <data key="d6">2984177342</data>
+    </node>
+    <node id="2984177343">
+      <data key="d4">38.5649782</data>
+      <data key="d5">-2.9251315</data>
+      <data key="d6">2984177343</data>
+    </node>
+    <node id="2984177345">
+      <data key="d4">38.5649998</data>
+      <data key="d5">-2.9224312</data>
+      <data key="d6">2984177345</data>
+    </node>
+    <node id="2984177347">
+      <data key="d4">38.5651308</data>
+      <data key="d5">-2.9239449</data>
+      <data key="d6">2984177347</data>
+    </node>
+    <node id="2984177348">
+      <data key="d4">38.5652171</data>
+      <data key="d5">-2.9216779</data>
+      <data key="d6">2984177348</data>
+    </node>
+    <node id="2984177350">
+      <data key="d4">38.5653311</data>
+      <data key="d5">-2.9244084</data>
+      <data key="d6">2984177350</data>
+    </node>
+    <node id="2984177353">
+      <data key="d4">38.5653565</data>
+      <data key="d5">-2.9216977</data>
+      <data key="d6">2984177353</data>
+    </node>
+    <node id="2984177355">
+      <data key="d4">38.5653869</data>
+      <data key="d5">-2.921005</data>
+      <data key="d6">2984177355</data>
+    </node>
+    <node id="2984177357">
+      <data key="d4">38.5654457</data>
+      <data key="d5">-2.9245781</data>
+      <data key="d6">2984177357</data>
+    </node>
+    <node id="2984177358">
+      <data key="d4">38.5654568</data>
+      <data key="d5">-2.9241308</data>
+      <data key="d6">2984177358</data>
+    </node>
+    <node id="2984177364">
+      <data key="d4">38.5655868</data>
+      <data key="d5">-2.9238614</data>
+      <data key="d6">2984177364</data>
+    </node>
+    <node id="2984177365">
+      <data key="d4">38.5655905</data>
+      <data key="d5">-2.9215485</data>
+      <data key="d6">2984177365</data>
+    </node>
+    <node id="2984177367">
+      <data key="d4">38.5656129</data>
+      <data key="d5">-2.9227565</data>
+      <data key="d6">2984177367</data>
+    </node>
+    <node id="2984177368">
+      <data key="d4">38.5656165</data>
+      <data key="d5">-2.9227869</data>
+      <data key="d6">2984177368</data>
+    </node>
+    <node id="2984177376">
+      <data key="d4">38.5658389</data>
+      <data key="d5">-2.9241821</data>
+      <data key="d6">2984177376</data>
+    </node>
+    <node id="2984177381">
+      <data key="d4">38.5658627</data>
+      <data key="d5">-2.9228336</data>
+      <data key="d6">2984177381</data>
+    </node>
+    <node id="2984177383">
+      <data key="d4">38.5659078</data>
+      <data key="d5">-2.9244396</data>
+      <data key="d6">2984177383</data>
+    </node>
+    <node id="2984177387">
+      <data key="d4">38.5659287</data>
+      <data key="d5">-2.924009</data>
+      <data key="d6">2984177387</data>
+    </node>
+    <node id="2984177391">
+      <data key="d4">38.5660344</data>
+      <data key="d5">-2.9251506</data>
+      <data key="d6">2984177391</data>
+    </node>
+    <node id="2984177394">
+      <data key="d4">38.5660905</data>
+      <data key="d5">-2.9248311</data>
+      <data key="d6">2984177394</data>
+    </node>
+    <node id="2984177419">
+      <data key="d4">38.5663246</data>
+      <data key="d5">-2.9252099</data>
+      <data key="d6">2984177419</data>
+    </node>
+    <node id="2984177424">
+      <data key="d4">38.5663693</data>
+      <data key="d5">-2.9248246</data>
+      <data key="d6">2984177424</data>
+    </node>
+    <node id="2984177427">
+      <data key="d4">38.5664152</data>
+      <data key="d5">-2.9252738</data>
+      <data key="d6">2984177427</data>
+    </node>
+    <node id="2984177428">
+      <data key="d4">38.5664238</data>
+      <data key="d5">-2.9247056</data>
+      <data key="d6">2984177428</data>
+    </node>
+    <node id="2984177445">
+      <data key="d4">38.5665044</data>
+      <data key="d5">-2.9258983</data>
+      <data key="d6">2984177445</data>
+    </node>
+    <node id="2984177446">
+      <data key="d4">38.566505</data>
+      <data key="d5">-2.9253691</data>
+      <data key="d6">2984177446</data>
+    </node>
+    <node id="2984177447">
+      <data key="d4">38.5665093</data>
+      <data key="d5">-2.9254451</data>
+      <data key="d6">2984177447</data>
+    </node>
+    <node id="2984177464">
+      <data key="d4">38.566793</data>
+      <data key="d5">-2.9247829</data>
+      <data key="d6">2984177464</data>
+    </node>
+    <node id="2984177466">
+      <data key="d4">38.5668115</data>
+      <data key="d5">-2.9260865</data>
+      <data key="d6">2984177466</data>
+    </node>
+    <node id="2984177470">
+      <data key="d4">38.5671359</data>
+      <data key="d5">-2.9255005</data>
+      <data key="d6">2984177470</data>
+    </node>
+    <node id="3006337875">
+      <data key="d4">38.5656366</data>
+      <data key="d5">-2.9216798</data>
+      <data key="d6">3006337875</data>
+    </node>
+    <node id="3006337877">
+      <data key="d4">38.5659058</data>
+      <data key="d5">-2.9233158</data>
+      <data key="d6">3006337877</data>
+    </node>
+    <node id="3006337879">
+      <data key="d4">38.565964</data>
+      <data key="d5">-2.9236575</data>
+      <data key="d6">3006337879</data>
+    </node>
+    <node id="3006337881">
+      <data key="d4">38.5661733</data>
+      <data key="d5">-2.92305</data>
+      <data key="d6">3006337881</data>
+    </node>
+    <node id="3006337882">
+      <data key="d4">38.5662565</data>
+      <data key="d5">-2.9236811</data>
+      <data key="d6">3006337882</data>
+    </node>
+    <node id="3006337883">
+      <data key="d4">38.56629</data>
+      <data key="d5">-2.9226546</data>
+      <data key="d6">3006337883</data>
+    </node>
+    <node id="3006337885">
+      <data key="d4">38.5664043</data>
+      <data key="d5">-2.9228157</data>
+      <data key="d6">3006337885</data>
+    </node>
+    <node id="3006337886">
+      <data key="d4">38.5664981</data>
+      <data key="d5">-2.9221854</data>
+      <data key="d6">3006337886</data>
+    </node>
+    <node id="3006337887">
+      <data key="d4">38.5665399</data>
+      <data key="d5">-2.9229571</data>
+      <data key="d6">3006337887</data>
+    </node>
+    <node id="3006337888">
+      <data key="d4">38.5666691</data>
+      <data key="d5">-2.9226212</data>
+      <data key="d6">3006337888</data>
+    </node>
+    <node id="3006337889">
+      <data key="d4">38.5667415</data>
+      <data key="d5">-2.9216702</data>
+      <data key="d6">3006337889</data>
+    </node>
+    <node id="3006337890">
+      <data key="d4">38.566776</data>
+      <data key="d5">-2.9223434</data>
+      <data key="d6">3006337890</data>
+    </node>
+    <node id="3006337892">
+      <data key="d4">38.5668226</data>
+      <data key="d5">-2.9239333</data>
+      <data key="d6">3006337892</data>
+    </node>
+    <node id="3006337893">
+      <data key="d4">38.566849</data>
+      <data key="d5">-2.9232851</data>
+      <data key="d6">3006337893</data>
+    </node>
+    <node id="3006337894">
+      <data key="d4">38.5668561</data>
+      <data key="d5">-2.9238638</data>
+      <data key="d6">3006337894</data>
+    </node>
+    <node id="3006337895">
+      <data key="d4">38.5668768</data>
+      <data key="d5">-2.9227555</data>
+      <data key="d6">3006337895</data>
+    </node>
+    <node id="3006337897">
+      <data key="d4">38.5669962</data>
+      <data key="d5">-2.9248301</data>
+      <data key="d6">3006337897</data>
+    </node>
+    <node id="3006337898">
+      <data key="d4">38.5670548</data>
+      <data key="d5">-2.9241559</data>
+      <data key="d6">3006337898</data>
+    </node>
+    <node id="3006337899">
+      <data key="d4">38.5670625</data>
+      <data key="d5">-2.9235426</data>
+      <data key="d6">3006337899</data>
+    </node>
+    <node id="3006337903">
+      <data key="d4">38.5671958</data>
+      <data key="d5">-2.9228629</data>
+      <data key="d6">3006337903</data>
+    </node>
+    <node id="3006337904">
+      <data key="d4">38.5672125</data>
+      <data key="d5">-2.9243273</data>
+      <data key="d6">3006337904</data>
+    </node>
+    <node id="3006337905">
+      <data key="d4">38.5672045</data>
+      <data key="d5">-2.9225692</data>
+      <data key="d6">3006337905</data>
+    </node>
+    <node id="3006337907">
+      <data key="d4">38.567287</data>
+      <data key="d5">-2.9238846</data>
+      <data key="d6">3006337907</data>
+    </node>
+    <node id="3006337921">
+      <data key="d4">38.5675315</data>
+      <data key="d5">-2.9255941</data>
+      <data key="d6">3006337921</data>
+    </node>
+    <node id="3006337927">
+      <data key="d4">38.567598</data>
+      <data key="d5">-2.9246863</data>
+      <data key="d6">3006337927</data>
+    </node>
+    <node id="3006337932">
+      <data key="d4">38.5676507</data>
+      <data key="d5">-2.9260091</data>
+      <data key="d6">3006337932</data>
+    </node>
+    <node id="3006339134">
+      <data key="d4">38.5676598</data>
+      <data key="d5">-2.9254019</data>
+      <data key="d6">3006339134</data>
+    </node>
+    <node id="3006339144">
+      <data key="d4">38.5677883</data>
+      <data key="d5">-2.9251792</data>
+      <data key="d6">3006339144</data>
+    </node>
+    <node id="3006339146">
+      <data key="d4">38.5678163</data>
+      <data key="d5">-2.925162</data>
+      <data key="d6">3006339146</data>
+    </node>
+    <node id="3006339148">
+      <data key="d4">38.5678321</data>
+      <data key="d5">-2.9258426</data>
+      <data key="d6">3006339148</data>
+    </node>
+    <node id="3006339152">
+      <data key="d4">38.5678897</data>
+      <data key="d5">-2.9264304</data>
+      <data key="d6">3006339152</data>
+    </node>
+    <node id="3006339153">
+      <data key="d4">38.567933</data>
+      <data key="d5">-2.9246493</data>
+      <data key="d6">3006339153</data>
+    </node>
+    <node id="3006339157">
+      <data key="d4">38.5680252</data>
+      <data key="d5">-2.9246351</data>
+      <data key="d6">3006339157</data>
+    </node>
+    <node id="3006339158">
+      <data key="d4">38.5680085</data>
+      <data key="d5">-2.9241911</data>
+      <data key="d6">3006339158</data>
+    </node>
+    <node id="3006339166">
+      <data key="d4">38.5681248</data>
+      <data key="d5">-2.9262077</data>
+      <data key="d6">3006339166</data>
+    </node>
+    <node id="3006339168">
+      <data key="d4">38.5681431</data>
+      <data key="d5">-2.9255434</data>
+      <data key="d6">3006339168</data>
+    </node>
+    <node id="3006339179">
+      <data key="d4">38.5683422</data>
+      <data key="d5">-2.9251843</data>
+      <data key="d6">3006339179</data>
+    </node>
+    <node id="3006339183">
+      <data key="d4">38.5684355</data>
+      <data key="d5">-2.9240405</data>
+      <data key="d6">3006339183</data>
+    </node>
+    <node id="3006339185">
+      <data key="d4">38.5685242</data>
+      <data key="d5">-2.9247619</data>
+      <data key="d6">3006339185</data>
+    </node>
+    <node id="3006339188">
+      <data key="d4">38.5686974</data>
+      <data key="d5">-2.9242999</data>
+      <data key="d6">3006339188</data>
+    </node>
+    <node id="3006339190">
+      <data key="d4">38.5687562</data>
+      <data key="d5">-2.9255904</data>
+      <data key="d6">3006339190</data>
+    </node>
+    <node id="3442741756">
+      <data key="d4">38.566087</data>
+      <data key="d5">-2.92404</data>
+      <data key="d6">3442741756</data>
+    </node>
+    <node id="3442741757">
+      <data key="d4">38.5661134</data>
+      <data key="d5">-2.9243509</data>
+      <data key="d6">3442741757</data>
+    </node>
+    <node id="3847811447">
+      <data key="d4">38.5676286</data>
+      <data key="d5">-2.9289706</data>
+      <data key="d6">3847811447</data>
+    </node>
+    <node id="3847811455">
+      <data key="d4">38.5750522</data>
+      <data key="d5">-2.9256264</data>
+      <data key="d6">3847811455</data>
+    </node>
+    <node id="3847812078">
+      <data key="d4">38.5696729</data>
+      <data key="d5">-2.9223062</data>
+      <data key="d6">3847812078</data>
+    </node>
+    <node id="3847812083">
+      <data key="d4">38.5683129</data>
+      <data key="d5">-2.9301849</data>
+      <data key="d6">3847812083</data>
+    </node>
+    <node id="3972217732">
+      <data key="d4">38.5535261</data>
+      <data key="d5">-2.9328668</data>
+      <data key="d6">3972217732</data>
+    </node>
+    <node id="3972258935">
+      <data key="d4">38.559785</data>
+      <data key="d5">-2.9364824</data>
+      <data key="d6">3972258935</data>
+    </node>
+    <edge id="0" source="2974604667" target="2979830231">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">56.694</data>
+      <data key="d13">LINESTRING (-2.9264757 38.5684342, -2.9262093 38.5685834, -2.9259095 38.5686803)</data>
+    </edge>
+    <edge id="0" source="2974604667" target="2979844125">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">46.726</data>
+      <data key="d13">LINESTRING (-2.9264757 38.5684342, -2.9267858 38.5681296, -2.9268083 38.5681042)</data>
+    </edge>
+    <edge id="0" source="2974604667" target="3006339166">
+      <data key="d7">296814741</data>
+      <data key="d9">Cuesta Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.67</data>
+      <data key="d13">LINESTRING (-2.9264757 38.5684342, -2.9264209 38.5682022, -2.9262077 38.5681248)</data>
+    </edge>
+    <edge id="0" source="2974604671" target="2979830246">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">72.977</data>
+    </edge>
+    <edge id="0" source="2974604671" target="2979830235">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">73.336</data>
+      <data key="d13">LINESTRING (-2.9247377 38.569054, -2.924949 38.5689409, -2.9251169 38.5688968, -2.9255017 38.5687854)</data>
+    </edge>
+    <edge id="0" source="2974604671" target="2974604691">
+      <data key="d7">294385094</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Calle Almedina</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">150.042</data>
+      <data key="d13">LINESTRING (-2.9247377 38.569054, -2.9247224 38.5691709, -2.9247606 38.5697303, -2.9247646 38.5702535, -2.9246821 38.5703872)</data>
+    </edge>
+    <edge id="0" source="2974604671" target="3006339188">
+      <data key="d7">296814755</data>
+      <data key="d9">Calle la Mancha</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">55.669</data>
+      <data key="d13">LINESTRING (-2.9247377 38.569054, -2.9245029 38.5689199, -2.9243367 38.5687377, -2.9242999 38.5686974)</data>
+    </edge>
+    <edge id="0" source="2974604691" target="2974604694">
+      <data key="d7">293881489</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d14">roundabout</data>
+      <data key="d11">True</data>
+      <data key="d12">29.045</data>
+      <data key="d13">LINESTRING (-2.9246821 38.5703872, -2.924572 38.5703742, -2.9244651 38.5703986, -2.924381 38.5704557)</data>
+    </edge>
+    <edge id="0" source="2974604691" target="2974604671">
+      <data key="d7">294385094</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Calle Almedina</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">150.042</data>
+      <data key="d13">LINESTRING (-2.9246821 38.5703872, -2.9247646 38.5702535, -2.9247606 38.5697303, -2.9247224 38.5691709, -2.9247377 38.569054)</data>
+    </edge>
+    <edge id="0" source="2974604694" target="2979830259">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">61.073</data>
+    </edge>
+    <edge id="0" source="2974604694" target="2974604702">
+      <data key="d7">293881489</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d14">roundabout</data>
+      <data key="d11">True</data>
+      <data key="d12">69.621</data>
+      <data key="d13">LINESTRING (-2.924381 38.5704557, -2.9243379 38.5705263, -2.9243321 38.5706044, -2.9243646 38.5706785, -2.9244305 38.5707374, -2.92452 38.5707724, -2.9246198 38.5707784, -2.9247151 38.5707544, -2.9247917 38.570704)</data>
+    </edge>
+    <edge id="0" source="2974604702" target="2974604691">
+      <data key="d7">293881489</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d14">roundabout</data>
+      <data key="d11">True</data>
+      <data key="d12">42.107</data>
+      <data key="d13">LINESTRING (-2.9247917 38.570704, -2.9248435 38.5706184, -2.92484 38.5705238, -2.924782 38.5704407, -2.9246821 38.5703872)</data>
+    </edge>
+    <edge id="0" source="2979830192" target="2979830193">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.973</data>
+    </edge>
+    <edge id="0" source="2979830193" target="2979830192">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.973</data>
+    </edge>
+    <edge id="0" source="2979830193" target="2979830198">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.339</data>
+      <data key="d13">LINESTRING (-2.9291086 38.566358, -2.9292112 38.5664112, -2.9297925 38.5667125)</data>
+    </edge>
+    <edge id="0" source="2979830193" target="2979830196">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.32</data>
+      <data key="d13">LINESTRING (-2.9291086 38.566358, -2.9288738 38.5663914, -2.9287463 38.566514)</data>
+    </edge>
+    <edge id="0" source="2979830196" target="2979830199">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.303</data>
+    </edge>
+    <edge id="0" source="2979830196" target="2979830202">
+      <data key="d7">294385100</data>
+      <data key="d9">Calle La Rosa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">87.72</data>
+      <data key="d13">LINESTRING (-2.9287463 38.566514, -2.9292068 38.5668453, -2.929537 38.5669973)</data>
+    </edge>
+    <edge id="0" source="2979830196" target="2979830193">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.32</data>
+      <data key="d13">LINESTRING (-2.9287463 38.566514, -2.9288738 38.5663914, -2.9291086 38.566358)</data>
+    </edge>
+    <edge id="0" source="2979830197" target="2979830203">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">69.374</data>
+    </edge>
+    <edge id="0" source="2979830197" target="2979844108">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">18.126</data>
+    </edge>
+    <edge id="0" source="2979830197" target="2979830199">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.805</data>
+    </edge>
+    <edge id="0" source="2979830198" target="2979830205">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">129.699</data>
+    </edge>
+    <edge id="0" source="2979830198" target="2979830202">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.682</data>
+    </edge>
+    <edge id="0" source="2979830198" target="2979830193">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.339</data>
+      <data key="d13">LINESTRING (-2.9297925 38.5667125, -2.9292112 38.5664112, -2.9291086 38.566358)</data>
+    </edge>
+    <edge id="0" source="2979830199" target="2979830197">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.805</data>
+    </edge>
+    <edge id="0" source="2979830199" target="2979830201">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">28.208</data>
+    </edge>
+    <edge id="0" source="2979830199" target="2979830196">
+      <data key="d7">294385101</data>
+      <data key="d9">Calle Lope de Vega</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.303</data>
+    </edge>
+    <edge id="0" source="2979830201" target="2979830199">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">28.208</data>
+    </edge>
+    <edge id="0" source="2979830201" target="2979830204">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.585</data>
+    </edge>
+    <edge id="0" source="2979830201" target="2979830206">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.49</data>
+    </edge>
+    <edge id="0" source="2979830202" target="2979830204">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.483</data>
+    </edge>
+    <edge id="0" source="2979830202" target="2979830198">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.682</data>
+    </edge>
+    <edge id="0" source="2979830202" target="2979830208">
+      <data key="d7">294385100</data>
+      <data key="d9">Calle La Rosa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">129.821</data>
+    </edge>
+    <edge id="0" source="2979830202" target="2979830196">
+      <data key="d7">294385100</data>
+      <data key="d9">Calle La Rosa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">87.72</data>
+      <data key="d13">LINESTRING (-2.929537 38.5669973, -2.9292068 38.5668453, -2.9287463 38.566514)</data>
+    </edge>
+    <edge id="0" source="2979830203" target="2979830207">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">49.601</data>
+    </edge>
+    <edge id="0" source="2979830203" target="2979830197">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">69.374</data>
+    </edge>
+    <edge id="0" source="2979830203" target="2979830206">
+      <data key="d7">294385106</data>
+      <data key="d9">Calle Sancho Panza</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">64.982</data>
+    </edge>
+    <edge id="0" source="2979830204" target="3847811447">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.264</data>
+    </edge>
+    <edge id="0" source="2979830204" target="2979830202">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.483</data>
+    </edge>
+    <edge id="0" source="2979830204" target="2979830201">
+      <data key="d7">294385097</data>
+      <data key="d9">Calle Don Quijote</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.585</data>
+    </edge>
+    <edge id="0" source="2979830205" target="2979830208">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.708</data>
+    </edge>
+    <edge id="0" source="2979830205" target="2979830198">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">129.699</data>
+    </edge>
+    <edge id="0" source="2979830205" target="2979830214">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">85.745</data>
+    </edge>
+    <edge id="0" source="2979830206" target="2979830218">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.554</data>
+    </edge>
+    <edge id="0" source="2979830206" target="2979830201">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.49</data>
+    </edge>
+    <edge id="0" source="2979830206" target="2979830203">
+      <data key="d7">294385106</data>
+      <data key="d9">Calle Sancho Panza</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">64.982</data>
+    </edge>
+    <edge id="0" source="2979830206" target="2979830213">
+      <data key="d7">294385106</data>
+      <data key="d9">Calle Sancho Panza</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">59.609</data>
+    </edge>
+    <edge id="0" source="2979830207" target="2979844122">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">4.837</data>
+    </edge>
+    <edge id="0" source="2979830207" target="2979830203">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">49.601</data>
+    </edge>
+    <edge id="0" source="2979830207" target="2979830218">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.244</data>
+    </edge>
+    <edge id="0" source="2979830208" target="3847812083">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">89.784</data>
+    </edge>
+    <edge id="0" source="2979830208" target="2979830205">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.708</data>
+    </edge>
+    <edge id="0" source="2979830208" target="2979830202">
+      <data key="d7">294385100</data>
+      <data key="d9">Calle La Rosa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">129.821</data>
+    </edge>
+    <edge id="0" source="2979830209" target="3006337927">
+      <data key="d7">296814768</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.265</data>
+    </edge>
+    <edge id="0" source="2979830209" target="3006339158">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.911</data>
+      <data key="d13">LINESTRING (-2.9244382 38.5676764, -2.9242998 38.5678264, -2.9241911 38.5680085)</data>
+    </edge>
+    <edge id="0" source="2979830209" target="3006337907">
+      <data key="d7">[296814768, 296814749]</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.06700000000001</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d13">LINESTRING (-2.9244382 38.5676764, -2.9244531 38.567586, -2.9244185 38.5675269, -2.9243814 38.5675049, -2.9241515 38.5673854, -2.9238846 38.567287)</data>
+    </edge>
+    <edge id="0" source="2979830213" target="2979830223">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.493</data>
+    </edge>
+    <edge id="0" source="2979830213" target="3847811447">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">17.304</data>
+    </edge>
+    <edge id="0" source="2979830213" target="2979830206">
+      <data key="d7">294385106</data>
+      <data key="d9">Calle Sancho Panza</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">59.609</data>
+    </edge>
+    <edge id="0" source="2979830214" target="2979830205">
+      <data key="d7">294385089</data>
+      <data key="d9">Avenida Tierno Galván</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">85.745</data>
+    </edge>
+    <edge id="0" source="2979830218" target="2979830224">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">70.306</data>
+    </edge>
+    <edge id="0" source="2979830218" target="2979830206">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.554</data>
+    </edge>
+    <edge id="0" source="2979830218" target="2979830207">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.244</data>
+    </edge>
+    <edge id="0" source="2979830218" target="2979830223">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.973</data>
+    </edge>
+    <edge id="0" source="2979830221" target="2979844125">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">14.117</data>
+    </edge>
+    <edge id="0" source="2979830221" target="2979844122">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">67.537</data>
+    </edge>
+    <edge id="0" source="2979830221" target="2979830224">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.521</data>
+    </edge>
+    <edge id="0" source="2979830223" target="2979830230">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.448</data>
+    </edge>
+    <edge id="0" source="2979830223" target="2979830213">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.493</data>
+    </edge>
+    <edge id="0" source="2979830223" target="2979830218">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.973</data>
+    </edge>
+    <edge id="0" source="2979830223" target="2979830236">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.404</data>
+      <data key="d13">LINESTRING (-2.9285294 38.5681204, -2.9291683 38.5684975, -2.9297429 38.5688093)</data>
+    </edge>
+    <edge id="0" source="2979830224" target="2979830230">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.129</data>
+    </edge>
+    <edge id="0" source="2979830224" target="2979830221">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.521</data>
+    </edge>
+    <edge id="0" source="2979830224" target="2979830228">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.027</data>
+    </edge>
+    <edge id="0" source="2979830224" target="2979830218">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">70.306</data>
+    </edge>
+    <edge id="0" source="2979830225" target="2979830239">
+      <data key="d7">294385095</data>
+      <data key="d9">Calle Alpujarras</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">103.888</data>
+      <data key="d13">LINESTRING (-2.9240626 38.5683493, -2.9239302 38.5684274, -2.9236826 38.5687512, -2.9233069 38.5690616)</data>
+    </edge>
+    <edge id="0" source="2979830225" target="3006339183">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">9.847999999999999</data>
+      <data key="d13">LINESTRING (-2.9240626 38.5683493, -2.9240412 38.5684074, -2.9240405 38.5684355)</data>
+    </edge>
+    <edge id="0" source="2979830225" target="3006339158">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.528999999999996</data>
+      <data key="d13">LINESTRING (-2.9240626 38.5683493, -2.9241821 38.5680236, -2.9241911 38.5680085)</data>
+    </edge>
+    <edge id="0" source="2979830228" target="2979830224">
+      <data key="d7">294385098</data>
+      <data key="d9">Calle Ducinea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.027</data>
+    </edge>
+    <edge id="0" source="2979830230" target="2979830243">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">82.679</data>
+    </edge>
+    <edge id="0" source="2979830230" target="2979830223">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.448</data>
+    </edge>
+    <edge id="0" source="2979830230" target="2979830241">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.927</data>
+    </edge>
+    <edge id="0" source="2979830230" target="2979830224">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.129</data>
+    </edge>
+    <edge id="0" source="2979830231" target="3006339190">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">28.998</data>
+    </edge>
+    <edge id="0" source="2979830231" target="2979830245">
+      <data key="d7">294385110</data>
+      <data key="d9">Travesía Mártires-Emigrantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">150.764</data>
+    </edge>
+    <edge id="0" source="2979830231" target="2974604667">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">56.694</data>
+      <data key="d13">LINESTRING (-2.9259095 38.5686803, -2.9262093 38.5685834, -2.9264757 38.5684342)</data>
+    </edge>
+    <edge id="0" source="2979830232" target="2979830237">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.746</data>
+    </edge>
+    <edge id="0" source="2979830235" target="3006339190">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">8.367</data>
+    </edge>
+    <edge id="0" source="2979830235" target="2979830238">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.469</data>
+    </edge>
+    <edge id="0" source="2979830235" target="2974604671">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">73.336</data>
+      <data key="d13">LINESTRING (-2.9255017 38.5687854, -2.9251169 38.5688968, -2.924949 38.5689409, -2.9247377 38.569054)</data>
+    </edge>
+    <edge id="0" source="2979830236" target="2979830241">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">55.129</data>
+    </edge>
+    <edge id="0" source="2979830236" target="3847812083">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">67.256</data>
+    </edge>
+    <edge id="0" source="2979830236" target="2979830223">
+      <data key="d7">294385103</data>
+      <data key="d9">Calle Rafael Ayala</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.404</data>
+      <data key="d13">LINESTRING (-2.9297429 38.5688093, -2.9291683 38.5684975, -2.9285294 38.5681204)</data>
+    </edge>
+    <edge id="0" source="2979830237" target="2979830232">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.746</data>
+    </edge>
+    <edge id="0" source="2979830237" target="2979830239">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.785</data>
+    </edge>
+    <edge id="0" source="2979830237" target="2979830253">
+      <data key="d7">294385112</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.512</data>
+      <data key="d13">LINESTRING (-2.9229996 38.5688213, -2.9221287 38.5695823, -2.9220817 38.5696524, -2.9220696 38.5697252)</data>
+    </edge>
+    <edge id="0" source="2979830238" target="2979830235">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.469</data>
+    </edge>
+    <edge id="0" source="2979830238" target="2979830242">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.559</data>
+    </edge>
+    <edge id="0" source="2979830238" target="2979830246">
+      <data key="d7">294385099</data>
+      <data key="d9">Calle Gonzalo Tovilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">77.743</data>
+    </edge>
+    <edge id="0" source="2979830239" target="2979830237">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.785</data>
+    </edge>
+    <edge id="0" source="2979830239" target="2979830250">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">83.473</data>
+    </edge>
+    <edge id="0" source="2979830239" target="2979830225">
+      <data key="d7">294385095</data>
+      <data key="d9">Calle Alpujarras</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">103.88799999999999</data>
+      <data key="d13">LINESTRING (-2.9233069 38.5690616, -2.9236826 38.5687512, -2.9239302 38.5684274, -2.9240626 38.5683493)</data>
+    </edge>
+    <edge id="0" source="2979830240" target="2979830247">
+      <data key="d7">294385104</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.554</data>
+    </edge>
+    <edge id="0" source="2979830241" target="2979830248">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">47.972</data>
+    </edge>
+    <edge id="0" source="2979830241" target="2979830236">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">55.129</data>
+    </edge>
+    <edge id="0" source="2979830241" target="2979830230">
+      <data key="d7">294385093</data>
+      <data key="d9">Calle Alejo Polo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.927</data>
+    </edge>
+    <edge id="0" source="2979830242" target="2979830238">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.559</data>
+    </edge>
+    <edge id="0" source="2979830242" target="2979830252">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">90.982</data>
+    </edge>
+    <edge id="0" source="2979830242" target="2979830255">
+      <data key="d7">294385102</data>
+      <data key="d9">Calle Martín Sánchez</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">87.582</data>
+    </edge>
+    <edge id="0" source="2979830243" target="2979830245">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.882</data>
+    </edge>
+    <edge id="0" source="2979830243" target="2979830230">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">82.679</data>
+    </edge>
+    <edge id="0" source="2979830243" target="2979830247">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.565</data>
+    </edge>
+    <edge id="0" source="2979830244" target="2979830248">
+      <data key="d7">294385109</data>
+      <data key="d9">Travesia Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">34.494</data>
+    </edge>
+    <edge id="0" source="2979830245" target="2979830252">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.326</data>
+    </edge>
+    <edge id="0" source="2979830245" target="2979830243">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.882</data>
+    </edge>
+    <edge id="0" source="2979830245" target="2979830231">
+      <data key="d7">294385110</data>
+      <data key="d9">Travesía Mártires-Emigrantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">150.764</data>
+    </edge>
+    <edge id="0" source="2979830246" target="2974604671">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">72.977</data>
+    </edge>
+    <edge id="0" source="2979830246" target="2979830255">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.512</data>
+    </edge>
+    <edge id="0" source="2979830246" target="2979830238">
+      <data key="d7">294385099</data>
+      <data key="d9">Calle Gonzalo Tovilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">77.743</data>
+    </edge>
+    <edge id="0" source="2979830247" target="2979830240">
+      <data key="d7">294385104</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.554</data>
+    </edge>
+    <edge id="0" source="2979830247" target="2979830243">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.565</data>
+    </edge>
+    <edge id="0" source="2979830247" target="2979830256">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">70.196</data>
+    </edge>
+    <edge id="0" source="2979830248" target="2979830256">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.697</data>
+    </edge>
+    <edge id="0" source="2979830248" target="2979830241">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">47.972</data>
+    </edge>
+    <edge id="0" source="2979830248" target="2979830244">
+      <data key="d7">294385109</data>
+      <data key="d9">Travesia Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">34.494</data>
+    </edge>
+    <edge id="0" source="2979830250" target="2979830239">
+      <data key="d7">294385111</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">83.473</data>
+    </edge>
+    <edge id="0" source="2979830250" target="2979830259">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.772999999999996</data>
+      <data key="d13">LINESTRING (-2.9239943 38.5695857, -2.9239388 38.5698493, -2.9238454 38.5701003)</data>
+    </edge>
+    <edge id="0" source="2979830250" target="3006339183">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">127.96199999999999</data>
+      <data key="d13">LINESTRING (-2.9239943 38.5695857, -2.9240294 38.568807, -2.9240327 38.5687345, -2.9240405 38.5684355)</data>
+    </edge>
+    <edge id="0" source="2979830252" target="2979830257">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.397</data>
+    </edge>
+    <edge id="0" source="2979830252" target="2979830245">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.326</data>
+    </edge>
+    <edge id="0" source="2979830252" target="2979830242">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">90.982</data>
+    </edge>
+    <edge id="0" source="2979830252" target="2979830261">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.981</data>
+    </edge>
+    <edge id="0" source="2979830253" target="2979830237">
+      <data key="d7">294385112</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.512</data>
+      <data key="d13">LINESTRING (-2.9220696 38.5697252, -2.9220817 38.5696524, -2.9221287 38.5695823, -2.9229996 38.5688213)</data>
+    </edge>
+    <edge id="0" source="2979830253" target="3847812078">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">21.521</data>
+      <data key="d13">LINESTRING (-2.9220696 38.5697252, -2.9221816 38.5696888, -2.9223062 38.5696729)</data>
+    </edge>
+    <edge id="0" source="2979830255" target="2979830246">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.512</data>
+    </edge>
+    <edge id="0" source="2979830255" target="2979830258">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">25.208</data>
+    </edge>
+    <edge id="0" source="2979830255" target="2979830242">
+      <data key="d7">294385102</data>
+      <data key="d9">Calle Martín Sánchez</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">87.582</data>
+    </edge>
+    <edge id="0" source="2979830256" target="2979830261">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.729</data>
+    </edge>
+    <edge id="0" source="2979830256" target="2979830248">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.697</data>
+    </edge>
+    <edge id="0" source="2979830256" target="2979830247">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">70.196</data>
+    </edge>
+    <edge id="0" source="2979830256" target="2979830260">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">56.011</data>
+    </edge>
+    <edge id="0" source="2979830257" target="2979830252">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.397</data>
+    </edge>
+    <edge id="0" source="2979830258" target="2979830255">
+      <data key="d7">294385096</data>
+      <data key="d9">Calle Antón Castilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">25.208</data>
+    </edge>
+    <edge id="0" source="2979830259" target="2974604694">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">61.073</data>
+    </edge>
+    <edge id="0" source="2979830259" target="2979830250">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.772999999999996</data>
+      <data key="d13">LINESTRING (-2.9238454 38.5701003, -2.9239388 38.5698493, -2.9239943 38.5695857)</data>
+    </edge>
+    <edge id="0" source="2979830259" target="3847812078">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">148.607</data>
+      <data key="d13">LINESTRING (-2.9238454 38.5701003, -2.9236029 38.5699394, -2.9232889 38.569778, -2.9229688 38.5696744, -2.9225828 38.5696377, -2.9223062 38.5696729)</data>
+    </edge>
+    <edge id="0" source="2979830260" target="2979830256">
+      <data key="d7">294385105</data>
+      <data key="d9">Calle Ramón y Cajal</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">56.011</data>
+    </edge>
+    <edge id="0" source="2979830261" target="2979830256">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.729</data>
+    </edge>
+    <edge id="0" source="2979830261" target="2979830252">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.981</data>
+    </edge>
+    <edge id="0" source="2979830261" target="2979830263">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">14.883</data>
+    </edge>
+    <edge id="0" source="2979830263" target="2979830261">
+      <data key="d7">294385092</data>
+      <data key="d9">Calle 23 de Mayo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">14.883</data>
+    </edge>
+    <edge id="0" source="2979844080" target="2979844082">
+      <data key="d7">294385558</data>
+      <data key="d9">Travesía de Marllena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">133.517</data>
+      <data key="d13">LINESTRING (-2.9271267 38.5643131, -2.9268876 38.5649207, -2.9262783 38.5652245)</data>
+    </edge>
+    <edge id="0" source="2979844082" target="2979844083">
+      <data key="d7">294385558</data>
+      <data key="d9">Travesía de Marllena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.828</data>
+    </edge>
+    <edge id="0" source="2979844082" target="2979844100">
+      <data key="d7">294385552</data>
+      <data key="d9">Calle Quevedo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">134.201</data>
+      <data key="d13">LINESTRING (-2.9262783 38.5652245, -2.9266349 38.565528, -2.9271991 38.5660056, -2.9272185 38.5661494)</data>
+    </edge>
+    <edge id="0" source="2979844082" target="2979844080">
+      <data key="d7">294385558</data>
+      <data key="d9">Travesía de Marllena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">133.517</data>
+      <data key="d13">LINESTRING (-2.9262783 38.5652245, -2.9268876 38.5649207, -2.9271267 38.5643131)</data>
+    </edge>
+    <edge id="0" source="2979844083" target="2979844082">
+      <data key="d7">294385558</data>
+      <data key="d9">Travesía de Marllena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.828</data>
+    </edge>
+    <edge id="0" source="2979844083" target="2979844088">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.684</data>
+      <data key="d13">LINESTRING (-2.9257563 38.5654848, -2.9257912 38.5656233, -2.9258428 38.5657544, -2.9259094 38.5658384, -2.9259239 38.5659253)</data>
+    </edge>
+    <edge id="0" source="2979844083" target="2984177342">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.877</data>
+      <data key="d13">LINESTRING (-2.9257563 38.5654848, -2.9256945 38.5652436, -2.9256271 38.5649742)</data>
+    </edge>
+    <edge id="0" source="2979844085" target="2979844100">
+      <data key="d7">294385555</data>
+      <data key="d9">Camino Lavadero</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">144.504</data>
+      <data key="d13">LINESTRING (-2.9287546 38.5656536, -2.9282508 38.5658272, -2.9272185 38.5661494)</data>
+    </edge>
+    <edge id="0" source="2979844087" target="3006337877">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.808</data>
+    </edge>
+    <edge id="0" source="2979844087" target="2984177381">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">28.751</data>
+    </edge>
+    <edge id="0" source="2979844087" target="2984177364">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.525</data>
+      <data key="d13">LINESTRING (-2.9231642 38.5658688, -2.9232671 38.5658161, -2.923579 38.5657205, -2.9238614 38.5655868)</data>
+    </edge>
+    <edge id="0" source="2979844088" target="2984177391">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.318</data>
+    </edge>
+    <edge id="0" source="2979844088" target="2979844090">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">21.867</data>
+    </edge>
+    <edge id="0" source="2979844088" target="2984177445">
+      <data key="d7">294794110</data>
+      <data key="d9">Calle El Olmo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.22200000000001</data>
+      <data key="d13">LINESTRING (-2.9259239 38.5659253, -2.9259115 38.5663273, -2.925875 38.5664247, -2.9258814 38.5664768, -2.9258983 38.5665044)</data>
+    </edge>
+    <edge id="0" source="2979844088" target="2979844083">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.684</data>
+      <data key="d13">LINESTRING (-2.9259239 38.5659253, -2.9259094 38.5658384, -2.9258428 38.5657544, -2.9257912 38.5656233, -2.9257563 38.5654848)</data>
+    </edge>
+    <edge id="0" source="2979844090" target="2979844088">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">21.867</data>
+    </edge>
+    <edge id="0" source="2979844090" target="2979844094">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">47.483</data>
+      <data key="d13">LINESTRING (-2.9261726 38.5659546, -2.9263298 38.5659717, -2.9267065 38.5660425)</data>
+    </edge>
+    <edge id="0" source="2979844090" target="2979844109">
+      <data key="d7">294385557</data>
+      <data key="d9">Travesia Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">67.806</data>
+      <data key="d13">LINESTRING (-2.9261726 38.5659546, -2.9261959 38.5660628, -2.9263317 38.5662469, -2.9265743 38.566463)</data>
+    </edge>
+    <edge id="0" source="2979844093" target="2984177394">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.763</data>
+    </edge>
+    <edge id="0" source="2979844093" target="2984177391">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.707</data>
+    </edge>
+    <edge id="0" source="2979844093" target="2984177343">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">122.23</data>
+      <data key="d13">LINESTRING (-2.925109 38.5660417, -2.925001 38.5651257, -2.9251315 38.5649782)</data>
+    </edge>
+    <edge id="0" source="2979844094" target="2979844106">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.66</data>
+    </edge>
+    <edge id="0" source="2979844094" target="2979844090">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">47.483</data>
+      <data key="d13">LINESTRING (-2.9267065 38.5660425, -2.9263298 38.5659717, -2.9261726 38.5659546)</data>
+    </edge>
+    <edge id="0" source="2979844094" target="2979844102">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.535999999999994</data>
+      <data key="d13">LINESTRING (-2.9267065 38.5660425, -2.9271405 38.5661109, -2.9271666 38.566141)</data>
+    </edge>
+    <edge id="0" source="2979844095" target="3006337879">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.815</data>
+    </edge>
+    <edge id="0" source="2979844095" target="3442741756">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.437</data>
+    </edge>
+    <edge id="0" source="2979844095" target="2984177387">
+      <data key="d7">294794119</data>
+      <data key="d9">Calle de la Cruz</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.309</data>
+      <data key="d13">LINESTRING (-2.9240121 38.5660651, -2.9240215 38.5659776, -2.924009 38.5659287)</data>
+    </edge>
+    <edge id="0" source="2979844100" target="2979844103">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.435</data>
+    </edge>
+    <edge id="0" source="2979844100" target="2979844102">
+      <data key="d7">294385555</data>
+      <data key="d9">Camino Lavadero</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.608</data>
+    </edge>
+    <edge id="0" source="2979844100" target="2979844082">
+      <data key="d7">294385552</data>
+      <data key="d9">Calle Quevedo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">134.201</data>
+      <data key="d13">LINESTRING (-2.9272185 38.5661494, -2.9271991 38.5660056, -2.9266349 38.565528, -2.9262783 38.5652245)</data>
+    </edge>
+    <edge id="0" source="2979844100" target="2979844085">
+      <data key="d7">294385555</data>
+      <data key="d9">Camino Lavadero</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">144.504</data>
+      <data key="d13">LINESTRING (-2.9272185 38.5661494, -2.9282508 38.5658272, -2.9287546 38.5656536)</data>
+    </edge>
+    <edge id="0" source="2979844102" target="2979844103">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.896</data>
+    </edge>
+    <edge id="0" source="2979844102" target="2979844100">
+      <data key="d7">294385555</data>
+      <data key="d9">Camino Lavadero</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.608</data>
+    </edge>
+    <edge id="0" source="2979844102" target="2979844094">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.535999999999994</data>
+      <data key="d13">LINESTRING (-2.9271666 38.566141, -2.9271405 38.5661109, -2.9267065 38.5660425)</data>
+    </edge>
+    <edge id="0" source="2979844103" target="2979844106">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">31.016</data>
+    </edge>
+    <edge id="0" source="2979844103" target="2979844100">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.435</data>
+    </edge>
+    <edge id="0" source="2979844103" target="2979844102">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">4.896</data>
+    </edge>
+    <edge id="0" source="2979844103" target="2979844104">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">10.995999999999999</data>
+      <data key="d13">LINESTRING (-2.9271884 38.5661816, -2.9271937 38.5661929, -2.9272321 38.5662744)</data>
+    </edge>
+    <edge id="0" source="2979844104" target="2979844103">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">10.995999999999999</data>
+      <data key="d13">LINESTRING (-2.9272321 38.5662744, -2.9271937 38.5661929, -2.9271884 38.5661816)</data>
+    </edge>
+    <edge id="0" source="2979844104" target="2979844108">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">92.346</data>
+      <data key="d13">LINESTRING (-2.9272321 38.5662744, -2.9277088 38.5662996, -2.9280085 38.5663477, -2.928258 38.5664443)</data>
+    </edge>
+    <edge id="0" source="2979844104" target="2979844112">
+      <data key="d7">432399413</data>
+      <data key="d9">Travesia Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.658</data>
+      <data key="d13">LINESTRING (-2.9272321 38.5662744, -2.9272272 38.5663, -2.9271263 38.5668227)</data>
+    </edge>
+    <edge id="0" source="2979844106" target="2979844094">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.66</data>
+    </edge>
+    <edge id="0" source="2979844106" target="2979844109">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.899</data>
+    </edge>
+    <edge id="0" source="2979844106" target="2979844103">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">31.016</data>
+    </edge>
+    <edge id="0" source="2979844106" target="2979844112">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.649</data>
+      <data key="d13">LINESTRING (-2.9268751 38.566315, -2.9271009 38.5667366, -2.9271263 38.5668227)</data>
+    </edge>
+    <edge id="0" source="2979844108" target="2979830197">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">18.126</data>
+    </edge>
+    <edge id="0" source="2979844108" target="2979844104">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">92.346</data>
+      <data key="d13">LINESTRING (-2.928258 38.5664443, -2.9280085 38.5663477, -2.9277088 38.5662996, -2.9272321 38.5662744)</data>
+    </edge>
+    <edge id="0" source="2979844109" target="2979844106">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.899</data>
+    </edge>
+    <edge id="0" source="2979844109" target="2984177466">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.555</data>
+      <data key="d13">LINESTRING (-2.9265743 38.566463, -2.926363 38.5666353, -2.9260865 38.5668115)</data>
+    </edge>
+    <edge id="0" source="2979844109" target="2979844090">
+      <data key="d7">294385557</data>
+      <data key="d9">Travesia Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">67.80600000000001</data>
+      <data key="d13">LINESTRING (-2.9265743 38.566463, -2.9263317 38.5662469, -2.9261959 38.5660628, -2.9261726 38.5659546)</data>
+    </edge>
+    <edge id="0" source="2979844112" target="2979844106">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.649</data>
+      <data key="d13">LINESTRING (-2.9271263 38.5668227, -2.9271009 38.5667366, -2.9268751 38.566315)</data>
+    </edge>
+    <edge id="0" source="2979844112" target="2979844122">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">77.586</data>
+      <data key="d13">LINESTRING (-2.9271263 38.5668227, -2.9271521 38.5669102, -2.9273417 38.5674998)</data>
+    </edge>
+    <edge id="0" source="2979844112" target="2979844104">
+      <data key="d7">432399413</data>
+      <data key="d9">Travesia Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.658</data>
+      <data key="d13">LINESTRING (-2.9271263 38.5668227, -2.9272272 38.5663, -2.9272321 38.5662744)</data>
+    </edge>
+    <edge id="0" source="2979844114" target="2984177470">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.585</data>
+      <data key="d13">LINESTRING (-2.9259867 38.5668731, -2.9257804 38.5669965, -2.9257562 38.5670413, -2.9255005 38.5671359)</data>
+    </edge>
+    <edge id="0" source="2979844114" target="2984177466">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">11.056000000000001</data>
+      <data key="d13">LINESTRING (-2.9259867 38.5668731, -2.926037 38.566843, -2.9260865 38.5668115)</data>
+    </edge>
+    <edge id="0" source="2979844114" target="3006337932">
+      <data key="d7">[294385554, 294385550]</data>
+      <data key="d9">['Calle Calar', 'Callejón de Cervantes']</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">108.52599999999998</data>
+      <data key="d13">LINESTRING (-2.9259867 38.5668731, -2.9261748 38.5670706, -2.9263046 38.5672288, -2.9259422 38.5676127, -2.9260091 38.5676507)</data>
+    </edge>
+    <edge id="0" source="2979844122" target="2979830221">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">67.537</data>
+    </edge>
+    <edge id="0" source="2979844122" target="2979830207">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">4.837</data>
+    </edge>
+    <edge id="0" source="2979844122" target="2979844112">
+      <data key="d7">294385549</data>
+      <data key="d9">Calle Bolea</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">77.586</data>
+      <data key="d13">LINESTRING (-2.9273417 38.5674998, -2.9271521 38.5669102, -2.9271263 38.5668227)</data>
+    </edge>
+    <edge id="0" source="2979844123" target="3006337927">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.091</data>
+    </edge>
+    <edge id="0" source="2979844123" target="2984177470">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">66.901</data>
+      <data key="d13">LINESTRING (-2.9249434 38.5675459, -2.9252763 38.5672608, -2.9254755 38.5671452, -2.9255005 38.5671359)</data>
+    </edge>
+    <edge id="0" source="2979844123" target="3006337897">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.13100000000001</data>
+      <data key="d13">LINESTRING (-2.9249434 38.5675459, -2.9248988 38.5674439, -2.9248365 38.5670239, -2.9248301 38.5669962)</data>
+    </edge>
+    <edge id="0" source="2979844123" target="3006339144">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.891000000000005</data>
+      <data key="d13">LINESTRING (-2.9249434 38.5675459, -2.9249534 38.5675526, -2.9251792 38.5677883)</data>
+    </edge>
+    <edge id="0" source="2979844125" target="2979830221">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">14.117</data>
+    </edge>
+    <edge id="0" source="2979844125" target="3006339152">
+      <data key="d7">294385550</data>
+      <data key="d9">Calle Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.599</data>
+    </edge>
+    <edge id="0" source="2979844125" target="2974604667">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">46.726</data>
+      <data key="d13">LINESTRING (-2.9268083 38.5681042, -2.9267858 38.5681296, -2.9264757 38.5684342)</data>
+    </edge>
+    <edge id="0" source="2984176631" target="2984177287">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">1334.7009999999998</data>
+      <data key="d13">LINESTRING (-2.9272647 38.5479341, -2.9272496 38.54815, -2.9272596 38.5486288, -2.927227 38.5487877, -2.9271241 38.5492528, -2.9269334 38.5497885, -2.9267126 38.5503183, -2.9266775 38.5505087, -2.9266374 38.5510562, -2.9266198 38.5515016, -2.9266675 38.5518862, -2.9268557 38.5525338, -2.9270012 38.5531048, -2.9271517 38.5534168, -2.9273776 38.5539368, -2.9274177 38.5541761, -2.9273751 38.554392, -2.9272496 38.5546216, -2.9269284 38.5549983, -2.9266549 38.5553593, -2.926527 38.5556144, -2.926414 38.556001, -2.926399 38.5562659, -2.9264667 38.5567721, -2.9265771 38.5573588, -2.926527 38.5579729, -2.9264417 38.5586812, -2.9263162 38.5595897)</data>
+    </edge>
+    <edge id="0" source="2984177287" target="2984176631">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">1334.701</data>
+      <data key="d13">LINESTRING (-2.9263162 38.5595897, -2.9264417 38.5586812, -2.926527 38.5579729, -2.9265771 38.5573588, -2.9264667 38.5567721, -2.926399 38.5562659, -2.926414 38.556001, -2.926527 38.5556144, -2.9266549 38.5553593, -2.9269284 38.5549983, -2.9272496 38.5546216, -2.9273751 38.554392, -2.9274177 38.5541761, -2.9273776 38.5539368, -2.9271517 38.5534168, -2.9270012 38.5531048, -2.9268557 38.5525338, -2.9266675 38.5518862, -2.9266198 38.5515016, -2.9266374 38.5510562, -2.9266775 38.5505087, -2.9267126 38.5503183, -2.9269334 38.5497885, -2.9271241 38.5492528, -2.927227 38.5487877, -2.9272596 38.5486288, -2.9272496 38.54815, -2.9272647 38.5479341)</data>
+    </edge>
+    <edge id="0" source="2984177287" target="2984177298">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">294.291</data>
+      <data key="d13">LINESTRING (-2.9263162 38.5595897, -2.9260703 38.5605824, -2.9258846 38.561383, -2.9256739 38.5618283, -2.9255208 38.562154)</data>
+    </edge>
+    <edge id="0" source="2984177287" target="3972217732">
+      <data key="d7">394211095</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">914.1360000000001</data>
+      <data key="d13">LINESTRING (-2.9263162 38.5595897, -2.9268372 38.5592564, -2.927438 38.5589133, -2.9280925 38.5581406, -2.9286611 38.5578143, -2.9291976 38.5569753, -2.9297555 38.5558921, -2.9303241 38.555372, -2.9306245 38.5553552, -2.9319871 38.5546924, -2.9328668 38.5535261)</data>
+    </edge>
+    <edge id="0" source="2984177298" target="2984177287">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">294.291</data>
+      <data key="d13">LINESTRING (-2.9255208 38.562154, -2.9256739 38.5618283, -2.9258846 38.561383, -2.9260703 38.5605824, -2.9263162 38.5595897)</data>
+    </edge>
+    <edge id="0" source="2984177298" target="2984177310">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">217.413</data>
+      <data key="d13">LINESTRING (-2.9255208 38.562154, -2.9254229 38.5628937, -2.9253828 38.563339, -2.9253778 38.5635627, -2.9254968 38.5640961)</data>
+    </edge>
+    <edge id="0" source="2984177298" target="3972217732">
+      <data key="d7">394213954</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">6343.972</data>
+      <data key="d13">LINESTRING (-2.9255208 38.562154, -2.9255712 38.5617817, -2.9251742 38.5613379, -2.9249919 38.5607246, -2.9245412 38.5600618, -2.9238664 38.5593902, -2.923007 38.5584015, -2.9215694 38.5562202, -2.9210329 38.5545497, -2.9213977 38.5539121, -2.9220414 38.5525957, -2.9220629 38.5519488, -2.9222131 38.5514881, -2.922256 38.5509755, -2.9221487 38.5496086, -2.9224062 38.5481654, -2.9224706 38.547662, -2.9222775 38.5469571, -2.9222989 38.5464201, -2.9221487 38.5460005, -2.9221487 38.5444062, -2.9223418 38.5428698, -2.9220843 38.5413761, -2.9216552 38.5403279, -2.9217839 38.5399419, -2.9214621 38.5387242, -2.9211617 38.5381293, -2.9211831 38.5373404, -2.9214835 38.5367194, -2.9214406 38.536257, -2.9219341 38.5353002, -2.9222131 38.5336813, -2.9231572 38.5321875, -2.9235864 38.5317754, -2.9237795 38.5309789, -2.9242945 38.5321035, -2.9246807 38.5328328, -2.9251528 38.533396, -2.9259896 38.5340414, -2.9259467 38.5345206, -2.9261828 38.5352163, -2.926569 38.5356787, -2.9272556 38.5376836, -2.9274273 38.5393713, -2.9283071 38.5406133, -2.9285431 38.5413928, -2.9288435 38.5418963, -2.9289079 38.5421649, -2.9292083 38.5427523, -2.9296589 38.5439942, -2.9296804 38.5443802, -2.929852 38.5447159, -2.930131 38.5453536, -2.9299164 38.5460584, -2.9299593 38.5464109, -2.9307962 38.5479884, -2.9309034 38.5485589, -2.9308176 38.5496162, -2.9328668 38.5535261)</data>
+    </edge>
+    <edge id="0" source="2984177310" target="2984177327">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.827999999999996</data>
+      <data key="d13">LINESTRING (-2.9254968 38.5640961, -2.9251836 38.5644267, -2.9251672 38.5644762, -2.9251536 38.5645239, -2.9251247 38.5645725)</data>
+    </edge>
+    <edge id="0" source="2984177310" target="2984177322">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.836999999999996</data>
+      <data key="d13">LINESTRING (-2.9254968 38.5640961, -2.9255183 38.564244, -2.9255355 38.564422, -2.9255419 38.5644977)</data>
+    </edge>
+    <edge id="0" source="2984177310" target="2984177298">
+      <data key="d7">294794122</data>
+      <data key="d9">Camino de Mairena</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">217.413</data>
+      <data key="d13">LINESTRING (-2.9254968 38.5640961, -2.9253778 38.5635627, -2.9253828 38.563339, -2.9254229 38.5628937, -2.9255208 38.562154)</data>
+    </edge>
+    <edge id="0" source="2984177310" target="2984177330">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">170.782</data>
+      <data key="d13">LINESTRING (-2.9254968 38.5640961, -2.9248044 38.5642911, -2.9236526 38.5646248)</data>
+    </edge>
+    <edge id="0" source="2984177322" target="2984177339">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.59</data>
+      <data key="d13">LINESTRING (-2.9255419 38.5644977, -2.9255785 38.5647228, -2.9256014 38.5648416)</data>
+    </edge>
+    <edge id="0" source="2984177322" target="2984177310">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.837</data>
+      <data key="d13">LINESTRING (-2.9255419 38.5644977, -2.9255355 38.564422, -2.9255183 38.564244, -2.9254968 38.5640961)</data>
+    </edge>
+    <edge id="0" source="2984177322" target="2984177343">
+      <data key="d7">294794128</data>
+      <data key="d9">Camino del Pilarillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">64.662</data>
+      <data key="d13">LINESTRING (-2.9255419 38.5644977, -2.9253457 38.5647248, -2.9252362 38.5648121, -2.9251315 38.5649782)</data>
+    </edge>
+    <edge id="0" source="2984177327" target="2984177310">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.827999999999996</data>
+      <data key="d13">LINESTRING (-2.9251247 38.5645725, -2.9251536 38.5645239, -2.9251672 38.5644762, -2.9251836 38.5644267, -2.9254968 38.5640961)</data>
+    </edge>
+    <edge id="0" source="2984177327" target="2984177343">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">45.179</data>
+      <data key="d13">LINESTRING (-2.9251247 38.5645725, -2.9251149 38.5648014, -2.9251315 38.5649782)</data>
+    </edge>
+    <edge id="0" source="2984177327" target="2984177347">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">119.905</data>
+      <data key="d13">LINESTRING (-2.9251247 38.5645725, -2.9247639 38.5647482, -2.924267 38.5649823, -2.9239449 38.5651308)</data>
+    </edge>
+    <edge id="0" source="2984177330" target="2984177347">
+      <data key="d7">294794105</data>
+      <data key="d9">Calle Aceituna</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.738</data>
+    </edge>
+    <edge id="0" source="2984177330" target="2984177345">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">114.086</data>
+    </edge>
+    <edge id="0" source="2984177330" target="2984177310">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">170.782</data>
+      <data key="d13">LINESTRING (-2.9236526 38.5646248, -2.9248044 38.5642911, -2.9254968 38.5640961)</data>
+    </edge>
+    <edge id="0" source="2984177339" target="2984177342">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">14.913</data>
+    </edge>
+    <edge id="0" source="2984177339" target="2984177343">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.587</data>
+    </edge>
+    <edge id="0" source="2984177339" target="2984177322">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.59</data>
+      <data key="d13">LINESTRING (-2.9256014 38.5648416, -2.9255785 38.5647228, -2.9255419 38.5644977)</data>
+    </edge>
+    <edge id="0" source="2984177340" target="2984177342">
+      <data key="d7">294794114</data>
+      <data key="d9">Calle Sierra Morena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.804</data>
+    </edge>
+    <edge id="0" source="2984177341" target="2984177348">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.665</data>
+    </edge>
+    <edge id="0" source="2984177342" target="2984177339">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">14.913</data>
+    </edge>
+    <edge id="0" source="2984177342" target="2984177340">
+      <data key="d7">294794114</data>
+      <data key="d9">Calle Sierra Morena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.804</data>
+    </edge>
+    <edge id="0" source="2984177342" target="2979844083">
+      <data key="d7">294794112</data>
+      <data key="d9">Calle Mairena</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.877</data>
+      <data key="d13">LINESTRING (-2.9256271 38.5649742, -2.9256945 38.5652436, -2.9257563 38.5654848)</data>
+    </edge>
+    <edge id="0" source="2984177343" target="2984177350">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">74.11</data>
+    </edge>
+    <edge id="0" source="2984177343" target="2984177339">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.587</data>
+    </edge>
+    <edge id="0" source="2984177343" target="2984177327">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">45.179</data>
+      <data key="d13">LINESTRING (-2.9251315 38.5649782, -2.9251149 38.5648014, -2.9251247 38.5645725)</data>
+    </edge>
+    <edge id="0" source="2984177343" target="2979844093">
+      <data key="d7">294794108</data>
+      <data key="d9">Calle Calvario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">122.23</data>
+      <data key="d13">LINESTRING (-2.9251315 38.5649782, -2.925001 38.5651257, -2.925109 38.5660417)</data>
+    </edge>
+    <edge id="0" source="2984177343" target="2984177322">
+      <data key="d7">294794128</data>
+      <data key="d9">Camino del Pilarillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">64.662</data>
+      <data key="d13">LINESTRING (-2.9251315 38.5649782, -2.9252362 38.5648121, -2.9253457 38.5647248, -2.9255419 38.5644977)</data>
+    </edge>
+    <edge id="0" source="2984177345" target="2984177367">
+      <data key="d7">294794106</data>
+      <data key="d9">Calle Alcantara</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">73.808</data>
+    </edge>
+    <edge id="0" source="2984177345" target="2984177348">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">69.81</data>
+    </edge>
+    <edge id="0" source="2984177345" target="2984177330">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">114.086</data>
+    </edge>
+    <edge id="0" source="2984177347" target="2984177330">
+      <data key="d7">294794105</data>
+      <data key="d9">Calle Aceituna</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">61.738</data>
+    </edge>
+    <edge id="0" source="2984177347" target="2984177358">
+      <data key="d7">294794131</data>
+      <data key="d9">Travesía Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.69</data>
+    </edge>
+    <edge id="0" source="2984177347" target="2984177368">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">115.08200000000002</data>
+      <data key="d13">LINESTRING (-2.9239449 38.5651308, -2.9234101 38.5654016, -2.9230059 38.5655668, -2.92281 38.5656192, -2.9227869 38.5656165)</data>
+    </edge>
+    <edge id="0" source="2984177347" target="2984177327">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">119.905</data>
+      <data key="d13">LINESTRING (-2.9239449 38.5651308, -2.924267 38.5649823, -2.9247639 38.5647482, -2.9251247 38.5645725)</data>
+    </edge>
+    <edge id="0" source="2984177348" target="2984177341">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.665</data>
+    </edge>
+    <edge id="0" source="2984177348" target="2984177353">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.596</data>
+    </edge>
+    <edge id="0" source="2984177348" target="2984177345">
+      <data key="d7">294794138</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">69.81</data>
+    </edge>
+    <edge id="0" source="2984177350" target="2984177343">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">74.11</data>
+    </edge>
+    <edge id="0" source="2984177350" target="2984177376">
+      <data key="d7">294794116</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">59.865</data>
+      <data key="d13">LINESTRING (-2.9244084 38.5653311, -2.924318 38.565503, -2.9242255 38.565712, -2.9241821 38.5658389)</data>
+    </edge>
+    <edge id="0" source="2984177350" target="2984177358">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.893</data>
+      <data key="d13">LINESTRING (-2.9244084 38.5653311, -2.9243061 38.5653791, -2.9241308 38.5654568)</data>
+    </edge>
+    <edge id="0" source="2984177350" target="2984177357">
+      <data key="d7">294794134</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.403999999999996</data>
+      <data key="d13">LINESTRING (-2.9244084 38.5653311, -2.924439 38.565365, -2.9245062 38.5653552, -2.9245781 38.5654457)</data>
+    </edge>
+    <edge id="0" source="2984177353" target="2984177348">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.596</data>
+    </edge>
+    <edge id="0" source="2984177353" target="2984177365">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.074</data>
+    </edge>
+    <edge id="0" source="2984177353" target="2984177367">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">96.997</data>
+      <data key="d13">LINESTRING (-2.9216977 38.5653565, -2.9220715 38.5654943, -2.9223169 38.5655496, -2.9225035 38.5655772, -2.9227565 38.5656129)</data>
+    </edge>
+    <edge id="0" source="2984177355" target="2984177365">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.397</data>
+    </edge>
+    <edge id="0" source="2984177357" target="2984177350">
+      <data key="d7">294794134</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.404</data>
+      <data key="d13">LINESTRING (-2.9245781 38.5654457, -2.9245062 38.5653552, -2.924439 38.565365, -2.9244084 38.5653311)</data>
+    </edge>
+    <edge id="0" source="2984177358" target="2984177364">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.524</data>
+    </edge>
+    <edge id="0" source="2984177358" target="2984177347">
+      <data key="d7">294794131</data>
+      <data key="d9">Travesía Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.69</data>
+    </edge>
+    <edge id="0" source="2984177358" target="2984177350">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.893</data>
+      <data key="d13">LINESTRING (-2.9241308 38.5654568, -2.9243061 38.5653791, -2.9244084 38.5653311)</data>
+    </edge>
+    <edge id="0" source="2984177364" target="2984177358">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.524</data>
+    </edge>
+    <edge id="0" source="2984177364" target="2984177387">
+      <data key="d7">294794119</data>
+      <data key="d9">Calle de la Cruz</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.158</data>
+      <data key="d13">LINESTRING (-2.9238614 38.5655868, -2.9238949 38.5656599, -2.9239818 38.5658803, -2.924009 38.5659287)</data>
+    </edge>
+    <edge id="0" source="2984177364" target="2979844087">
+      <data key="d7">294794121</data>
+      <data key="d9">Calle de la Olivilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.525</data>
+      <data key="d13">LINESTRING (-2.9238614 38.5655868, -2.923579 38.5657205, -2.9232671 38.5658161, -2.9231642 38.5658688)</data>
+    </edge>
+    <edge id="0" source="2984177365" target="2984177355">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.397</data>
+    </edge>
+    <edge id="0" source="2984177365" target="2984177353">
+      <data key="d7">294794125</data>
+      <data key="d9">Camino de los Molinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.074</data>
+    </edge>
+    <edge id="0" source="2984177365" target="3006337875">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">12.517</data>
+      <data key="d13">LINESTRING (-2.9215485 38.5655905, -2.9216125 38.5656115, -2.9216798 38.5656366)</data>
+    </edge>
+    <edge id="0" source="2984177367" target="2984177345">
+      <data key="d7">294794106</data>
+      <data key="d9">Calle Alcantara</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">73.808</data>
+    </edge>
+    <edge id="0" source="2984177367" target="2984177368">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">2.673</data>
+    </edge>
+    <edge id="0" source="2984177367" target="2984177353">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">96.997</data>
+      <data key="d13">LINESTRING (-2.9227565 38.5656129, -2.9225035 38.5655772, -2.9223169 38.5655496, -2.9220715 38.5654943, -2.9216977 38.5653565)</data>
+    </edge>
+    <edge id="0" source="2984177368" target="2984177367">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">2.673</data>
+    </edge>
+    <edge id="0" source="2984177368" target="2984177381">
+      <data key="d7">294794136</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.676</data>
+    </edge>
+    <edge id="0" source="2984177368" target="2984177347">
+      <data key="d7">294794117</data>
+      <data key="d9">Calle de Santiago</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">115.08200000000001</data>
+      <data key="d13">LINESTRING (-2.9227869 38.5656165, -2.92281 38.5656192, -2.9230059 38.5655668, -2.9234101 38.5654016, -2.9239449 38.5651308)</data>
+    </edge>
+    <edge id="0" source="2984177376" target="2984177383">
+      <data key="d7">294794115</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.662</data>
+    </edge>
+    <edge id="0" source="2984177376" target="2984177387">
+      <data key="d7">294794116</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">18.516</data>
+      <data key="d13">LINESTRING (-2.9241821 38.5658389, -2.9241753 38.5658545, -2.9241131 38.5658878, -2.924009 38.5659287)</data>
+    </edge>
+    <edge id="0" source="2984177376" target="2984177350">
+      <data key="d7">294794116</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">59.865</data>
+      <data key="d13">LINESTRING (-2.9241821 38.5658389, -2.9242255 38.565712, -2.924318 38.565503, -2.9244084 38.5653311)</data>
+    </edge>
+    <edge id="0" source="2984177381" target="2979844087">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">28.751</data>
+    </edge>
+    <edge id="0" source="2984177381" target="2984177368">
+      <data key="d7">294794136</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">27.676</data>
+    </edge>
+    <edge id="0" source="2984177381" target="3006337875">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">104.42399999999999</data>
+      <data key="d13">LINESTRING (-2.9228336 38.5658627, -2.9225681 38.5658477, -2.9220016 38.5657566, -2.9216798 38.5656366)</data>
+    </edge>
+    <edge id="0" source="2984177383" target="2984177376">
+      <data key="d7">294794115</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.662</data>
+    </edge>
+    <edge id="0" source="2984177387" target="2984177376">
+      <data key="d7">294794116</data>
+      <data key="d9">Calle Sudario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">18.516</data>
+      <data key="d13">LINESTRING (-2.924009 38.5659287, -2.9241131 38.5658878, -2.9241753 38.5658545, -2.9241821 38.5658389)</data>
+    </edge>
+    <edge id="0" source="2984177387" target="2984177364">
+      <data key="d7">294794119</data>
+      <data key="d9">Calle de la Cruz</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.158</data>
+      <data key="d13">LINESTRING (-2.924009 38.5659287, -2.9239818 38.5658803, -2.9238949 38.5656599, -2.9238614 38.5655868)</data>
+    </edge>
+    <edge id="0" source="2984177387" target="2979844095">
+      <data key="d7">294794119</data>
+      <data key="d9">Calle de la Cruz</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">15.309</data>
+      <data key="d13">LINESTRING (-2.924009 38.5659287, -2.9240215 38.5659776, -2.9240121 38.5660651)</data>
+    </edge>
+    <edge id="0" source="2984177391" target="2979844093">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.707</data>
+    </edge>
+    <edge id="0" source="2984177391" target="2979844088">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">68.318</data>
+    </edge>
+    <edge id="0" source="2984177391" target="2984177419">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.678</data>
+    </edge>
+    <edge id="0" source="2984177394" target="2979844093">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.763</data>
+    </edge>
+    <edge id="0" source="2984177394" target="3442741757">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.878</data>
+      <data key="d13">LINESTRING (-2.9248311 38.5660905, -2.9246261 38.566106, -2.9244356 38.566106, -2.9243509 38.5661134)</data>
+    </edge>
+    <edge id="0" source="2984177394" target="2984177424">
+      <data key="d7">294794137</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">31.124</data>
+      <data key="d13">LINESTRING (-2.9248311 38.5660905, -2.9248399 38.5662978, -2.9248246 38.5663693)</data>
+    </edge>
+    <edge id="0" source="2984177419" target="2984177391">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.678</data>
+    </edge>
+    <edge id="0" source="2984177419" target="2984177424">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.865</data>
+    </edge>
+    <edge id="0" source="2984177419" target="2984177427">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">11.654</data>
+      <data key="d13">LINESTRING (-2.9252099 38.5663246, -2.9252137 38.5663432, -2.9252738 38.5664152)</data>
+    </edge>
+    <edge id="0" source="2984177424" target="2984177419">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.865</data>
+    </edge>
+    <edge id="0" source="2984177424" target="2984177394">
+      <data key="d7">294794137</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">31.124</data>
+      <data key="d13">LINESTRING (-2.9248246 38.5663693, -2.9248399 38.5662978, -2.9248311 38.5660905)</data>
+    </edge>
+    <edge id="0" source="2984177424" target="2984177428">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">12.204</data>
+      <data key="d13">LINESTRING (-2.9248246 38.5663693, -2.9247969 38.5663726, -2.9247056 38.5664238)</data>
+    </edge>
+    <edge id="0" source="2984177427" target="2984177419">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">11.654</data>
+      <data key="d13">LINESTRING (-2.9252738 38.5664152, -2.9252137 38.5663432, -2.9252099 38.5663246)</data>
+    </edge>
+    <edge id="0" source="2984177427" target="2984177446">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.285</data>
+      <data key="d13">LINESTRING (-2.9252738 38.5664152, -2.9253384 38.5664927, -2.9253691 38.566505)</data>
+    </edge>
+    <edge id="0" source="2984177427" target="2984177428">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.979</data>
+      <data key="d13">LINESTRING (-2.9252738 38.5664152, -2.9251536 38.5664364, -2.9250075 38.5664524, -2.9247056 38.5664238)</data>
+    </edge>
+    <edge id="0" source="2984177428" target="3006337892">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">84.455</data>
+      <data key="d13">LINESTRING (-2.9247056 38.5664238, -2.9244713 38.5665251, -2.9240791 38.5667012, -2.9239089 38.5667942, -2.9239333 38.5668226)</data>
+    </edge>
+    <edge id="0" source="2984177428" target="2984177464">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.795</data>
+      <data key="d13">LINESTRING (-2.9247056 38.5664238, -2.9247355 38.566498, -2.9247484 38.5666627, -2.9247829 38.566793)</data>
+    </edge>
+    <edge id="0" source="2984177428" target="2984177427">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">49.979000000000006</data>
+      <data key="d13">LINESTRING (-2.9247056 38.5664238, -2.9250075 38.5664524, -2.9251536 38.5664364, -2.9252738 38.5664152)</data>
+    </edge>
+    <edge id="0" source="2984177428" target="2984177424">
+      <data key="d7">294794140</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">12.204</data>
+      <data key="d13">LINESTRING (-2.9247056 38.5664238, -2.9247969 38.5663726, -2.9248246 38.5663693)</data>
+    </edge>
+    <edge id="0" source="2984177445" target="2984177466">
+      <data key="d7">294794110</data>
+      <data key="d9">Calle El Olmo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.866</data>
+    </edge>
+    <edge id="0" source="2984177445" target="2979844088">
+      <data key="d7">294794110</data>
+      <data key="d9">Calle El Olmo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">65.22200000000001</data>
+      <data key="d13">LINESTRING (-2.9258983 38.5665044, -2.9258814 38.5664768, -2.925875 38.5664247, -2.9259115 38.5663273, -2.9259239 38.5659253)</data>
+    </edge>
+    <edge id="0" source="2984177445" target="2984177447">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.421</data>
+      <data key="d13">LINESTRING (-2.9258983 38.5665044, -2.9255683 38.5665036, -2.9254451 38.5665093)</data>
+    </edge>
+    <edge id="0" source="2984177446" target="2984177464">
+      <data key="d7">294794109</data>
+      <data key="d9">Calle Chirinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.988</data>
+      <data key="d13">LINESTRING (-2.9253691 38.566505, -2.9253457 38.5665299, -2.9251461 38.5666387, -2.9250128 38.5667244, -2.9247829 38.566793)</data>
+    </edge>
+    <edge id="0" source="2984177446" target="2984177427">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.285</data>
+      <data key="d13">LINESTRING (-2.9253691 38.566505, -2.9253384 38.5664927, -2.9252738 38.5664152)</data>
+    </edge>
+    <edge id="0" source="2984177446" target="2984177447">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">6.803000000000001</data>
+      <data key="d13">LINESTRING (-2.9253691 38.566505, -2.9253867 38.566512, -2.9254451 38.5665093)</data>
+    </edge>
+    <edge id="0" source="2984177447" target="2984177470">
+      <data key="d7">294794111</data>
+      <data key="d9">Calle Empedrada</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.509</data>
+      <data key="d13">LINESTRING (-2.9254451 38.5665093, -2.9254711 38.5666867, -2.9254361 38.5667639, -2.9254164 38.5669219, -2.9255005 38.5671359)</data>
+    </edge>
+    <edge id="0" source="2984177447" target="2984177446">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">6.803000000000001</data>
+      <data key="d13">LINESTRING (-2.9254451 38.5665093, -2.9253867 38.566512, -2.9253691 38.566505)</data>
+    </edge>
+    <edge id="0" source="2984177447" target="2984177445">
+      <data key="d7">294794132</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.421</data>
+      <data key="d13">LINESTRING (-2.9254451 38.5665093, -2.9255683 38.5665036, -2.9258983 38.5665044)</data>
+    </edge>
+    <edge id="0" source="2984177464" target="3006337897">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.964</data>
+    </edge>
+    <edge id="0" source="2984177464" target="2984177446">
+      <data key="d7">294794109</data>
+      <data key="d9">Calle Chirinos</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">60.98799999999999</data>
+      <data key="d13">LINESTRING (-2.9247829 38.566793, -2.9250128 38.5667244, -2.9251461 38.5666387, -2.9253457 38.5665299, -2.9253691 38.566505)</data>
+    </edge>
+    <edge id="0" source="2984177464" target="2984177428">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.795</data>
+      <data key="d13">LINESTRING (-2.9247829 38.566793, -2.9247484 38.5666627, -2.9247355 38.566498, -2.9247056 38.5664238)</data>
+    </edge>
+    <edge id="0" source="2984177466" target="2984177445">
+      <data key="d7">294794110</data>
+      <data key="d9">Calle El Olmo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.866</data>
+    </edge>
+    <edge id="0" source="2984177466" target="2979844114">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">11.056000000000001</data>
+      <data key="d13">LINESTRING (-2.9260865 38.5668115, -2.926037 38.566843, -2.9259867 38.5668731)</data>
+    </edge>
+    <edge id="0" source="2984177466" target="2979844109">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.555</data>
+      <data key="d13">LINESTRING (-2.9260865 38.5668115, -2.926363 38.5666353, -2.9265743 38.566463)</data>
+    </edge>
+    <edge id="0" source="2984177470" target="2979844123">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">66.90100000000001</data>
+      <data key="d13">LINESTRING (-2.9255005 38.5671359, -2.9254755 38.5671452, -2.9252763 38.5672608, -2.9249434 38.5675459)</data>
+    </edge>
+    <edge id="0" source="2984177470" target="2979844114">
+      <data key="d7">294385551</data>
+      <data key="d9">Calle Cervantes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.585</data>
+      <data key="d13">LINESTRING (-2.9255005 38.5671359, -2.9257562 38.5670413, -2.9257804 38.5669965, -2.9259867 38.5668731)</data>
+    </edge>
+    <edge id="0" source="2984177470" target="2984177447">
+      <data key="d7">294794111</data>
+      <data key="d9">Calle Empedrada</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.509</data>
+      <data key="d13">LINESTRING (-2.9255005 38.5671359, -2.9254164 38.5669219, -2.9254361 38.5667639, -2.9254711 38.5666867, -2.9254451 38.5665093)</data>
+    </edge>
+    <edge id="0" source="3006337875" target="2984177365">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">12.517</data>
+      <data key="d13">LINESTRING (-2.9216798 38.5656366, -2.9216125 38.5656115, -2.9215485 38.5655905)</data>
+    </edge>
+    <edge id="0" source="3006337875" target="2984177381">
+      <data key="d7">294794107</data>
+      <data key="d9">Calle Calatrava</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">104.424</data>
+      <data key="d13">LINESTRING (-2.9216798 38.5656366, -2.9220016 38.5657566, -2.9225681 38.5658477, -2.9228336 38.5658627)</data>
+    </edge>
+    <edge id="0" source="3006337875" target="3006337883">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">111.66499999999999</data>
+      <data key="d13">LINESTRING (-2.9216798 38.5656366, -2.9220252 38.5658836, -2.9226546 38.56629)</data>
+    </edge>
+    <edge id="0" source="3006337877" target="2979844087">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">13.808</data>
+    </edge>
+    <edge id="0" source="3006337877" target="3006337881">
+      <data key="d7">296814745</data>
+      <data key="d9">Calle Felipe II</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.667</data>
+    </edge>
+    <edge id="0" source="3006337877" target="3006337879">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.579</data>
+      <data key="d13">LINESTRING (-2.9233158 38.5659058, -2.923477 38.5659188, -2.9235555 38.5659355, -2.9236575 38.565964)</data>
+    </edge>
+    <edge id="0" source="3006337879" target="2979844095">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.815</data>
+    </edge>
+    <edge id="0" source="3006337879" target="3006337877">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">30.579</data>
+      <data key="d13">LINESTRING (-2.9236575 38.565964, -2.9235555 38.5659355, -2.923477 38.5659188, -2.9233158 38.5659058)</data>
+    </edge>
+    <edge id="0" source="3006337879" target="3006337882">
+      <data key="d7">296814767</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.519000000000005</data>
+      <data key="d13">LINESTRING (-2.9236575 38.565964, -2.9236238 38.5660425, -2.9236811 38.5662565)</data>
+    </edge>
+    <edge id="0" source="3006337881" target="3006337885">
+      <data key="d7">296814745</data>
+      <data key="d9">Calle Felipe II</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.783</data>
+    </edge>
+    <edge id="0" source="3006337881" target="3006337877">
+      <data key="d7">296814745</data>
+      <data key="d9">Calle Felipe II</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.667</data>
+    </edge>
+    <edge id="0" source="3006337881" target="3006337894">
+      <data key="d7">296814746</data>
+      <data key="d9">Calle Gloria</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">103.781</data>
+    </edge>
+    <edge id="0" source="3006337882" target="3006337879">
+      <data key="d7">296814767</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.519000000000005</data>
+      <data key="d13">LINESTRING (-2.9236811 38.5662565, -2.9236238 38.5660425, -2.9236575 38.565964)</data>
+    </edge>
+    <edge id="0" source="3006337883" target="3006337886">
+      <data key="d7">296814744</data>
+      <data key="d9">Calle Federico García Lorca</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.899</data>
+    </edge>
+    <edge id="0" source="3006337883" target="3006337875">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">111.66499999999999</data>
+      <data key="d13">LINESTRING (-2.9226546 38.56629, -2.9220252 38.5658836, -2.9216798 38.5656366)</data>
+    </edge>
+    <edge id="0" source="3006337883" target="3006337885">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">18.979</data>
+      <data key="d13">LINESTRING (-2.9226546 38.56629, -2.9227831 38.566373, -2.9228157 38.5664043)</data>
+    </edge>
+    <edge id="0" source="3006337885" target="3006337881">
+      <data key="d7">296814745</data>
+      <data key="d9">Calle Felipe II</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.783</data>
+    </edge>
+    <edge id="0" source="3006337885" target="3006337887">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">19.455</data>
+    </edge>
+    <edge id="0" source="3006337885" target="3006337883">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">18.979</data>
+      <data key="d13">LINESTRING (-2.9228157 38.5664043, -2.9227831 38.566373, -2.9226546 38.56629)</data>
+    </edge>
+    <edge id="0" source="3006337886" target="3006337889">
+      <data key="d7">296814744</data>
+      <data key="d9">Calle Federico García Lorca</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.334</data>
+    </edge>
+    <edge id="0" source="3006337886" target="3006337883">
+      <data key="d7">296814744</data>
+      <data key="d9">Calle Federico García Lorca</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.899</data>
+    </edge>
+    <edge id="0" source="3006337886" target="3006337890">
+      <data key="d7">296814750</data>
+      <data key="d9">Calle Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.817</data>
+    </edge>
+    <edge id="0" source="3006337887" target="3006337885">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">19.455</data>
+    </edge>
+    <edge id="0" source="3006337887" target="3006337888">
+      <data key="d7">296814761</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.546</data>
+    </edge>
+    <edge id="0" source="3006337887" target="3006337893">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.672000000000004</data>
+      <data key="d13">LINESTRING (-2.9229571 38.5665399, -2.9232433 38.5668144, -2.9232851 38.566849)</data>
+    </edge>
+    <edge id="0" source="3006337888" target="3006337895">
+      <data key="d7">296814760</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">25.879</data>
+    </edge>
+    <edge id="0" source="3006337888" target="3006337890">
+      <data key="d7">296814761</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">26.919</data>
+    </edge>
+    <edge id="0" source="3006337888" target="3006337887">
+      <data key="d7">296814761</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.546</data>
+    </edge>
+    <edge id="0" source="3006337889" target="3006337886">
+      <data key="d7">296814744</data>
+      <data key="d9">Calle Federico García Lorca</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.334</data>
+    </edge>
+    <edge id="0" source="3006337890" target="3006337886">
+      <data key="d7">296814750</data>
+      <data key="d9">Calle Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.817</data>
+    </edge>
+    <edge id="0" source="3006337890" target="3006337905">
+      <data key="d7">296814750</data>
+      <data key="d9">Calle Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.533</data>
+    </edge>
+    <edge id="0" source="3006337890" target="3006337888">
+      <data key="d7">296814761</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">26.919</data>
+    </edge>
+    <edge id="0" source="3006337892" target="3006337894">
+      <data key="d7">296814762</data>
+      <data key="d9">Travesía Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">7.098</data>
+    </edge>
+    <edge id="0" source="3006337892" target="3006337898">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.318</data>
+      <data key="d13">LINESTRING (-2.9239333 38.5668226, -2.9240457 38.5669533, -2.9241559 38.5670548)</data>
+    </edge>
+    <edge id="0" source="3006337892" target="2984177428">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">84.455</data>
+      <data key="d13">LINESTRING (-2.9239333 38.5668226, -2.9239089 38.5667942, -2.9240791 38.5667012, -2.9244713 38.5665251, -2.9247056 38.5664238)</data>
+    </edge>
+    <edge id="0" source="3006337893" target="3006337899">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.631</data>
+    </edge>
+    <edge id="0" source="3006337893" target="3006337903">
+      <data key="d7">296814759</data>
+      <data key="d9">Travesía Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.239</data>
+    </edge>
+    <edge id="0" source="3006337893" target="3006337887">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.672000000000004</data>
+      <data key="d13">LINESTRING (-2.9232851 38.566849, -2.9232433 38.5668144, -2.9229571 38.5665399)</data>
+    </edge>
+    <edge id="0" source="3006337894" target="3006337881">
+      <data key="d7">296814746</data>
+      <data key="d9">Calle Gloria</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">103.781</data>
+    </edge>
+    <edge id="0" source="3006337894" target="3006337892">
+      <data key="d7">296814762</data>
+      <data key="d9">Travesía Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">7.098</data>
+    </edge>
+    <edge id="0" source="3006337894" target="3006337899">
+      <data key="d7">296814762</data>
+      <data key="d9">Travesía Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.344</data>
+      <data key="d13">LINESTRING (-2.9238638 38.5668561, -2.9237312 38.56692, -2.9235426 38.5670625)</data>
+    </edge>
+    <edge id="0" source="3006337895" target="3006337888">
+      <data key="d7">296814760</data>
+      <data key="d9">Travesía Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">25.879</data>
+    </edge>
+    <edge id="0" source="3006337897" target="2984177464">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.964</data>
+    </edge>
+    <edge id="0" source="3006337897" target="2979844123">
+      <data key="d7">294794120</data>
+      <data key="d9">Calle de la Iglesia</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">62.131</data>
+      <data key="d13">LINESTRING (-2.9248301 38.5669962, -2.9248365 38.5670239, -2.9248988 38.5674439, -2.9249434 38.5675459)</data>
+    </edge>
+    <edge id="0" source="3006337897" target="3006337904">
+      <data key="d7">296814743</data>
+      <data key="d9">Calle Cuesta</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">50.306</data>
+      <data key="d13">LINESTRING (-2.9248301 38.5669962, -2.9245351 38.5670903, -2.9243273 38.5672125)</data>
+    </edge>
+    <edge id="0" source="3006337898" target="3006337904">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.012</data>
+    </edge>
+    <edge id="0" source="3006337898" target="3006337892">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.318</data>
+      <data key="d13">LINESTRING (-2.9241559 38.5670548, -2.9240457 38.5669533, -2.9239333 38.5668226)</data>
+    </edge>
+    <edge id="0" source="3006337898" target="3006337907">
+      <data key="d7">296814742</data>
+      <data key="d9">Calle Alberquilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">35.287</data>
+      <data key="d13">LINESTRING (-2.9241559 38.5670548, -2.9240073 38.5671623, -2.9239736 38.567215, -2.9238846 38.567287)</data>
+    </edge>
+    <edge id="0" source="3006337899" target="3006337893">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.631</data>
+    </edge>
+    <edge id="0" source="3006337899" target="3006337907">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.102</data>
+      <data key="d13">LINESTRING (-2.9235426 38.5670625, -2.9237005 38.5671935, -2.9238846 38.567287)</data>
+    </edge>
+    <edge id="0" source="3006337899" target="3006337894">
+      <data key="d7">296814762</data>
+      <data key="d9">Travesía Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.344</data>
+      <data key="d13">LINESTRING (-2.9235426 38.5670625, -2.9237312 38.56692, -2.9238638 38.5668561)</data>
+    </edge>
+    <edge id="0" source="3006337903" target="3006337893">
+      <data key="d7">296814759</data>
+      <data key="d9">Travesía Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.239</data>
+    </edge>
+    <edge id="0" source="3006337904" target="3006337898">
+      <data key="d7">294794113</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.012</data>
+    </edge>
+    <edge id="0" source="3006337904" target="3006337927">
+      <data key="d7">[296814768, 294794113]</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.315</data>
+      <data key="d13">LINESTRING (-2.9243273 38.5672125, -2.9243487 38.5672322, -2.9245306 38.5673984, -2.9245657 38.5674355, -2.9246372 38.567514, -2.9246863 38.567598)</data>
+    </edge>
+    <edge id="0" source="3006337904" target="3006337897">
+      <data key="d7">296814743</data>
+      <data key="d9">Calle Cuesta</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">50.306</data>
+      <data key="d13">LINESTRING (-2.9243273 38.5672125, -2.9245351 38.5670903, -2.9248301 38.5669962)</data>
+    </edge>
+    <edge id="0" source="3006337905" target="3006337890">
+      <data key="d7">296814750</data>
+      <data key="d9">Calle Montesa</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">51.533</data>
+    </edge>
+    <edge id="0" source="3006337907" target="3006337898">
+      <data key="d7">296814742</data>
+      <data key="d9">Calle Alberquilla</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">35.287</data>
+      <data key="d13">LINESTRING (-2.9238846 38.567287, -2.9239736 38.567215, -2.9240073 38.5671623, -2.9241559 38.5670548)</data>
+    </edge>
+    <edge id="0" source="3006337907" target="3006337899">
+      <data key="d7">296814749</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.102</data>
+      <data key="d13">LINESTRING (-2.9238846 38.567287, -2.9237005 38.5671935, -2.9235426 38.5670625)</data>
+    </edge>
+    <edge id="0" source="3006337907" target="2979830209">
+      <data key="d7">[296814768, 296814749]</data>
+      <data key="d9">Calle Huerto</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">71.06700000000001</data>
+      <data key="d13">LINESTRING (-2.9238846 38.567287, -2.9241515 38.5673854, -2.9243814 38.5675049, -2.9244185 38.5675269, -2.9244531 38.567586, -2.9244382 38.5676764)</data>
+    </edge>
+    <edge id="0" source="3006337921" target="3006339134">
+      <data key="d7">296814748</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.619999999999997</data>
+      <data key="d13">LINESTRING (-2.9255941 38.5675315, -2.9254277 38.5676158, -2.9254019 38.5676598)</data>
+    </edge>
+    <edge id="0" source="3006337927" target="2979844123">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.091</data>
+    </edge>
+    <edge id="0" source="3006337927" target="2979830209">
+      <data key="d7">296814768</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">23.265</data>
+    </edge>
+    <edge id="0" source="3006337927" target="3006339153">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.45</data>
+      <data key="d13">LINESTRING (-2.9246863 38.567598, -2.9246633 38.5677057, -2.924654 38.5678138, -2.9246493 38.567933)</data>
+    </edge>
+    <edge id="0" source="3006337927" target="3006337904">
+      <data key="d7">[296814768, 294794113]</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">53.315000000000005</data>
+      <data key="d9">Calle Rosario</data>
+      <data key="d13">LINESTRING (-2.9246863 38.567598, -2.9246372 38.567514, -2.9245657 38.5674355, -2.9245306 38.5673984, -2.9243487 38.5672322, -2.9243273 38.5672125)</data>
+    </edge>
+    <edge id="0" source="3006337932" target="3006339152">
+      <data key="d7">294385550</data>
+      <data key="d9">Calle Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">45.253</data>
+    </edge>
+    <edge id="0" source="3006337932" target="3006339148">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.827</data>
+    </edge>
+    <edge id="0" source="3006337932" target="2979844114">
+      <data key="d7">[294385554, 294385550]</data>
+      <data key="d9">['Calle Calar', 'Callejón de Cervantes']</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">108.526</data>
+      <data key="d13">LINESTRING (-2.9260091 38.5676507, -2.9259422 38.5676127, -2.9263046 38.5672288, -2.9261748 38.5670706, -2.9259867 38.5668731)</data>
+    </edge>
+    <edge id="0" source="3006339134" target="3006339144">
+      <data key="d7">296814748</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.063</data>
+    </edge>
+    <edge id="0" source="3006339134" target="3006339148">
+      <data key="d7">296814747</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.894</data>
+      <data key="d13">LINESTRING (-2.9254019 38.5676598, -2.9255003 38.5676892, -2.9258426 38.5678321)</data>
+    </edge>
+    <edge id="0" source="3006339134" target="3006337921">
+      <data key="d7">296814748</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">22.619999999999997</data>
+      <data key="d13">LINESTRING (-2.9254019 38.5676598, -2.9254277 38.5676158, -2.9255941 38.5675315)</data>
+    </edge>
+    <edge id="0" source="3006339144" target="3006339134">
+      <data key="d7">296814748</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.063</data>
+    </edge>
+    <edge id="0" source="3006339144" target="3006339146">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.454</data>
+    </edge>
+    <edge id="0" source="3006339144" target="2979844123">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">33.891000000000005</data>
+      <data key="d13">LINESTRING (-2.9251792 38.5677883, -2.9249534 38.5675526, -2.9249434 38.5675459)</data>
+    </edge>
+    <edge id="0" source="3006339146" target="3006339153">
+      <data key="d7">296814751</data>
+      <data key="d9">Calle Postes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.425</data>
+    </edge>
+    <edge id="0" source="3006339146" target="3006339144">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.454</data>
+    </edge>
+    <edge id="0" source="3006339146" target="3006339179">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">66.17099999999999</data>
+      <data key="d13">LINESTRING (-2.925162 38.5678163, -2.9251235 38.5678788, -2.9251458 38.5680181, -2.9250345 38.5681956, -2.9251843 38.5683422)</data>
+    </edge>
+    <edge id="0" source="3006339148" target="3006337932">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">24.827</data>
+    </edge>
+    <edge id="0" source="3006339148" target="3006339134">
+      <data key="d7">296814747</data>
+      <data key="d9">Calle Horno</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.894</data>
+      <data key="d13">LINESTRING (-2.9258426 38.5678321, -2.9255003 38.5676892, -2.9254019 38.5676598)</data>
+    </edge>
+    <edge id="0" source="3006339148" target="3006339168">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.336999999999996</data>
+      <data key="d13">LINESTRING (-2.9258426 38.5678321, -2.9255754 38.5680979, -2.9255434 38.5681431)</data>
+    </edge>
+    <edge id="0" source="3006339152" target="3006337932">
+      <data key="d7">294385550</data>
+      <data key="d9">Calle Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">45.253</data>
+    </edge>
+    <edge id="0" source="3006339152" target="2979844125">
+      <data key="d7">294385550</data>
+      <data key="d9">Calle Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.599</data>
+    </edge>
+    <edge id="0" source="3006339152" target="3006339166">
+      <data key="d7">296814758</data>
+      <data key="d9">Travesía Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.531</data>
+    </edge>
+    <edge id="0" source="3006339153" target="3006339146">
+      <data key="d7">296814751</data>
+      <data key="d9">Calle Postes</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.425</data>
+    </edge>
+    <edge id="0" source="3006339153" target="3006339157">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">10.326</data>
+    </edge>
+    <edge id="0" source="3006339153" target="3006337927">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">37.45</data>
+      <data key="d13">LINESTRING (-2.9246493 38.567933, -2.924654 38.5678138, -2.9246633 38.5677057, -2.9246863 38.567598)</data>
+    </edge>
+    <edge id="0" source="3006339157" target="3006339153">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">10.326</data>
+    </edge>
+    <edge id="0" source="3006339157" target="3006339185">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.03</data>
+      <data key="d13">LINESTRING (-2.9246351 38.5680252, -2.9246378 38.568155, -2.9246994 38.5683981, -2.9247619 38.5685242)</data>
+    </edge>
+    <edge id="0" source="3006339157" target="3006339158">
+      <data key="d7">296814756</data>
+      <data key="d9">Callejon del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.495000000000005</data>
+      <data key="d13">LINESTRING (-2.9246351 38.5680252, -2.9243813 38.5680697, -2.9241911 38.5680085)</data>
+    </edge>
+    <edge id="0" source="3006339158" target="2979830225">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">39.528999999999996</data>
+      <data key="d13">LINESTRING (-2.9241911 38.5680085, -2.9241821 38.5680236, -2.9240626 38.5683493)</data>
+    </edge>
+    <edge id="0" source="3006339158" target="2979830209">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">42.911</data>
+      <data key="d13">LINESTRING (-2.9241911 38.5680085, -2.9242998 38.5678264, -2.9244382 38.5676764)</data>
+    </edge>
+    <edge id="0" source="3006339158" target="3006339157">
+      <data key="d7">296814756</data>
+      <data key="d9">Callejon del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">40.495000000000005</data>
+      <data key="d13">LINESTRING (-2.9241911 38.5680085, -2.9243813 38.5680697, -2.9246351 38.5680252)</data>
+    </edge>
+    <edge id="0" source="3006339166" target="3006339152">
+      <data key="d7">296814758</data>
+      <data key="d9">Travesía Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">32.531</data>
+    </edge>
+    <edge id="0" source="3006339166" target="3006339168">
+      <data key="d7">296814741</data>
+      <data key="d9">Cuesta Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.714999999999996</data>
+      <data key="d13">LINESTRING (-2.9262077 38.5681248, -2.9261308 38.5680969, -2.9256996 38.5681364, -2.9255434 38.5681431)</data>
+    </edge>
+    <edge id="0" source="3006339166" target="2974604667">
+      <data key="d7">296814741</data>
+      <data key="d9">Cuesta Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.67</data>
+      <data key="d13">LINESTRING (-2.9262077 38.5681248, -2.9264209 38.5682022, -2.9264757 38.5684342)</data>
+    </edge>
+    <edge id="0" source="3006339168" target="3006339166">
+      <data key="d7">296814741</data>
+      <data key="d9">Cuesta Calar</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.714999999999996</data>
+      <data key="d13">LINESTRING (-2.9255434 38.5681431, -2.9256996 38.5681364, -2.9261308 38.5680969, -2.9262077 38.5681248)</data>
+    </edge>
+    <edge id="0" source="3006339168" target="3006339179">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.281</data>
+      <data key="d13">LINESTRING (-2.9255434 38.5681431, -2.9253081 38.5682776, -2.9251843 38.5683422)</data>
+    </edge>
+    <edge id="0" source="3006339168" target="3006339148">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">43.336999999999996</data>
+      <data key="d13">LINESTRING (-2.9255434 38.5681431, -2.9255754 38.5680979, -2.9258426 38.5678321)</data>
+    </edge>
+    <edge id="0" source="3006339179" target="3006339185">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.975</data>
+      <data key="d13">LINESTRING (-2.9251843 38.5683422, -2.9250807 38.5683784, -2.9247619 38.5685242)</data>
+    </edge>
+    <edge id="0" source="3006339179" target="3006339168">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">38.281</data>
+      <data key="d13">LINESTRING (-2.9251843 38.5683422, -2.9253081 38.5682776, -2.9255434 38.5681431)</data>
+    </edge>
+    <edge id="0" source="3006339179" target="3006339190">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.266999999999996</data>
+      <data key="d13">LINESTRING (-2.9251843 38.5683422, -2.9252238 38.5683809, -2.9253746 38.5685095, -2.9255253 38.5686595, -2.9255904 38.5687562)</data>
+    </edge>
+    <edge id="0" source="3006339179" target="3006339146">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">66.17099999999999</data>
+      <data key="d13">LINESTRING (-2.9251843 38.5683422, -2.9250345 38.5681956, -2.9251458 38.5680181, -2.9251235 38.5678788, -2.925162 38.5678163)</data>
+    </edge>
+    <edge id="0" source="3006339183" target="3006339188">
+      <data key="d7">296814755</data>
+      <data key="d9">Calle la Mancha</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.833</data>
+    </edge>
+    <edge id="0" source="3006339183" target="2979830250">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">127.962</data>
+      <data key="d13">LINESTRING (-2.9240405 38.5684355, -2.9240327 38.5687345, -2.9240294 38.568807, -2.9239943 38.5695857)</data>
+    </edge>
+    <edge id="0" source="3006339183" target="2979830225">
+      <data key="d7">294385107</data>
+      <data key="d9">Calle de La Fuente</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">9.847999999999999</data>
+      <data key="d13">LINESTRING (-2.9240405 38.5684355, -2.9240412 38.5684074, -2.9240626 38.5683493)</data>
+    </edge>
+    <edge id="0" source="3006339185" target="3006339188">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.545</data>
+      <data key="d13">LINESTRING (-2.9247619 38.5685242, -2.9245602 38.5686002, -2.9242999 38.5686974)</data>
+    </edge>
+    <edge id="0" source="3006339185" target="3006339179">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.975</data>
+      <data key="d13">LINESTRING (-2.9247619 38.5685242, -2.9250807 38.5683784, -2.9251843 38.5683422)</data>
+    </edge>
+    <edge id="0" source="3006339185" target="3006339157">
+      <data key="d7">296814754</data>
+      <data key="d9">Calle del Castillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">57.03</data>
+      <data key="d13">LINESTRING (-2.9247619 38.5685242, -2.9246994 38.5683981, -2.9246378 38.568155, -2.9246351 38.5680252)</data>
+    </edge>
+    <edge id="0" source="3006339188" target="3006339183">
+      <data key="d7">296814755</data>
+      <data key="d9">Calle la Mancha</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">36.833</data>
+    </edge>
+    <edge id="0" source="3006339188" target="3006339185">
+      <data key="d7">296814752</data>
+      <data key="d9">Calle Toledillo</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">44.545</data>
+      <data key="d13">LINESTRING (-2.9242999 38.5686974, -2.9245602 38.5686002, -2.9247619 38.5685242)</data>
+    </edge>
+    <edge id="0" source="3006339188" target="2974604671">
+      <data key="d7">296814755</data>
+      <data key="d9">Calle la Mancha</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">55.669</data>
+      <data key="d13">LINESTRING (-2.9242999 38.5686974, -2.9243367 38.5687377, -2.9245029 38.5689199, -2.9247377 38.569054)</data>
+    </edge>
+    <edge id="0" source="3006339190" target="2979830235">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">8.367</data>
+    </edge>
+    <edge id="0" source="3006339190" target="2979830231">
+      <data key="d7">294385090</data>
+      <data key="d8">CM-3202</data>
+      <data key="d9">Avenida de los Emigrantes</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">28.998</data>
+    </edge>
+    <edge id="0" source="3006339190" target="3006339179">
+      <data key="d7">296814753</data>
+      <data key="d9">Calle Vía Crucis</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">58.267</data>
+      <data key="d13">LINESTRING (-2.9255904 38.5687562, -2.9255253 38.5686595, -2.9253746 38.5685095, -2.9252238 38.5683809, -2.9251843 38.5683422)</data>
+    </edge>
+    <edge id="0" source="3442741756" target="2979844095">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">3.437</data>
+    </edge>
+    <edge id="0" source="3442741756" target="3442741757">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.399</data>
+      <data key="d13">LINESTRING (-2.92404 38.566087, -2.9241015 38.5661353, -2.9243509 38.5661134)</data>
+    </edge>
+    <edge id="1" source="3442741756" target="3442741757">
+      <data key="d7">294794141</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.56</data>
+      <data key="d13">LINESTRING (-2.92404 38.566087, -2.924145 38.566262, -2.9243531 38.5661278, -2.9243509 38.5661134)</data>
+    </edge>
+    <edge id="2" source="3442741756" target="3442741757">
+      <data key="d7">294794141</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">35.056000000000004</data>
+      <data key="d13">LINESTRING (-2.92404 38.566087, -2.9240295 38.5660695, -2.9240842 38.5660648, -2.9241267 38.5660802, -2.9242604 38.5660802, -2.924344 38.5660684, -2.9243509 38.5661134)</data>
+    </edge>
+    <edge id="0" source="3442741757" target="3442741756">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">29.399</data>
+      <data key="d13">LINESTRING (-2.9243509 38.5661134, -2.9241015 38.5661353, -2.92404 38.566087)</data>
+    </edge>
+    <edge id="1" source="3442741757" target="3442741756">
+      <data key="d7">294794141</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">35.056000000000004</data>
+      <data key="d13">LINESTRING (-2.9243509 38.5661134, -2.924344 38.5660684, -2.9242604 38.5660802, -2.9241267 38.5660802, -2.9240842 38.5660648, -2.9240295 38.5660695, -2.92404 38.566087)</data>
+    </edge>
+    <edge id="2" source="3442741757" target="3442741756">
+      <data key="d7">294794141</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">46.56</data>
+      <data key="d13">LINESTRING (-2.9243509 38.5661134, -2.9243531 38.5661278, -2.924145 38.566262, -2.92404 38.566087)</data>
+    </edge>
+    <edge id="0" source="3442741757" target="2984177394">
+      <data key="d7">294385553</data>
+      <data key="d9">Calle del Aire</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">41.878</data>
+      <data key="d13">LINESTRING (-2.9243509 38.5661134, -2.9244356 38.566106, -2.9246261 38.566106, -2.9248311 38.5660905)</data>
+    </edge>
+    <edge id="0" source="3847811447" target="2979830213">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">17.304</data>
+    </edge>
+    <edge id="0" source="3847811447" target="2979830204">
+      <data key="d7">294385091</data>
+      <data key="d9">Avenida de los Mártires</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">52.264</data>
+    </edge>
+    <edge id="0" source="3847811447" target="3847812083">
+      <data key="d7">381590191</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.135</data>
+    </edge>
+    <edge id="0" source="3847811455" target="3847812078">
+      <data key="d7">381590190</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">721.2069999999999</data>
+      <data key="d13">LINESTRING (-2.9256264 38.5750522, -2.9254856 38.5744366, -2.9253247 38.5739836, -2.9252174 38.5737991, -2.9247198 38.5731398, -2.9242947 38.5722895, -2.9242196 38.5719455, -2.9241995 38.5715251, -2.9240962 38.5710564, -2.9239782 38.5704776, -2.9232929 38.5698894, -2.9230609 38.569794, -2.9227551 38.5697436, -2.9223581 38.5697856, -2.9223062 38.5696729)</data>
+    </edge>
+    <edge id="0" source="3847812078" target="3847811455">
+      <data key="d7">381590190</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">721.2070000000001</data>
+      <data key="d13">LINESTRING (-2.9223062 38.5696729, -2.9223581 38.5697856, -2.9227551 38.5697436, -2.9230609 38.569794, -2.9232929 38.5698894, -2.9239782 38.5704776, -2.9240962 38.5710564, -2.9241995 38.5715251, -2.9242196 38.5719455, -2.9242947 38.5722895, -2.9247198 38.5731398, -2.9252174 38.5737991, -2.9253247 38.5739836, -2.9254856 38.5744366, -2.9256264 38.5750522)</data>
+    </edge>
+    <edge id="0" source="3847812078" target="2979830259">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">148.607</data>
+      <data key="d13">LINESTRING (-2.9223062 38.5696729, -2.9225828 38.5696377, -2.9229688 38.5696744, -2.9232889 38.569778, -2.9236029 38.5699394, -2.9238454 38.5701003)</data>
+    </edge>
+    <edge id="0" source="3847812078" target="2979830253">
+      <data key="d7">495534142</data>
+      <data key="d8">CM-3202</data>
+      <data key="d10">secondary</data>
+      <data key="d11">False</data>
+      <data key="d12">21.521</data>
+      <data key="d13">LINESTRING (-2.9223062 38.5696729, -2.9221816 38.5696888, -2.9220696 38.5697252)</data>
+    </edge>
+    <edge id="0" source="3847812083" target="2979830236">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">67.256</data>
+    </edge>
+    <edge id="0" source="3847812083" target="2979830208">
+      <data key="d7">294385088</data>
+      <data key="d9">Avenida Carlos III</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">89.784</data>
+    </edge>
+    <edge id="0" source="3847812083" target="3847811447">
+      <data key="d7">381590191</data>
+      <data key="d10">residential</data>
+      <data key="d11">False</data>
+      <data key="d12">130.135</data>
+    </edge>
+    <edge id="0" source="3972217732" target="2984177287">
+      <data key="d7">394211095</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">914.1360000000001</data>
+      <data key="d13">LINESTRING (-2.9328668 38.5535261, -2.9319871 38.5546924, -2.9306245 38.5553552, -2.9303241 38.555372, -2.9297555 38.5558921, -2.9291976 38.5569753, -2.9286611 38.5578143, -2.9280925 38.5581406, -2.927438 38.5589133, -2.9268372 38.5592564, -2.9263162 38.5595897)</data>
+    </edge>
+    <edge id="0" source="3972217732" target="2984177298">
+      <data key="d7">394213954</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">6343.972000000002</data>
+      <data key="d13">LINESTRING (-2.9328668 38.5535261, -2.9308176 38.5496162, -2.9309034 38.5485589, -2.9307962 38.5479884, -2.9299593 38.5464109, -2.9299164 38.5460584, -2.930131 38.5453536, -2.929852 38.5447159, -2.9296804 38.5443802, -2.9296589 38.5439942, -2.9292083 38.5427523, -2.9289079 38.5421649, -2.9288435 38.5418963, -2.9285431 38.5413928, -2.9283071 38.5406133, -2.9274273 38.5393713, -2.9272556 38.5376836, -2.926569 38.5356787, -2.9261828 38.5352163, -2.9259467 38.5345206, -2.9259896 38.5340414, -2.9251528 38.533396, -2.9246807 38.5328328, -2.9242945 38.5321035, -2.9237795 38.5309789, -2.9235864 38.5317754, -2.9231572 38.5321875, -2.9222131 38.5336813, -2.9219341 38.5353002, -2.9214406 38.536257, -2.9214835 38.5367194, -2.9211831 38.5373404, -2.9211617 38.5381293, -2.9214621 38.5387242, -2.9217839 38.5399419, -2.9216552 38.5403279, -2.9220843 38.5413761, -2.9223418 38.5428698, -2.9221487 38.5444062, -2.9221487 38.5460005, -2.9222989 38.5464201, -2.9222775 38.5469571, -2.9224706 38.547662, -2.9224062 38.5481654, -2.9221487 38.5496086, -2.922256 38.5509755, -2.9222131 38.5514881, -2.9220629 38.5519488, -2.9220414 38.5525957, -2.9213977 38.5539121, -2.9210329 38.5545497, -2.9215694 38.5562202, -2.923007 38.5584015, -2.9238664 38.5593902, -2.9245412 38.5600618, -2.9249919 38.5607246, -2.9251742 38.5613379, -2.9255712 38.5617817, -2.9255208 38.562154)</data>
+    </edge>
+    <edge id="0" source="3972217732" target="3972258935">
+      <data key="d7">394213954</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">772.013</data>
+      <data key="d13">LINESTRING (-2.9328668 38.5535261, -2.9332209 38.5546001, -2.9338861 38.5561606, -2.9347015 38.5573352, -2.935667 38.5582245, -2.9364824 38.559785)</data>
+    </edge>
+    <edge id="0" source="3972258935" target="3972217732">
+      <data key="d7">394213954</data>
+      <data key="d10">unclassified</data>
+      <data key="d11">False</data>
+      <data key="d12">772.013</data>
+      <data key="d13">LINESTRING (-2.9364824 38.559785, -2.935667 38.5582245, -2.9347015 38.5573352, -2.9338861 38.5561606, -2.9332209 38.5546001, -2.9328668 38.5535261)</data>
+    </edge>
+    <data key="d0">Puebla del Príncipe, Ciudad Real, Castilla-La Mancha, España</data>
+    <data key="d1">{'init': 'epsg:4326'}</data>
+    <data key="d2">True</data>
+    <data key="d3">{2974604667: 3, 2974604671: 4, 2974604691: 3, 2974604694: 3, 2974604702: 3, 2979830192: 1, 2979830193: 3, 2979830196: 3, 2979830197: 3, 2979830198: 3, 2979830199: 3, 2979830201: 3, 2979830202: 4, 2979830203: 3, 2979830204: 3, 2979830205: 3, 2979830206: 4, 2979830207: 3, 2979830208: 3, 2979830209: 3, 2979830213: 3, 2979830214: 1, 2979830218: 4, 2979830221: 3, 2979830223: 4, 2979830224: 4, 2979830225: 3, 2979830228: 1, 2979830230: 4, 2979830231: 3, 2979830232: 1, 2979830235: 3, 2979830236: 3, 2979830237: 3, 2979830238: 3, 2979830239: 3, 2979830240: 1, 2979830241: 3, 2979830242: 3, 2979830243: 3, 2979830244: 1, 2979830245: 3, 2979830246: 3, 2979830247: 3, 2979830248: 3, 2979830250: 3, 2979830252: 4, 2979830253: 3, 2979830255: 3, 2979830256: 4, 2979830257: 1, 2979830258: 1, 2979830259: 3, 2979830260: 1, 2979830261: 3, 2979830263: 1, 2979844080: 1, 2979844082: 3, 2979844083: 3, 2979844085: 1, 2979844087: 3, 2979844088: 4, 2979844090: 3, 2979844093: 3, 2979844094: 3, 2979844095: 3, 2979844100: 4, 2979844102: 3, 2979844103: 4, 2979844104: 3, 2979844106: 4, 2979844108: 3, 2979844109: 3, 2979844112: 3, 2979844114: 3, 2979844122: 3, 2979844123: 4, 2979844125: 3, 2984176631: 1, 2984177287: 3, 2984177298: 3, 2984177310: 4, 2984177322: 3, 2984177327: 3, 2984177330: 3, 2984177339: 3, 2984177340: 1, 2984177341: 1, 2984177342: 3, 2984177343: 5, 2984177345: 3, 2984177347: 4, 2984177348: 3, 2984177350: 4, 2984177353: 3, 2984177355: 1, 2984177357: 1, 2984177358: 3, 2984177364: 3, 2984177365: 3, 2984177367: 3, 2984177368: 3, 2984177376: 3, 2984177381: 3, 2984177383: 1, 2984177387: 3, 2984177391: 3, 2984177394: 3, 2984177419: 3, 2984177424: 3, 2984177427: 3, 2984177428: 4, 2984177445: 3, 2984177446: 3, 2984177447: 3, 2984177464: 3, 2984177466: 3, 2984177470: 3, 3006337875: 3, 3006337877: 3, 3006337879: 3, 3006337881: 3, 3006337882: 1, 3006337883: 3, 3006337885: 3, 3006337886: 3, 3006337887: 3, 3006337888: 3, 3006337889: 1, 3006337890: 3, 3006337892: 3, 3006337893: 3, 3006337894: 3, 3006337895: 1, 3006337897: 3, 3006337898: 3, 3006337899: 3, 3006337903: 1, 3006337904: 3, 3006337905: 1, 3006337907: 3, 3006337921: 1, 3006337927: 4, 3006337932: 3, 3006339134: 3, 3006339144: 3, 3006339146: 3, 3006339148: 3, 3006339152: 3, 3006339153: 3, 3006339157: 3, 3006339158: 3, 3006339166: 3, 3006339168: 3, 3006339179: 4, 3006339183: 3, 3006339185: 3, 3006339188: 3, 3006339190: 3, 3442741756: 4, 3442741757: 4, 3847811447: 3, 3847811455: 1, 3847812078: 3, 3847812083: 3, 3972217732: 4, 3972258935: 1}</data>
+  </graph>
+</graphml>
