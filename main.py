@@ -12,7 +12,7 @@ def main():
     #print(nodes)
 
     print(belongNode(nodes,'950073331')[0])
-    positionNode(nodes,'95007331')
+    positionNode(nodes,'950073331')
 
 def belongNode(nodes,id):
     #input: osm node id, output: true/false
