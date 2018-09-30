@@ -9,27 +9,21 @@ def main():
     for node in root.findall('n:graph/n:node',ns):
         id = node.get('id')
         nodes.append((id, *(data.text for data in node if data.get('key') != 'd6')))
-    print(nodes)
-    print("------------------------------")
+    #print(nodes)
 
     print(belongNode(nodes,'950073331'))
-    positionNode(nodes,'950073335')
+    positionNode(nodes,'5071906323')
 
 def belongNode(nodes,id):
     #input: osm node id, output: true/false
-    try:
-        node_exists = False
-        for data in nodes:
-            if data[0] == id:
-                node_exists = True
-        if node_exists:
-            return True
-        else:
-            return False
-    except ValueError:
-        return False
-    else:
+    node_exists = False
+    for data in nodes:
+        if data[0] == id:
+            node_exists = True
+    if node_exists:
         return True
+    else:
+        return False
 
 def positionNode(nodes,id):
     #input: osm node id, output: latitude&longitude 
@@ -37,7 +31,7 @@ def positionNode(nodes,id):
         for data in nodes:
             if data[0] == id:
                 print((data[1],data[2]))
-    except ValueError:
+    except Exception:
         print("Error. The node does not exist.")
         return False
     else:
