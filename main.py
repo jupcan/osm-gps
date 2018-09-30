@@ -12,13 +12,20 @@ def main():
     print(nodes)
     print("------------------------------")
 
-    print(belongNode(nodes,'950073335'))
+    print(belongNode(nodes,'950073331'))
     positionNode(nodes,'950073335')
 
 def belongNode(nodes,id):
     #input: osm node id, output: true/false
     try:
-        nodes.index(id) 
+        node_exists = False
+        for data in nodes:
+            if data[0] == id:
+                node_exists = True
+        if node_exists:
+            return True
+        else:
+            return False
     except ValueError:
         return False
     else:
