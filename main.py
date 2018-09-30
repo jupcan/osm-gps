@@ -5,7 +5,15 @@ def main():
     root = data.getroot()
     ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
     
-    nodes = [node.get('id') for node in root.findall('n:graph/n:node', ns)]
+    nodes = [node.get('id') for node in root.findall('n:graph/n:node',ns)]
+    """nodes = []
+    for node in root.findall('n:graph/n:node',ns):
+        id = node.get('id')
+        for data in root.findall('n:graph/n:node/n:data', ns):
+            key = data.get('key')
+        nodes.append((id,key,"hola"))
+    print(nodes)"""
+
     print(belongNode(nodes,'950073335'))
     positionNode(nodes,id)
 
