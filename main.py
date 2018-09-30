@@ -12,7 +12,7 @@ def main():
     #print(nodes)
 
     print(belongNode(nodes,'950073331'))
-    positionNode(nodes,'5071906323')
+    positionNode(nodes,'50719')
 
 def belongNode(nodes,id):
     #input: osm node id, output: true/false
@@ -28,14 +28,16 @@ def belongNode(nodes,id):
 def positionNode(nodes,id):
     #input: osm node id, output: latitude&longitude 
     try:
+        node_exists = False
         for data in nodes:
             if data[0] == id:
-                print((data[1],data[2]))
-    except Exception:
+                node_exists = True
+        if node_exists:
+            print((data[1],data[2]))
+        else:
+            raise ValueError
+    except ValueError:
         print("Error. The node does not exist.")
-        return False
-    else:
-        return True
 
 if __name__ == '__main__':
     main()
