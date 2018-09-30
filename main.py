@@ -5,14 +5,12 @@ def main():
     root = data.getroot()
     ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
     
-    nodes = [node.get('id') for node in root.findall('n:graph/n:node',ns)]
-    """nodes = []
+    #nodes = [node.get('id') for node in root.findall('n:graph/n:node',ns)]
+    nodes = []
     for node in root.findall('n:graph/n:node',ns):
         id = node.get('id')
-        for data in root.findall('n:graph/n:node/n:data', ns):
-            key = data.get('key')
-        nodes.append((id,key,"hola"))
-    print(nodes)"""
+        nodes.append((id, *(data.text for data in node if data.get('key') != 'd6')))
+    print(nodes)
 
     print(belongNode(nodes,'950073335'))
     positionNode(nodes,id)
@@ -27,7 +25,7 @@ def belongNode(nodes,id):
         return True
 
 def positionNode(nodes,id):
-    #input: osm node id, output: longitude&latitude of given node
+    #input: osm node id, output: longitude&latitude 
     try:
         nodes.index(id) 
     except ValueError:
