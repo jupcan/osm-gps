@@ -11,8 +11,8 @@ def main():
         nodes.append((id, *(data.text for data in node if data.get('key') != 'd6')))
     #print(nodes)
 
-    print(belongNode(nodes,'950073331'))
-    positionNode(nodes,'50719')
+    print(belongNode(nodes,'950073331')[0])
+    positionNode(nodes,'95007331')
 
 def belongNode(nodes,id):
     #input: osm node id, output: true/false
@@ -21,19 +21,17 @@ def belongNode(nodes,id):
         if data[0] == id:
             node_exists = True
     if node_exists:
-        return True
+        coordinates = (data[1],data[2])
+        return True, coordinates
     else:
-        return False
+        return False, False
 
 def positionNode(nodes,id):
     #input: osm node id, output: latitude&longitude 
     try:
-        node_exists = False
-        for data in nodes:
-            if data[0] == id:
-                node_exists = True
+        node_exists, coordinates = belongNode(nodes,id)
         if node_exists:
-            print((data[1],data[2]))
+            print(coordinates)
         else:
             raise ValueError
     except ValueError:
