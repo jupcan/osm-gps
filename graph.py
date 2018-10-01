@@ -1,28 +1,41 @@
 from lxml import etree
+from os.path import basename
 
 class graph():
     _path = ""
     _nodes = []
     def __init__(self, path):
         self._path = path
-        self._nodes, self._edges = self._readFile()
+        self._keys, self._nodes, self._edges = self._readFile()
 
     def _readFile(self):
         data = etree.parse(self._path)
         root = data.getroot()
         ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
+
+        print(basename(self._path))
+        keys = []
+        for key in root:
+            name = key.get('attr.name')
+            data_structure = key.get('for')
+            if (name == "y" or name == "x") and data_structure == "node":
+                id = key.get('id')
+                keys.append(id)
+            if (name == "length" or name == "name") and data_structure == "edge":
+                id = key.get('id')
+                keys.append(id)
     
         nodes = []
         for node in root.findall('n:graph/n:node', ns):
             id = node.get('id')
-            nodes.append((id, *(data.text for data in node if (data.get('key') == 'd4' or data.get('key') == 'd5'))))
+            nodes.append((id, *(data.text for data in node if (data.get('key') == keys[2] or data.get('key') == keys[3]))))
 
         edges = []
         for edge in root.findall('n:graph/n:edge', ns):
             source = edge.get('source')
             target = edge.get('target')
-            edges.append((source, target, *(data.text for data in edge if (data.get('key') == 'd13' or data.get('key') == 'd11'))))
-        return nodes, edges
+            edges.append((source, target, *(data.text for data in edge if (data.get('key') == keys[0] or data.get('key') == keys[1]))))
+        return keys, nodes, edges
 
     def belongNode(self, id):
         #input: osm node id, output: true/false
