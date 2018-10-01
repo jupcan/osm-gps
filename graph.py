@@ -26,7 +26,7 @@ class graph():
             if data[0] == id:
                 node_exists = True
         if node_exists:
-            coordinates = (data[1],data[2])
+            coordinates = [(data[1],data[2])]
             return True, coordinates
         else:
             return False, False
