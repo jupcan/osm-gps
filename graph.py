@@ -21,7 +21,7 @@ class graph():
         for edge in root.findall('n:graph/n:edge', ns):
             source = edge.get('source')
             target = edge.get('target')
-            edges.append((source, target, *(data.text for data in edge if (data.get('key') == 'd13' or data.get('key') == 'd10'))))
+            edges.append((source, target, *(data.text for data in edge if (data.get('key') == 'd13' or data.get('key') == 'd11'))))
         return nodes, edges
 
     def belongNode(self, id):
@@ -41,6 +41,23 @@ class graph():
             node_exists, coordinates = self.belongNode(id)
             if node_exists:
                 print(coordinates)
+            else:
+                raise ValueError
+        except ValueError:
+            print("Error. The node does not exist.")
+
+    def adjacentNode(self, id):
+        #input: osm node id, output: list of adjacent arcs
+        try:
+            adjacents = []
+            node_exists = self.belongNode(id)[0]
+            if node_exists:
+                for data in self._edges:
+                    if data[0] == id:
+                        edge_info = (data[0:4])
+                        adjacents.append(edge_info)
+                print(*adjacents, sep="\n" )
+                #print(adjacents)
             else:
                 raise ValueError
         except ValueError:
