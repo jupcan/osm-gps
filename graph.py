@@ -5,7 +5,7 @@ class graph():
     _nodes = []
     def __init__(self,path):
         self._path=path
-        self._nodes=self._readFile()
+        self._nodes=self._readFile(h)
 
     def _readFile(self):
         data = etree.parse(self._path)
