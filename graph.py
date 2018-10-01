@@ -25,14 +25,14 @@ class graph():
         for data in self._nodes:
             if data[0] == id:
                 node_exists = True
-        if node_exists:
-            coordinates = [(data[1],data[2])]
-            return True, coordinates
+            if node_exists:
+                coordinates = [(data[1],data[2])]
+                return True, coordinates
         else:
             return False, False
 
     def positionNode(self,id):
-        #input: osm node id, output: latitude&longitude 
+        #input: osm node id, output: latitude&longitude[(y,x)]
         try:
             node_exists, coordinates = self.belongNode(id)
             if node_exists:
