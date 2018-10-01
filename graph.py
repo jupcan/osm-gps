@@ -4,8 +4,8 @@ class graph():
     _path=""
     _nodes = []
     def __init__(self,path):
-        self._path=path
-        self._nodes=self._readFile()
+        self._path = path
+        self._nodes,self._edges = self._readFile()
 
     def _readFile(self):
         data = etree.parse(self._path)
@@ -15,9 +15,14 @@ class graph():
         nodes = []
         for node in root.findall('n:graph/n:node',ns):
             id = node.get('id')
-            nodes.append((id, *(data.text for data in node if data.get('key') != 'd6')))
-        #print(nodes)
-        return nodes
+            nodes.append((id,*(data.text for data in node if data.get('key') != 'd6')))
+
+        edges = []
+        for edge in root.findall('n:graph/n:edge',ns):
+            source = edge.get('source')
+            target = edge.get('target')
+            edges.append((source,target,*(data.text for data in edge if (data.get('key') == 'd13' or data.get('key') == 'd10'))))
+        return nodes, edges
 
     def belongNode(self,id):
         #input: osm node id, output: true/false
@@ -28,8 +33,7 @@ class graph():
             if node_exists:
                 coordinates = [(data[1],data[2])]
                 return True, coordinates
-        else:
-            return False, False
+        return False, False
 
     def positionNode(self,id):
         #input: osm node id, output: latitude&longitude[(y,x)]
