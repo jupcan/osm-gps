@@ -3,7 +3,6 @@ from os.path import basename
 
 class graph():
     _path = ""
-    _nodes = []
     def __init__(self, path):
         self._path = path
         self._keys, self._nodes, self._edges = self._readFile()
