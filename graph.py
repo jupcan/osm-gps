@@ -12,8 +12,8 @@ class graph():
         root = data.getroot()
         ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
 
-        print(basename(self._path))
-        keys = []
+        keys, nodes, edges = [], [], []
+        print(basename(self._path)) #print file name
         for key in root:
             name = key.get('attr.name')
             data_structure = key.get('for')
@@ -24,16 +24,16 @@ class graph():
                 id = key.get('id')
                 keys.append(id)
     
-        nodes = []
         for node in root.findall('n:graph/n:node', ns):
             id = node.get('id')
-            nodes.append((id, *(data.text for data in node if (data.get('key') == keys[2] or data.get('key') == keys[3]))))
+            nodes.append((id, *(data.text for data in node if \
+            (data.get('key') == keys[2] or data.get('key') == keys[3]))))
 
-        edges = []
         for edge in root.findall('n:graph/n:edge', ns):
             source = edge.get('source')
             target = edge.get('target')
-            edges.append((source, target, *(data.text for data in edge if (data.get('key') == keys[0] or data.get('key') == keys[1]))))
+            edges.append((source, target, *(data.text for data in edge if \
+            (data.get('key') == keys[0] or data.get('key') == keys[1]))))
         return keys, nodes, edges
 
     def belongNode(self, id):
