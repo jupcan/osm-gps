@@ -28,14 +28,12 @@ class graph():
     
         for node in root.findall('n:graph/n:node', ns):
             id = node.get('id')
-            nodes[id] = tuple([data.text for data in node if \
-            (data.get('key') == keys[2] or data.get('key') == keys[3])])
+            nodes[id] = tuple([data.text for data in node if data.get('key') in keys[2:]])
 
         for edge in root.findall('n:graph/n:edge', ns):
             source = edge.get('source')
             target = edge.get('target')
-            edges[(source, target)] = tuple([data.text for data in edge if \
-            (data.get('key') == keys[0] or data.get('key') == keys[1])])
+            edges[(source, target)] = tuple([data.text for data in edge if data.get('key') in keys[:2]])
         return keys, nodes, edges
 
     def belongNode(self, id):
