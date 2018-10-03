@@ -1,5 +1,6 @@
 from lxml import etree
 from os.path import basename
+from pprint import pprint
 
 class graph():
     _path = ""
@@ -12,7 +13,8 @@ class graph():
         root = data.getroot()
         ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
 
-        keys, nodes, edges = [], [], []
+        keys = [] #get desired key values for each file
+        nodes, edges = {}, {}
         print(basename(self._path)) #print file name
         for key in root:
             name = key.get('attr.name')
@@ -26,33 +28,29 @@ class graph():
     
         for node in root.findall('n:graph/n:node', ns):
             id = node.get('id')
-            nodes.append((id, *(data.text for data in node if \
-            (data.get('key') == keys[2] or data.get('key') == keys[3]))))
+            nodes[id] = tuple([data.text for data in node if \
+            (data.get('key') == keys[2] or data.get('key') == keys[3])])
 
         for edge in root.findall('n:graph/n:edge', ns):
             source = edge.get('source')
             target = edge.get('target')
-            edges.append((source, target, *(data.text for data in edge if \
-            (data.get('key') == keys[0] or data.get('key') == keys[1]))))
+            edges[(source, target)] = tuple([data.text for data in edge if \
+            (data.get('key') == keys[0] or data.get('key') == keys[1])])
         return keys, nodes, edges
 
     def belongNode(self, id):
         #input: osm node id, output: true/false
-        node_exists = False
-        for data in self._nodes:
-            if data[0] == id:
-                node_exists = True
-            if node_exists:
-                coordinates = [(data[1], data[2])]
-                return True, coordinates
-        return False, False
+        if id in self._nodes:
+            return True
+        else:
+            return False
 
     def positionNode(self, id):
         #input: osm node id, output: latitude&longitude[(y,x)]
         try:
-            node_exists, coordinates = self.belongNode(id)
+            node_exists = self.belongNode(id)
             if node_exists:
-                print(coordinates)
+                print([self._nodes[id]])
             else:
                 raise ValueError
         except ValueError:
@@ -61,15 +59,13 @@ class graph():
     def adjacentNode(self, id):
         #input: osm node id, output: list of adjacent arcs
         try:
-            adjacents = []
-            node_exists = self.belongNode(id)[0]
+            node_exists = self.belongNode(id)   
+            streets = {}
             if node_exists:
-                for data in self._edges:
-                    if data[0] == id:
-                        edge_info = (data[0:4])
-                        adjacents.append(edge_info)
-                print(*adjacents, sep="\n" )
-                #print(adjacents)
+                adjacents = [key for key in self._edges.keys() if id in key[0]]
+                for data in adjacents:
+                    streets[data] = tuple(self._edges[data])
+                pprint(streets)
             else:
                 raise ValueError
         except ValueError:
