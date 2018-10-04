@@ -13,27 +13,24 @@ class graph():
         root = data.getroot()
         ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
 
-        keys = [] #get desired key values for each file
-        nodes, edges = {}, {}
+        keys, nodes, edges = {}, {}, {}
         print(basename(self._path)) #print file name
-        for key in root:
-            name = key.get('attr.name')
-            data_structure = key.get('for')
-            if (name == "y" or name == "x") and data_structure == "node":
-                id = key.get('id')
-                keys.append(id)
-            if (name == "length" or name == "name") and data_structure == "edge":
-                id = key.get('id')
-                keys.append(id)
+        for key in root: #get desired key values for each file
+            keys[(key.get('attr.name'), key.get('for'))] = (key.get('id'))
+        key_y = keys[('y', 'node')]
+        key_x = keys[('x', 'node')]
+        key_name = keys[('name', 'edge')]
+        key_length = keys[('length', 'edge')]
     
         for node in root.findall('n:graph/n:node', ns):
-            id = node.get('id')
-            nodes[id] = tuple([data.text for data in node if data.get('key') in keys[2:]])
+            data = dict((d.get('key'), d.text) for d in node)
+            values = (data.get(key_y), data[key_x])
+            nodes[node.get('id')] = values
 
         for edge in root.findall('n:graph/n:edge', ns):
-            source = edge.get('source')
-            target = edge.get('target')
-            edges[(source, target)] = tuple([data.text for data in edge if data.get('key') in keys[:2]])
+            data = dict((d.get('key'), d.text) for d in edge)
+            values = (data.get(key_name, 'sinNombre'), data[key_length])
+            edges[(edge.get('source'), edge.get('target'))] = values
         return keys, nodes, edges
 
     def belongNode(self, id):
