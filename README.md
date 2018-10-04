@@ -11,7 +11,8 @@ below we are showing a command line output example for the 3 aforementioned meth
 
 ```python
 file: ciudad real.graphml.xml
-nodes: True
+nodes: 796725819,765309509,827212358
+True
 [('38.9845189', '-3.9145536')]
 {('796725819', '764039286'): ('Avenida de Europa', '4.148'),
  ('796725819', '797147422'): ('Calle Santa María de Alarcos', '9.129')}
