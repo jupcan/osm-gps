@@ -9,7 +9,7 @@ def main():
         if filename.isdigit():
             raise ValueError
         town1 = graph('data/%s.graphml.xml' % filename)
-        nodes = [i for i in input('node: ').split(',')]
+        nodes = [i for i in input('nodes: ').split(',')]
         for node in nodes:
             start_time = time.time()
             print(town1.belongNode(node))
