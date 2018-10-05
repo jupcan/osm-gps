@@ -26,4 +26,14 @@ True
 {('827212358', '827212360'): ('Calle Goya', '47.442'),
  ('827212358', '827212476'): ('Calle Atalaya', '42.912')}
 0.0003237724304199219 seconds
+
+from lxml import etree
+from os.path import basename
+from pprint import pprint
+
+class graph():
+    _path = ""
+    def __init__(self, path):
+        self._path = path
+        self._keys, self._nodes, self._edges = self._readFile()
 ```
