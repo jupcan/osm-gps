@@ -6,6 +6,7 @@
 given a file in format grahml, the students must write a class ”graph” containing:
 - a constructor, that receives as parameter the name of the file graphml
 - methods: belongNode, positionNode and adjacentNode
+[requirements file](/reqs/requirements1.pdf) given by the teacher  
 
 below we are showing a command line output example for the 3 aforementioned methods:
 
