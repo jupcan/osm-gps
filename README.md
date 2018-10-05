@@ -5,7 +5,7 @@
 ## task1
 given a file in format grahml, the students must write a class ”graph” containing:
 - a constructor, that receives as parameter the name of the file graphml
-- methods: belongNode, positionNode and adjacentNode
+- methods: belongNode, positionNode and adjacentNode  
 [requirements file](/reqs/requirements1.pdf) given by the teacher  
 
 below we are showing a command line output example for the 3 aforementioned methods:
@@ -28,3 +28,4 @@ True
  ('827212358', '827212476'): ('Calle Atalaya', '42.912')}
 0.0003237724304199219 seconds
 ```
+delivered [task1 documentation](/docs/task1.pdf)  
