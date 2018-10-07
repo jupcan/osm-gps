@@ -10,7 +10,8 @@ given a file in format grahml, the students must write a class ”graph” conta
 below we are showing a command line output example for the 3 aforementioned methods:
 
 ```python
-file: ciudad real.graphml.xml
+file: ciudad real
+ciudad real.graphml.xml
 nodes: 796725819,765309509,827212358
 True
 [('38.9845189', '-3.9145536')]
