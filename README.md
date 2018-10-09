@@ -1,6 +1,6 @@
 # osm-gps [![HitCount](http://hits.dwyl.io/jupcan/osm-gps.svg)](http://hits.dwyl.io/jupcan/osm-gps) ![Github Issues](http://githubbadges.herokuapp.com/jupcan/osm-gps/issues.svg?style=flat-square) 
 **a3 group** intelligent systems lab project
-> designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
+designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
 ## installation
 we are using lxml library to represent the xml files data in a tree an then generate our own internal representation of it
