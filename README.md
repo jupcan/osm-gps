@@ -37,8 +37,14 @@ delivered [task1 documentation](/docs/task1.pdf)
 
 ## [task2](/reqs/task2.pdf) 
 definition of the problem and implementation of the frontier
-- creation and organization of the code in more detailed classes: **state**, **state space**, **frontier**, **treeNode** and **problem**
+- creation and organization of the code in more detailed classes: **[state][i33]**, **[state space][i33]**, **[frontier][i33]**, **[treeNode][i33]** and **[problem][i33]**
 - use of new technologies such as .json and .md5 for some inputs/outputs of certain classes  
 
-#1
+[i9]: https://github.com/jupcan/osm-gps/issues/9
+[i10]: https://github.com/jupcan/osm-gps/issues/10
+[i11]: https://github.com/jupcan/osm-gps/issues/11
+[i12]: https://github.com/jupcan/osm-gps/issues/12
+[i13]: https://github.com/jupcan/osm-gps/issues/13
+[i14]: https://github.com/jupcan/osm-gps/issues/14
+[i15]: https://github.com/jupcan/osm-gps/issues/15
 
