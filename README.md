@@ -9,8 +9,8 @@ we are using lxml library to represent the xml files data in a tree an then gene
 ## [task1](/reqs/task1.pdf) 
 generation of a internal representation of a graph with geographical data from osm
 given a file in format grahml, the students must write a class ”graph” containing:
-- a constructor, that receives as parameter the name of the file graphml
-- methods: belongNode, positionNode and adjacentNode  
+- a **[constructor][i5]**, that receives as parameter the name of the file graphml
+- methods: **[belongNode][i6]**, **[positionNode][i7]** and **[adjacentNode][i8]** 
 
 below we are showing a command line output example for the 3 aforementioned methods:
 
@@ -40,6 +40,10 @@ definition of the problem and implementation of the frontier
 - creation and organization of the code in more detailed classes: **[state][i10]**, **[state space][i11]**, **[frontier][i14]**, **[treeNode][i13]** and **[problem][i12]**
 - use of new technologies such as .json and .md5 for some inputs/outputs of certain classes  
 
+[i5]: https://github.com/jupcan/osm-gps/issues/5
+[i6]: https://github.com/jupcan/osm-gps/issues/6
+[i7]: https://github.com/jupcan/osm-gps/issues/7
+[i8]: https://github.com/jupcan/osm-gps/issues/8
 [i10]: https://github.com/jupcan/osm-gps/issues/10
 [i11]: https://github.com/jupcan/osm-gps/issues/11
 [i12]: https://github.com/jupcan/osm-gps/issues/12
