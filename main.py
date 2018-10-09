@@ -16,7 +16,6 @@ def main():
             town1.positionNode(node)
             town1.adjacentNode(node)
             print("%s seconds" % (time.time() - start_time))
-            
     except ValueError:
         print ("Error. Not a valid input.")
     
