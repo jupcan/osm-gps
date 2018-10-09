@@ -2,7 +2,7 @@
 **a3 group** intelligent systems lab project
 > designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
-## [task1](/reqs/requirements1.pdf) 
+## [task1](/reqs/task1.pdf) 
 given a file in format grahml, the students must write a class ”graph” containing:
 - a constructor, that receives as parameter the name of the file graphml
 - methods: belongNode, positionNode and adjacentNode  
@@ -30,5 +30,5 @@ True
 ```
 delivered [task1 documentation](/docs/task1.pdf)  
 
-## task2
+## [task2](/reqs/task2.pdf) 
 ...
