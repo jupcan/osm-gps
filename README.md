@@ -2,6 +2,10 @@
 **a3 group** intelligent systems lab project
 > designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
+## installation
+we are using lxml library to represent the xml files data in a tree an then generate our own internal representation of it
+> sudo apt-get install python3-lxml
+
 ## [task1](/reqs/task1.pdf) 
 generation of a internal representation of a graph with geographical data from osm
 given a file in format grahml, the students must write a class ”graph” containing:
