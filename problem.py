@@ -5,10 +5,10 @@ import json
 class problem():
     _path = ""
     _file = {}
-    
+
     _state_space = stateSpace("","")
     _init_state = state("","","")
-    
+
     def __init__(self, path):
         self._path = path
         self._file = self._readJson()
@@ -16,10 +16,10 @@ class problem():
     def _readJson(self):
         with open(self._path) as json_data:
             return json.load(json_data)
-    
+
     def printing(self):
         print(self._file["IntSt"])
-        
+
     def isGoal(self,state):
         """isGoal(state) => True or False
         A state satisfies this function if the list of nodes is empty
@@ -40,6 +40,6 @@ def main():
         json.printing()
     except ValueError:
         print("Error. Not a valid input")
-    
+
 if __name__ == '__main__':
     main()
