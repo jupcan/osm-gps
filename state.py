@@ -4,7 +4,10 @@ class state():
     _nodes = {}
     _md5 = ""
 
-    def __init__(self, current, nodes, md5):
+    def __init__(self, current, nodes, sl):
         self._current = current
         self._nodes = nodes
-        md5._md5 = md5
+        self._md5 = sl
+
+    def getNodes(self):
+        return self._nodes

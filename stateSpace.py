@@ -9,9 +9,6 @@ class stateSpace():
         self._path = path
         self._states = states
 
-    def getStates(self):
-        return self._states
-    
     def Successors(self, state):
         """return [(acc1,NewState1,costAct1), ... , (accM,NewStateM,costActM)]
         where:
