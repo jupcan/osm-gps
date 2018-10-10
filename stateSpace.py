@@ -1,6 +1,6 @@
 from state import state as state
 
-def stateSpace():
+class stateSpace():
 
     _path = ""
     _states = {}
@@ -9,6 +9,9 @@ def stateSpace():
         self._path = path
         self._states = states
 
+    def getStates(self):
+        return self._states
+    
     def Successors(self, state):
         """return [(acc1,NewState1,costAct1), ... , (accM,NewStateM,costActM)]
         where:
@@ -20,7 +23,6 @@ def stateSpace():
         costAct = {}
         
         return acc, costAct
-
 
     def BelongNode(self, state):
         #output: True (if it belongs to the State Space) or False(in other case)
