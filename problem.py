@@ -2,7 +2,7 @@ from state import state
 from stateSpace import stateSpace
 import json
 
-class problem():
+class problem(): 
     _path = ""
     _file = {}
 
