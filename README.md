@@ -3,7 +3,14 @@
 > designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
 ## installation
-we are using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
+whole project developed using **python3**
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+```
+
+we are also using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
 ```
 sudo apt-get install python3-lxml
 ```
