@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install python3.6
 ```
 
-we are also using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
+also using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
 ```
 sudo apt-get install python3-lxml
 ```
