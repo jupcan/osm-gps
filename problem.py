@@ -5,14 +5,10 @@ import json
 class problem(): 
     _path = ""
     _file = {}
-<<<<<<< HEAD
-    
-=======
 
     _state_space = stateSpace("","")
     _init_state = state("","","")
 
->>>>>>> 9bd4128d85a0df2e3fa66c26636cfae94c42c2c7
     def __init__(self, path):
         self._path = path
         self._file = self._readJson()
