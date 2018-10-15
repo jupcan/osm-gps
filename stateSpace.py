@@ -1,4 +1,4 @@
-from state import state as state
+from state import state
 
 class stateSpace():
 
