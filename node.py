@@ -8,7 +8,7 @@ class node():
 	_d
 	_f
 
-	def __init__(self):
+	def __init__(self,state,cost,action,d):
 		self._state = state("","","")#current state of the problem
 		self._cost #cost from the inicial node to the current node (this one)
 		self._action 
