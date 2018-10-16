@@ -1,6 +1,7 @@
 from state import state as state
 from stateSpace import stateSpace as stateSpace
 import json
+import hashlib
 
 class problem(): 
     _path = ""
@@ -38,8 +39,9 @@ def main():
         filename = 'example.json'
         if filename.isdigit():
             raise ValueError
-        json = problem(filename)
-        print(json._state_space.BelongNode(json._init_state))
+        p = problem(filename)
+        #cadena = p._file["IntSt"]["node"] + " : " + str(p._file["IntSt"]["listNodes"])
+        print(p._init_state._md5)
     except ValueError:
         print("Error. Not a valid input")
 
