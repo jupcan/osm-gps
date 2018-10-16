@@ -1,5 +1,5 @@
 class state():
-    
+ 
     _current = ""
     _nodes = {}
     _md5 = ""
