@@ -1,14 +1,13 @@
-from state import state as state
-from stateSpace import stateSpace as stateSpace
+from state import state
+from stateSpace import stateSpace
 import json
 import hashlib
 
-class problem(): 
+class problem():
     _path = ""
     _file = {}
-
-    _state_space = stateSpace("","")
     _init_state = state("","","")
+    _state_space = stateSpace("","")
 
     def __init__(self, path):
         self._path = path
@@ -31,19 +30,3 @@ class problem():
             return False
         else:
             return True
-"""
-Main for testing json reading
-"""
-def main():
-    try:
-        filename = 'example.json'
-        if filename.isdigit():
-            raise ValueError
-        p = problem(filename)
-        #cadena = p._file["IntSt"]["node"] + " : " + str(p._file["IntSt"]["listNodes"])
-        print(p._init_state._md5)
-    except ValueError:
-        print("Error. Not a valid input")
-
-if __name__ == '__main__':
-    main()
