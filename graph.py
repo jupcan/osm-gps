@@ -21,7 +21,7 @@ class graph():
         key_x = keys[('x', 'node')]
         key_name = keys[('name', 'edge')]
         key_length = keys[('length', 'edge')]
-    
+
         for node in root.findall('n:graph/n:node', ns):
             data = dict((d.get('key'), d.text) for d in node)
             values = (data.get(key_y), data[key_x])
@@ -54,7 +54,7 @@ class graph():
     def adjacentNode(self, id):
         #input: osm node id, output: list of adjacent arcs
         try:
-            node_exists = self.belongNode(id)   
+            node_exists = self.belongNode(id)
             streets = {}
             if node_exists:
                 adjacents = [key for key in self._edges.keys() if id in key[0]]

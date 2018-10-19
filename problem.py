@@ -21,10 +21,8 @@ class problem():
     def printing(self):
         print(self._file["IntSt"])
 
-    def isGoal(self,state):
-        """isGoal(state) => True or False
-        A state satisfies this function if the list of nodes is empty
-        """
+    def isGoal(self, state):
+        #input: initial state, output: true/false if list of nodes is empty
         if bool(state.getNodes()): #bool(<dictionary>) -> true if has items, false otherwise
             return False
         else:
