@@ -4,7 +4,7 @@ from problem import problem
 
 def main():
     try:
-        filename = input('file: ')
+        filename = input('json file: ')
         if filename.isdigit():
             raise ValueError
         p = problem('%s.json' % filename)
