@@ -4,7 +4,6 @@ import json
 import hashlib
 
 class problem():
-    _path = ""
     _file = {}
     _init_state = state("","","")
     _state_space = stateSpace("","")

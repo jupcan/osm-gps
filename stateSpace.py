@@ -1,10 +1,6 @@
 from state import state
 
 class stateSpace():
-
-    _path = ""
-    _states = {}
-    
     def __init__(self, path, states):
         self._path = path
         self._states = states
@@ -18,7 +14,7 @@ class stateSpace():
         """
         acc = {}
         costAct = {}
-        
+
         return acc, costAct
 
     def BelongNode(self, state):
