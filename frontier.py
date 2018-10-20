@@ -5,6 +5,9 @@ class frontier():
     def __init__(self):
         self._frontier = self._createFrontier()
 
+    def _createFrontier(self):
+            return {}
+
     def insert(self, node):
         self._frontier[node._f] = node
 
@@ -16,6 +19,3 @@ class frontier():
 
     def __str__(self):
         return f'{self._frontier}'
-
-    def _createFrontier(self):
-        return {}
