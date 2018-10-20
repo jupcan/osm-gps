@@ -23,6 +23,7 @@ def main():
         f.remove()
         print(f._frontier)
         print(p._init_state.createCode())
+        print(p._state_space.successors(p._init_state))
 
     except ValueError:
         print("Error. Not a valid input")

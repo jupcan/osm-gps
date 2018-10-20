@@ -1,12 +1,13 @@
 from state import state
 
 class stateSpace():
-    def __init__(self, path):
+    def __init__(self, path, state):
         self._path = path
+        self._states = state
 
     def successors(self, state):
-        acc = {}
-        costAct = {}
+        acc = "i'm in %s and i go to %s" %(state._current, state._nodes[0])
+        costAct = 0
         return acc, costAct
 
     def belongNode(self, state):
