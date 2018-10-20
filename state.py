@@ -15,4 +15,4 @@ class state():
         return self._nodes
 
     def __str__(self):
-        return f'({self._current},{self._nodes})'
+        return f'({self._current}, {self._nodes})'
