@@ -16,6 +16,3 @@ class frontier():
             return False
         else:
             return True
-
-    def __str__(self):
-        return f'{self._frontier}'

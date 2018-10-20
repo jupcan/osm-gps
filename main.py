@@ -19,7 +19,7 @@ def main():
         print(p._init_state._md5)
         f.insert(tn1)
         f.insert(tn2)
-        print(str(f))
+        print(f._frontier)
         print(dict(sorted(f._frontier.items())))
     except ValueError:
         print("Error. Not a valid input")
