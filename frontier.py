@@ -16,7 +16,7 @@ class frontier():
         del self._frontier[min(self._frontier)]
 
     def isEmpty(self):
-        if bool(self._frontier): #bool(<dictionary>) -> true if has items, false otherwise
+        if bool(self._frontier): #true if has items, false otherwise
             return False
         else:
             return True

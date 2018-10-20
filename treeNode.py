@@ -2,7 +2,6 @@ from state import state
 import random
 
 class treeNode():
-
 	def __init__(self, state, cost, action, d):
 		self._state = state #current state of the problem
 		self._cost = 0 #cost from the inicial node to the current node (this one)

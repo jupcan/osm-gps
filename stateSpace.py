@@ -1,9 +1,8 @@
 from state import state
 
 class stateSpace():
-    def __init__(self, path, states):
+    def __init__(self, path):
         self._path = path
-        self._states = states
 
     def successors(self, state):
         acc = {}
