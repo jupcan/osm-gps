@@ -1,12 +1,13 @@
-from treeNode import treeNode
 from state import state
+from treeNode import treeNode
 
 class frontier():
+    _frontier = {}
     def __init__(self):
         self._frontier = self._createFrontier()
 
-    def createFrontier(self):
-        frontier = {}
+    def _createFrontier(self):
+        return _frontier
 
-    def insert(self, treeNode):
-        frontier[treeNode.f] = treeNode
+    def insert(self, node):
+        frontier[node.f] = node
