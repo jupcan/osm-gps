@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
 from problem import problem
 from frontier import frontier
 from state import state
 from treeNode import treeNode
+from collections import OrderedDict
 
 def main():
     try:

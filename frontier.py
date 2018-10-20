@@ -2,7 +2,6 @@ from state import state
 from treeNode import treeNode
 
 class frontier():
-
     def __init__(self):
         self._frontier = self._createFrontier()
 
@@ -19,4 +18,4 @@ class frontier():
         return f'{self._frontier}'
 
     def _createFrontier(self):
-        return {}    
+        return {}
