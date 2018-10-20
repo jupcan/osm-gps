@@ -7,15 +7,13 @@ class frontier():
         self._frontier = self._createFrontier()
 
     def _createFrontier(self):
-
         return _frontier
 
     def insert(self, node):
-        self._frontier[node.f] = node
-        
+        self._frontier[node.get] = node
+
     def isEmpty(self):
         if bool(self._frontier): #bool(<dictionary>) -> true if has items, false otherwise
             return False
         else:
-            return True    
-        
+            return True
