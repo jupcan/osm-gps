@@ -13,14 +13,17 @@ def main():
         p = problem('%s.json' % filename)
         tn1 = treeNode(p._init_state, 0, "", 0)
         tn2 = treeNode(p._init_state, 1, "", 1)
+        tn3 = treeNode(p._init_state, 2, "", 2)
+        
         f = frontier()
         print(str(p._init_state))
-        print(tn1._f)
         print(p._init_state._md5)
+
         f.insert(tn1)
         f.insert(tn2)
+        f.insert(tn3)
+        
         print(f._frontier)
-        print(dict(sorted(f._frontier.items())))
     except ValueError:
         print("Error. Not a valid input")
 
