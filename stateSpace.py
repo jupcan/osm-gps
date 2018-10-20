@@ -12,7 +12,7 @@ class stateSpace():
 
     def belongNode(self, state):
         #output: True (if it belongs to the State Space) or False(in other case)
-        if state in self._states:
+        if state._current in self._states:
             return True
         else:
             return False
