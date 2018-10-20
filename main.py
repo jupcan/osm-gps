@@ -16,7 +16,7 @@ def main():
         tn2 = treeNode(p._init_state, 1, "", 1)
         f = frontier()
         print(str(p._init_state))
-        print(tn1.getF())
+        print(tn1._f)
         print(p._init_state._md5)
         f.insert(tn1)
         f.insert(tn2)
