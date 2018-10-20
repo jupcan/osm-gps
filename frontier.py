@@ -12,6 +12,9 @@ class frontier():
         self._frontier[node._f] = node
         self._frontier = self.sortFrontier()
 
+    def remove(self):
+        del self._frontier[min(self._frontier)]
+
     def isEmpty(self):
         if bool(self._frontier): #bool(<dictionary>) -> true if has items, false otherwise
             return False
