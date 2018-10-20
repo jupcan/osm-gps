@@ -13,6 +13,7 @@ def main():
             raise ValueError
         p = problem('%s.json' % filename)
         tn1 = treeNode(p._init_state, 0, "", 0)
+        print(str(p._init_state))
         print(p._init_state._md5)
     except ValueError:
         print("Error. Not a valid input")

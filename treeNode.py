@@ -1,4 +1,5 @@
 from state import state
+import random
 
 class treeNode():
 	f = 0
@@ -8,4 +9,3 @@ class treeNode():
 		self._action = ""
 		self._d = 0 #depth of the node.
 		self.f = random.uniform(1, 1000) #random value that determines the insertion order in the frontier
-                

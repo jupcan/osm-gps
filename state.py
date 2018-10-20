@@ -13,3 +13,6 @@ class state():
 
     def getNodes(self):
         return self._nodes
+
+    def __str__(self):
+        return f'({self._current}, {self._nodes})'
