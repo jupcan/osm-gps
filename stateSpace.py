@@ -5,19 +5,12 @@ class stateSpace():
         self._path = path
         self._states = states
 
-    def Successors(self, state):
-        """return [(acc1,NewState1,costAct1), ... , (accM,NewStateM,costActM)]
-        where:
-        - acci is a string like: "Origin ID: *** - Destination ID: ***"
-        - NewStatei is the successor from state
-        - costActi is the distance between state and NewStatei
-        """
+    def successors(self, state):
         acc = {}
         costAct = {}
-
         return acc, costAct
 
-    def BelongNode(self, state):
+    def belongNode(self, state):
         #output: True (if it belongs to the State Space) or False(in other case)
         if state in self._states:
             return True
