@@ -4,7 +4,6 @@ from problem import problem
 from frontier import frontier
 from state import state
 from treeNode import treeNode
-from collections import OrderedDict
 
 def main():
     try:
@@ -21,6 +20,7 @@ def main():
         f.insert(tn1)
         f.insert(tn2)
         print(str(f))
+        print(dict(sorted(f._frontier.items())))
     except ValueError:
         print("Error. Not a valid input")
 
