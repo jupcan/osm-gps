@@ -9,7 +9,7 @@ class frontier():
             return {}
 
     def insert(self, node):
-        self._frontier[node._f] = node
+        self._frontier[node._f] = hex(id(node)) #convert object id to hex to see it better
         self._frontier = self.sortFrontier()
 
     def remove(self):
