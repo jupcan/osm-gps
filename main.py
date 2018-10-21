@@ -39,6 +39,7 @@ def main():
         print(p._init_state._md5)
         print(p._state_space._path)
         print(p._state_space.successors(p._init_state))
+        p._state_space.positionNode('946409156')
 
         """print('Elements until MemoryError: ')
         start = time.time()

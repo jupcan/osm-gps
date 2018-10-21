@@ -69,9 +69,9 @@ class stateSpace():
         costAct = 0
         return acc, costAct
 
-    def belongNode(self, state):
+    """def belongNode(self, state):
         #output: True (if it belongs to the State Space) or False(in other case)
         if state._current in self._states:
             return True
         else:
-            return False
+            return False"""
