@@ -31,9 +31,9 @@ class stateSpace():
             edges[(edge.get('source'), edge.get('target'))] = values
         return keys, nodes, edges
 
-    def belongNode(self, id):
+    def belongNode(self, state):
         #input: osm node id, output: true/false
-        if id in self._nodes:
+        if state in self._nodes:
             return True
         else:
             return False

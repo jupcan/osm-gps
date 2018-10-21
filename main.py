@@ -38,8 +38,8 @@ def main():
         print(f._frontier)
         print(p._init_state._md5)
         print(p._state_space._path)
-        print(p._state_space.successors(p._init_state))
-        p._state_space.positionNode('946409156')
+        p._state_space.positionNode(p._init_state._current)
+        print(p._state_space.belongNode(p._init_state))
 
         """print('Elements until MemoryError: ')
         start = time.time()
