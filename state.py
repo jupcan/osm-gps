@@ -11,7 +11,7 @@ class state():
         #_current + _nodes to string
         data = self._current + ''.join(str(i) for i in self._nodes)
         md5 = hashlib.new("md5", data.encode('utf-8')) #encode string
-        return md5.hexdigest() #return hexadecimal encoded string value
+        return md5.hexdigest() #return hexadecimal string value
 
     def getNodes(self):
         return self._nodes
