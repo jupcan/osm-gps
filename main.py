@@ -39,7 +39,7 @@ def main():
         print(p._init_state._md5)
         print(p._state_space._path)
         p._state_space.positionNode(p._init_state._current)
-        print(p._state_space.belongNode(p._init_state))
+        print(p._state_space.belongNode(p._init_state._current))
 
         """print('Elements until MemoryError: ')
         start = time.time()
