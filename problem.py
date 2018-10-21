@@ -6,15 +6,16 @@ import hashlib
 class problem():
     _file = {}
     _init_state = state("", "", "")
-    _state_space = stateSpace("", "")
-    def __init__(self, path):
-        self._path = path
+    _state_space = stateSpace("")
+    def __init__(self, json):
+        self._json = json
         self._file = self._readJson()
         self._init_state = state(self._file["IntSt"]["node"], self._file["IntSt"]["listNodes"], self._file["IntSt"]["id"])
-        self._state_space = stateSpace("/".join(self._file["graphlmfile"].strip("/").split('/')[1:]), self._init_state) #not getting town folder
+        path = "/".join(self._file["graphlmfile"].strip("/").split('/')[1:]) + ".xml" #not getting town folder and adding .xml
+        self._state_space = stateSpace(path)
 
     def _readJson(self):
-        with open(self._path) as json_data:
+        with open(self._json) as json_data:
             return json.load(json_data)
 
     def isGoal(self, state):
