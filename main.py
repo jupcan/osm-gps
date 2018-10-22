@@ -6,16 +6,15 @@ from state import state
 from treeNode import treeNode
 import time
 
-"""def stressTest(f,p):
+"""def stressTest(f, p):
         elements = 0
         while True:
             try:
                 node = treeNode(p._init_state, 0, "", 0)
                 f.insert(node)
                 elements+=1
-                print(elements)
             except MemoryError:
-                print("Full Memory")
+                print('full memory')
                 break
         return element"""
 
@@ -38,13 +37,13 @@ def main():
         print(f._frontier)
         print(p._init_state._md5)
         print(p._state_space._path)
-        p._state_space.positionNode(p._init_state._current)
-        print(p._state_space.belongNode(p._init_state._current))
+        p._state_space.positionNode(p._init_state)
+        print(p._state_space.belongNode(p._init_state))
 
-        """print('Elements until MemoryError: ')
+        """print('elements until MemoryError: ')
         start = time.time()
         print(stressTest(f,p))
-        print('Time: %.11f' % (time.time() - start))"""
+        print('time: %.11f' % (time.time() - start))"""
 
     except ValueError:
         print("Error. Not a valid input")

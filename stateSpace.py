@@ -33,7 +33,7 @@ class stateSpace():
 
     def belongNode(self, id):
         #input: osm node id, output: true/false
-        if id in self._nodes:
+        if id._current in self._nodes:
             return True
         else:
             return False
@@ -43,7 +43,7 @@ class stateSpace():
         try:
             node_exists = self.belongNode(id)
             if node_exists:
-                print([self._nodes[id]])
+                print([self._nodes[id._current]])
             else:
                 raise ValueError
         except ValueError:
