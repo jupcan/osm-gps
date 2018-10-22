@@ -9,8 +9,11 @@ class frontier():
             return {}
 
     def insert(self, node):
-        self._frontier[node._f] = hex(id(node)) #convert object id to hex to see it better
-        self._frontier = self.sortFrontier()
+        if(type(node) is treeNode):
+            self._frontier[node] = hex(id(node)) #convert object id to hex to see it better
+            self._frontier = self.sortFrontier()
+        else:
+            print("Is not a node")
 
     def remove(self):
         del self._frontier[min(self._frontier)]
