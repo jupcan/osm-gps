@@ -1,6 +1,7 @@
 from lxml import etree
 from pprint import pprint
 from state import state
+import math
 
 class stateSpace():
     def __init__(self, path):
@@ -32,39 +33,45 @@ class stateSpace():
         return keys, nodes, edges
 
     def belongNode(self, id):
-        #input: osm node id, output: true/false
-        if id._current in self._nodes:
-            return True
+        #input: problem state or osm id node, output: true/false if current in nodes
+        if isinstance(id, state):
+            if id._current in self._nodes:
+                return True
+            else:
+                return False
         else:
-            return False
+            if id in self._nodes:
+                return True
+            else:
+                return False
 
     def positionNode(self, id):
-        #input: osm node id, output: latitude&longitude[(y,x)]
+        #input: problem state, output: latitude&longitude[(y,x)] of current node
         try:
             node_exists = self.belongNode(id)
             if node_exists:
-                print([self._nodes[id._current]])
+                return [self._nodes[id]]
             else:
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
 
-    def adjacentNode(self, id):
-        #input: osm node id, output: list of adjacent arcs
+    def successors(self, id):
+        #input: problem state, output: list of adjacent nodes + extra info
         try:
             node_exists = self.belongNode(id)
             streets = {}
             if node_exists:
-                adjacents = [key for key in self._edges.keys() if id in key[0]]
+                adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
                     streets[data] = tuple(self._edges[data])
-                pprint(streets)
+                    acc = "i'm in %s and i go to %s" %(data[0], data[1])
+                    orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
+                    dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
+                    cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))
+                    print([(acc, data[1], cost)])
+                #pprint(streets)
             else:
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
-
-    def successors(self, state):
-        acc = "i'm in %s and i go to %s" %(state._current, state._nodes[0])
-        costAct = 0
-        return acc, costAct

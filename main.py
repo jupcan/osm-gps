@@ -7,7 +7,7 @@ from treeNode import treeNode
 import time
 import sys
 
-def stressTest(f,p):
+"""def stressTest(f,p):
     elements = 0
     try:
         while True:
@@ -25,7 +25,7 @@ def stressTest(f,p):
                 break
     except KeyboardInterrupt:
             return elements
-    return elements
+    return elements"""
 
 def main():
     try:
@@ -45,15 +45,15 @@ def main():
         #f.remove()
         #print(f._frontier)
         #print(p._init_state._md5)
-        #print(p._state_space._path)
-        #p._state_space.positionNode(p._init_state)
-        #print(p._state_space.belongNode(p._init_state))
+        print(p._state_space._path)
+        print(p._state_space.belongNode(p._init_state))
+        p._state_space.successors(p._init_state)
 
-        print('elements until memory error: ')
+        """print('elements until memory error: ')
         start = time.time()
         print(stressTest(f,p))
         print('time: %.11f' % (time.time() - start))
-        print(f._frontier[min(f._frontier)])
+        print(f._frontier[min(f._frontier)])"""
 
     except ValueError:
         print("error. not a valid input")
