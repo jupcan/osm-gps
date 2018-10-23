@@ -16,7 +16,7 @@ def stressTest(f,p):
                 if(elements == 0):
                     node = treeNode(p._init_state, 0, "", elements)
                 else:
-                    node = treeNode(newState,0,"",elements)
+                    node = treeNode(newState, 0, "", elements)
                 f.insert(node)
                 elements+=1
                 print(f._frontier[node._f]._state._md5)
