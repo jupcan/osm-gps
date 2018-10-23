@@ -8,25 +8,24 @@ import time
 import sys
 
 def stressTest(f,p):
-        elements = 0
-        
-        try:
-                while True:
-                    try:
-                        newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
-                        if(elements == 0):
-                                node = treeNode(p._init_state, 0, "", elements)
-                        else:
-                                node = treeNode(newState,0,"",elements)
-                        f.insert(node)
-                        elements+=1
-                        print(f._frontier[node._f]._state._md5)
-                    except MemoryError:
-                        print("Full Memory")
-                        break
-        except KeyboardInterrupt:
-                return elements
-        return elements
+    elements = 0
+    try:
+        while True:
+            try:
+                newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
+                if(elements == 0):
+                    node = treeNode(p._init_state, 0, "", elements)
+                else:
+                    node = treeNode(newState,0,"",elements)
+                f.insert(node)
+                elements+=1
+                print(f._frontier[node._f]._state._md5)
+            except MemoryError:
+                print("Full Memory")
+                break
+    except KeyboardInterrupt:
+            return elements
+    return elements
 
 def main():
     try:
@@ -47,17 +46,15 @@ def main():
         #print(f._frontier)
         #print(p._init_state._md5)
         #print(p._state_space._path)
-        #p._state_space.positionNode(p._init_state._current)
-        #print(p._state_space.belongNode(p._init_state._current))
+        #p._state_space.positionNode(p._init_state)
+        #print(p._state_space.belongNode(p._init_state))
 
         print('Elements until MemoryError: ')
         start = time.time()
         print(stressTest(f,p))
         print('Time: %.11f' % (time.time() - start))
         print(f._frontier[min(f._frontier)])
-        
-        
-        
+
     except ValueError:
         print("Error. Not a valid input")
 
