@@ -10,7 +10,7 @@ class frontier():
 
     def insert(self, node):
         if(type(node) is treeNode):
-            self._frontier[node] = hex(id(node)) #convert object id to hex to see it better
+            self._frontier[node._f] = node #convert object id to hex to see it better
             self._frontier = self.sortFrontier()
         else:
             print("Is not a node")

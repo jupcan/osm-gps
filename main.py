@@ -13,11 +13,14 @@ def stressTest(f,p):
         try:
                 while True:
                     try:
-                        node = treeNode(p._init_state, 0, "", elements)
-                        type(node)
+                        newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
+                        if(elements == 0):
+                                node = treeNode(p._init_state, 0, "", elements)
+                        else:
+                                node = treeNode(newState,0,"",elements)
                         f.insert(node)
-                        type(f._frontier)
                         elements+=1
+                        print(f._frontier[node._f]._state._md5)
                     except MemoryError:
                         print("Full Memory")
                         break
@@ -47,18 +50,13 @@ def main():
         #p._state_space.positionNode(p._init_state._current)
         #print(p._state_space.belongNode(p._init_state._current))
 
-        #print('Elements until MemoryError: ')
-        #start = time.time()
-        #print(stressTest(f,p))
-        #print('Time: %.11f' % (time.time() - start))
-        #print(f._frontier[min(f._frontier)])
-
-        print(type(tn1))
-        print(type(f._frontier))
-        print(type(f._frontier[tn1]))
-        print(f._frontier[tn1]._state)
+        print('Elements until MemoryError: ')
+        start = time.time()
+        print(stressTest(f,p))
+        print('Time: %.11f' % (time.time() - start))
+        print(f._frontier[min(f._frontier)])
         
-
+        
         
     except ValueError:
         print("Error. Not a valid input")
