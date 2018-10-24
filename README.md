@@ -78,6 +78,8 @@ I'm in 4331489739 and I go to 4331489763 (4331489763, ['4331489528', '4331489668
 ```
 that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state.
 
+delivered [task2 documentation](/docs/task2.pdf) 
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
