@@ -76,6 +76,7 @@ I'm in 4331489739 and I go to 4331489738 (4331489738, ['4331489528', '4331489668
 I'm in 4331489739 and I go to 4331489740 (4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 108.841
 I'm in 4331489739 and I go to 4331489763 (4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 63.11
 ```
+that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list and also generating the md5 representation of each state.
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
