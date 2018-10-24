@@ -58,6 +58,10 @@ given an json file used as input to initialize our problem class:
 	}
 }
 ```
+we create a stateSpace class instance with the given path and read all the information stored in the graphml file so as to be able to compute all the operations we already were able to do in **task1**. we also create a state class instance with all the other information (node, listNodes, id) to have a start point and be able to make some other operations:
+- successors(state): [(acc1,NewState1,costAct1), ... ,(accM,NewStateM,costActM)]; accM = string like 'I am in id origin and I go to id destionation'. NewStateM = adjacent node. costActM = street length
+- belongNode(state): true or false if it belongs or not to state space (search for state.id)
+- creation of frontier as well as insertion of treeNodes objects, elimination and checking if empty on it 
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
