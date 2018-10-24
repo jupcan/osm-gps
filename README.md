@@ -60,10 +60,22 @@ given an json file used as input to initialize our problem class:
 ```
 we create a *stateSpace class* instance with the given path and read all the information stored in the graphml file so as to be able to compute all the operations we already were able to do in **[task1](/reqs/task1.pdf)**. we also create a *state class* instance with all the other information (node, listNodes, id) to have a start point and be able to make some other new operations:
 - **successors(*state*)**: [(acc1,NewState1,costAct1), ... ,(accM,NewStateM,costActM)]; accM = string like 'I am in id origin and I go to id destionation'. NewStateM = adjacent node. costActM = street length
-- **belongNode(*state*)**: true or false if it belongs or not to state space (search for state.id)
-- creation of **frontier** as well as insertion of *treeNodes objects*, elimination and checking emptiness on it
+- **belongNode(*state*)**: true or false if it belongs or not to state space 
+- **creation of frontier** as well as insertion of *treeNodes objects*, elimination and checking emptiness on it
 
 below we are showing a command line output example for the 3 aforementioned methods:
+```python
+json file: example
+example.json
+data/anchuras.graphml.xml
+True
+4331489738 state md5: 331b41c249f9d392954ce4a36df65ca7
+4331489740 state md5: 229da16d1c640e1e81747a47bdd716fa
+4331489763 state md5: 6d7014c2db65e030d3ae0af84286edfe
+I'm in 4331489739 and I go to 4331489738 (4331489738, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 48.137
+I'm in 4331489739 and I go to 4331489740 (4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 108.841
+I'm in 4331489739 and I go to 4331489763 (4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 63.11
+```
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
