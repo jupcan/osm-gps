@@ -1,5 +1,4 @@
 from lxml import etree
-from pprint import pprint
 from state import state
 import math
 
@@ -69,9 +68,14 @@ class stateSpace():
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
                     successors.append((acc, str(aux), cost))
-                return successors
-                #pprint(streets)
+                    for a, b, c in successors:
+                        print(a, b, c)
+                #return successors
             else:
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
+
+    def __str__(self):
+        for a, b, c in self.successors:
+            print(a, b, c)
