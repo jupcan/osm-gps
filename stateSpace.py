@@ -55,7 +55,7 @@ class stateSpace():
         #input: problem state, output: list of adjacent nodes + extra info
         try:
             node_exists = self.belongNode(id)
-            streets, successors = {}, []
+            successors = []
             if node_exists:
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
@@ -68,8 +68,8 @@ class stateSpace():
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
                     successors.append((acc, str(aux), cost))
-                    for a, b, c in successors:
-                        print(a, b, c)
+                for tup in successors:
+                    print(tup[0], tup[1], tup[2])
                 #return successors
             else:
                 raise ValueError
