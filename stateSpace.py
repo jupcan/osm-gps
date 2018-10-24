@@ -75,7 +75,3 @@ class stateSpace():
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
-
-    def __str__(self):
-        for a, b, c in self.successors:
-            print(a, b, c)
