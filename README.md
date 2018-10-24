@@ -13,7 +13,7 @@ also using **lxml library** to represent the xml files data in a tree an then ge
 sudo apt-get install python3-lxml
 ```
 
-## [task1](/reqs/task1.pdf) 
+## [task1]:[task1](/reqs/task1.pdf) 
 generation of a internal representation of a graph with geographical data from osm
 given a file in format grahml, the students must write a class ”graph” containing:
 - a **[constructor][i5]**, that receives as parameter the name of the file graphml
@@ -58,7 +58,7 @@ given an json file used as input to initialize our problem class:
 	}
 }
 ```
-we create a stateSpace class instance with the given path and read all the information stored in the graphml file so as to be able to compute all the operations we already were able to do in **task1**. we also create a state class instance with all the other information (node, listNodes, id) to have a start point and be able to make some other operations:
+we create a *stateSpace class* instance with the given path and read all the information stored in the graphml file so as to be able to compute all the operations we already were able to do in **[task1][task1]**. we also create a *state class* instance with all the other information (node, listNodes, id) to have a start point and be able to make some other new operations:
 - successors(state): [(acc1,NewState1,costAct1), ... ,(accM,NewStateM,costActM)]; accM = string like 'I am in id origin and I go to id destionation'. NewStateM = adjacent node. costActM = street length
 - belongNode(state): true or false if it belongs or not to state space (search for state.id)
 - creation of frontier as well as insertion of treeNodes objects, elimination and checking if empty on it 
