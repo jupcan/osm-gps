@@ -35,15 +35,11 @@ class stateSpace():
     def belongNode(self, id):
         #input: problem state or osm id node, output: true/false if current in nodes
         if isinstance(id, state):
-            if id._current in self._nodes:
-                return True
-            else:
-                return False
+            if id._current in self._nodes: return True
+            else: return False
         else:
-            if id in self._nodes:
-                return True
-            else:
-                return False
+            if id in self._nodes: return True
+            else: return False
 
     def positionNode(self, id):
         #input: problem state, output: latitude&longitude[(y,x)] of current node
@@ -70,7 +66,7 @@ class stateSpace():
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))
                     successors.append((acc, data[1], cost))
-                print(successors)
+                return successors
                 #pprint(streets)
             else:
                 raise ValueError

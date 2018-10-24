@@ -47,7 +47,7 @@ def main():
         #print(p._init_state._md5)
         print(p._state_space._path)
         print(p._state_space.belongNode(p._init_state))
-        p._state_space.successors(p._init_state)
+        print(p._state_space.successors(p._init_state))
 
         """print('elements until memory error: ')
         start = time.time()
