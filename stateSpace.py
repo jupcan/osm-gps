@@ -61,7 +61,7 @@ class stateSpace():
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
                     #streets[data] = tuple(self._edges[data])
-                    acc = "i'm in %s and i go to %s" %(data[0], data[1])
+                    acc = "I'm in %s and I go to %s" %(data[0], data[1])
                     orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))

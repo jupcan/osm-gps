@@ -56,7 +56,7 @@ def main():
         print(f._frontier[min(f._frontier)])"""
 
     except ValueError:
-        print("error. not a valid input")
+        print("Error. Not a valid input")
 
 if __name__ == '__main__':
     main()
