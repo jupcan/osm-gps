@@ -47,6 +47,18 @@ definition of the problem and implementation of the frontier
 - creation and organization of the code in more detailed classes: **[state][i10]**, **[state space][i11]**, **[frontier][i14]**, **[treeNode][i13]** and **[problem][i12]**
 - use of new technologies such as .json and .md5 for some inputs/outputs of certain classes  
 
+given an json file used as input to initialize our problem class:
+```json
+{
+	"graphlmfile": "Ciudad Real/data/anchuras.graphml",
+	"IntSt":{
+			"node": "4331489739",
+			"listNodes":["4331489528","4331489668","4331489711","4762868815","4928063625"],
+			"id": "f4b616551965fb586e608397c308bf0f"
+	}
+}
+```
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
