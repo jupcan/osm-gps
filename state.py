@@ -16,5 +16,13 @@ class state():
     def getNodes(self):
         return self._nodes
 
+    def visited(self, id, old_list):
+        if id in old_list:
+            new_list = old_list[:]
+            new_list.remove(id)
+            return new_list
+        else:
+            return old_list
+
     def __str__(self):
         return f'({self._current}, {self._nodes})'
