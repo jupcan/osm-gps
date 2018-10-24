@@ -13,11 +13,11 @@ also using **lxml library** to represent the xml files data in a tree an then ge
 sudo apt-get install python3-lxml
 ```
 
-## [task1](/reqs/task1.pdf) 
+## [task1](/reqs/task1.pdf)
 generation of a internal representation of a graph with geographical data from osm
 given a file in format grahml, the students must write a class ”graph” containing:
 - a **[constructor][i5]**, that receives as parameter the name of the file graphml
-- methods: **[belongNode][i6]**, **[positionNode][i7]** and **[adjacentNode][i8]** 
+- methods: **[belongNode][i6]**, **[positionNode][i7]** and **[adjacentNode][i8]**
 
 below we are showing a command line output example for the 3 aforementioned methods:
 
@@ -42,7 +42,7 @@ True
 ```
 delivered [task1 documentation](/docs/task1.pdf)  
 
-## [task2](/reqs/task2.pdf) 
+## [task2](/reqs/task2.pdf)
 definition of the problem and implementation of the frontier
 - creation and organization of the code in more detailed classes: **[state][i10]**, **[state space][i11]**, **[frontier][i14]**, **[treeNode][i13]** and **[problem][i12]**
 - use of new technologies such as .json and .md5 for some inputs/outputs of certain classes  
@@ -60,7 +60,7 @@ given an json file used as input to initialize our problem class:
 ```
 we create a *stateSpace class* instance with the given path and read all the information stored in the graphml file so as to be able to compute all the operations we already were able to do in **[task1](/reqs/task1.pdf)**. we also create a *state class* instance with all the other information (node, listNodes, id) to have a start point and be able to make some other new operations:
 - **successors(*state*)**: [(acc1,NewState1,costAct1), ... ,(accM,NewStateM,costActM)]; accM = string like 'I am in id origin and I go to id destionation'. NewStateM = adjacent node. costActM = street length
-- **belongNode(*state*)**: true or false if it belongs or not to state space 
+- **belongNode(*state*)**: true or false if it belongs or not to state space
 - **creation of frontier** as well as insertion of *treeNodes objects*, elimination and checking emptiness on it
 
 below we are showing a command line output example for the 3 aforementioned methods:
@@ -72,13 +72,11 @@ True
 4331489738 state md5: 331b41c249f9d392954ce4a36df65ca7
 4331489740 state md5: 229da16d1c640e1e81747a47bdd716fa
 4331489763 state md5: 6d7014c2db65e030d3ae0af84286edfe
-I'm in 4331489739 and I go to 4331489738 (4331489738, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 48.137
-I'm in 4331489739 and I go to 4331489740 (4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 108.841
-I'm in 4331489739 and I go to 4331489763 (4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625']) 63.11
+[("I'm in 4331489739 and I go to 4331489738", "(4331489738, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '48.137'), ("I'm in 4331489739 and I go to 4331489740", "(4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '108.841'), ("I'm in 4331489739 and I go to 4331489763", "(4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '63.11')]
 ```
 that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state.
 
-delivered [task2 documentation](/docs/task2.pdf) 
+delivered [task2 documentation](/docs/task2.pdf)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
@@ -89,4 +87,3 @@ delivered [task2 documentation](/docs/task2.pdf)
 [i12]: https://github.com/jupcan/osm-gps/issues/12
 [i13]: https://github.com/jupcan/osm-gps/issues/13
 [i14]: https://github.com/jupcan/osm-gps/issues/14
-
