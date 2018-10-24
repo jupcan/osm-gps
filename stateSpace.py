@@ -32,13 +32,11 @@ class stateSpace():
         return keys, nodes, edges
 
     def belongNode(self, id):
-        #input: problem state or osm id node, output: true/false if current in nodes
-        if isinstance(id, state):
-            if id._current in self._nodes: return True
-            else: return False
+        #input: problem state, output: true/false if current in nodes
+        if id._current in self._nodes:
+            return True
         else:
-            if id in self._nodes: return True
-            else: return False
+            return False
 
     def positionNode(self, id):
         #input: problem state, output: latitude&longitude[(y,x)] of current node
@@ -60,14 +58,16 @@ class stateSpace():
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
                     #streets[data] = tuple(self._edges[data])
-                    aux = state(data[1], id.visited(data[1], id._nodes))
                     acc = "I'm in %s and I go to %s" % (data[0], data[1])
+                    aux = state(data[1], id.visited(data[1], id._nodes))
                     cost = self._edges[data][1]
                     #!(heuristhic)!
                     """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
                     successors.append((acc, str(aux), cost))
+                    new_md5 =  aux.createCode(aux._current, aux._nodes)
+                    print("%s state md5: %s" % (aux._current, new_md5))
                 for tup in successors:
                     print(tup[0], tup[1], tup[2])
                 #return successors

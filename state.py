@@ -4,12 +4,12 @@ class state():
     def __init__(self, current, nodes, md5=None):
         self._current = current
         self._nodes = sorted(nodes)
-        if md5 is None: self._md5 = self.createCode()
+        if md5 is None: self._md5 = self.createCode(self._current, self._nodes)
         else: self._md5 = md5
 
-    def createCode(self):
+    def createCode(self, node, list):
         #_current + _nodes to string
-        data = self._current + ''.join(str(i) for i in self._nodes)
+        data = node + ''.join(str(i) for i in list)
         md5 = hashlib.new("md5", data.encode('utf-8')) #encode string
         return md5.hexdigest() #return hexadecimal string value
 
