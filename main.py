@@ -33,6 +33,7 @@ def main():
         filename = input('json file: ')
         if filename.isdigit():
             raise ValueError
+        print(filename + ".json") #print json file name
         p = problem('%s.json' % filename)
         tn1 = treeNode(p._init_state, 0, "", 0)
         tn2 = treeNode(p._init_state, 1, "", 1)
