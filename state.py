@@ -13,9 +13,6 @@ class state():
         md5 = hashlib.new("md5", data.encode('utf-8')) #encode string
         return md5.hexdigest() #return hexadecimal string value
 
-    def getNodes(self):
-        return self._nodes
-
     def visited(self, id, old_list):
         if id in old_list:
             new_list = old_list[:]

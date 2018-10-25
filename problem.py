@@ -19,8 +19,8 @@ class problem():
             return json.load(json_data)
 
     def isGoal(self, state):
-        #input: initial state, output: true/false if list of nodes is empty
-        if bool(state.getNodes()): #bool(<dictionary>) -> true if has items, false otherwise
+        #input: state, output: true/false if list of nodes is empty
+        if bool(state._nodes): #true if has items, false otherwise
             return False
         else:
             return True
