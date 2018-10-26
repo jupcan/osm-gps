@@ -12,7 +12,6 @@ def stressTest(f,p):
     avg = 0
     maxim = 0
     minim = 9999
-
     """try:
         while True:
             try:
