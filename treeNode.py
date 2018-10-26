@@ -10,6 +10,3 @@ class treeNode():
 		self._d = d #depth of the node.
 		self._father = father
 		self._f = random.uniform(1, 1000) #random value that determines the insertion order in the frontier
-
-	def __lt__(self, other):
-		return self._f < other._f
