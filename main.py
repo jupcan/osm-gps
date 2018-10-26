@@ -12,8 +12,8 @@ def stressTest(f,p):
     avg = 0
     maxim = 0
     minim = 9999
-    
-    try:
+
+    """try:
         while True:
             try:
                 newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
@@ -21,20 +21,16 @@ def stressTest(f,p):
                     node = treeNode(p._init_state, 0, "", elements)
                 else:
                     node = treeNode(newState, 0, "", elements)
-
                 start = time.time()
                 f.insert(node)
                 end = time.time()
-
+                elements+=1
                 timer = end - start
                 avg += timer
                 if(timer > maxim):
                     maxim = timer
                 if(timer < minim):
                     minim = timer
-                
-                elements+=1
-                
             except MemoryError:
                 print("full memory")
                 print('nº elements: '+elements)
@@ -43,11 +39,11 @@ def stressTest(f,p):
                 print('avg time: %.11f' % (avg/elements))
                 break
     except KeyboardInterrupt:
+            print('avg time: %.11f' % (avg/elements))
             print('min time: %.11f' % minim)
             print('max time: %.11f' %  maxim)
-            print('avg time: %.11f' % (avg/elements))
             return elements
-    return elements
+    return elements"""
 
 def main():
     try:
@@ -56,22 +52,15 @@ def main():
             raise ValueError
         print(filename + ".json") #print json file name
         p = problem('%s.json' % filename)
-        f = frontier()
-        
-        """tn1 = treeNode(p._init_state, 0, "", 0)
+        tn1 = treeNode(p._init_state, 0, "", 0)
         tn2 = treeNode(p._init_state, 1, "", 1)
         tn3 = treeNode(p._init_state, 2, "", 2)
-
-        
+        f = frontier()
         f.insert(tn1)
         f.insert(tn2)
         f.insert(tn3)
-
         #print(str(p._init_state))
-
-        "while not f._frontier.empty():
-            print(f._frontier.get())"""
-
+        print(f._frontier)
         #f.remove()
         #print(f._frontier)
         #print(p._init_state._md5)
@@ -80,14 +69,14 @@ def main():
         #p._state_space.successors(p._init_state)
         #print(p.isGoal(p._init_state))
 
-        print('elements until memory error: ')
+        """print('Waiting for memory error...or process abort (ctrl+c)')
         start = time.time()
-        print(stressTest(f,p))
-        print('time: %.11f' % (time.time() - start))
-        #print(f._frontier[min(f._frontier)])
+        print('nº elements: '+str(stressTest(f,p)))
+        print('total time: %.11f' % (time.time() - start))
+        #print(f._frontier[min(f._frontier)])"""
 
     except ValueError:
         print("Error. Not a valid input")
-            
+
 if __name__ == '__main__':
     main()
