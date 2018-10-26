@@ -1,25 +1,25 @@
 from state import state
 from treeNode import treeNode
+import bisect
 
 class frontier():
     def __init__(self):
         self._frontier = self._createFrontier()
 
     def _createFrontier(self):
-            return {}
+            return []
 
     def insert(self, node):
-        self._frontier[node._f] = hex(id(node)) #convert object id to hex to see it better
-        self._frontier = self.sortFrontier()
+        if isinstance(node, treeNode):
+            bisect.insort(self._frontier, (node._f, node))
+        else:
+            print("Error. It is not a node")
 
     def remove(self):
-        del self._frontier[min(self._frontier)]
+        del self._frontier[0]
 
     def isEmpty(self):
         if bool(self._frontier): #true if has items, false otherwise
             return False
         else:
             return True
-
-    def sortFrontier(self):
-        return dict(sorted(self._frontier.items()))
