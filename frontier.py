@@ -10,7 +10,7 @@ class frontier():
             return []
 
     def insert(self, node):
-        if(type(node) is treeNode):
+        if isinstance(node, treeNode):
             bisect.insort(self._frontier, (node._f, node))
         else:
             print("Error. It is not a node")

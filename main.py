@@ -12,7 +12,7 @@ def stressTest(f,p):
     avg = 0
     maxim = 0
     minim = 9999
-    
+
     try:
         while True:
             try:
@@ -65,7 +65,7 @@ def main():
         #print(f._frontier)
         #print(p._init_state._md5)
         #print(p._state_space._path)
-        #print(p._state_space.belongNode(p._init_state))    
+        #print(p._state_space.belongNode(p._init_state))
         #p._state_space.successors(p._init_state)
         #print(p.isGoal(p._init_state))
 
