@@ -43,7 +43,8 @@ def main():
         f.insert(tn2)
         f.insert(tn3)
         #print(str(p._init_state))
-        print(f._frontier)
+        while not f._frontier.empty():
+            print(f._frontier.get())
         #f.remove()
         #print(f._frontier)
         #print(p._init_state._md5)
@@ -60,6 +61,6 @@ def main():
 
     except ValueError:
         print("Error. Not a valid input")
-
+            
 if __name__ == '__main__':
     main()
