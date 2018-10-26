@@ -1,4 +1,4 @@
-# osm-gps [![HitCount](http://hits.dwyl.io/jupcan/osm-gps.svg)](http://hits.dwyl.io/jupcan/osm-gps)
+# osm-gps
 **a3 group** intelligent systems lab project  
 > designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
@@ -68,13 +68,15 @@ below we are showing a command line output example for the 3 aforementioned meth
 json file: example
 example.json
 data/anchuras.graphml.xml
+[(127.1360111900787, <treeNode.treeNode object at 0x7f33cc1c8fd0>), (591.7378136374725, <treeNode.treeNode object at 0x7f33cc1d9e80>), (612.2393770939552, <treeNode.treeNode object at 0x7f33cc1d9e10>)]
+[(591.7378136374725, <treeNode.treeNode object at 0x7f33cc1d9e80>), (612.2393770939552, <treeNode.treeNode object at 0x7f33cc1d9e10>)]
 True
 4331489738 state md5: 331b41c249f9d392954ce4a36df65ca7
 4331489740 state md5: 229da16d1c640e1e81747a47bdd716fa
 4331489763 state md5: 6d7014c2db65e030d3ae0af84286edfe
 [("I'm in 4331489739 and I go to 4331489738", "(4331489738, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '48.137'), ("I'm in 4331489739 and I go to 4331489740", "(4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '108.841'), ("I'm in 4331489739 and I go to 4331489763", "(4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '63.11')]
 ```
-that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state.
+that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state and printing the frontier of the problem once inserting three treeNode object examples and removing one of them.
 
 delivered [task2 documentation](/docs/task2.pdf)
 
