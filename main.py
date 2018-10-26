@@ -57,6 +57,7 @@ def main():
         f = frontier()
         f.insert(tn1)
         f.insert(tn2)
+        f.insert(tn3)
         #print(str(p._init_state))
         print(p._state_space._path)
         print(f._frontier)

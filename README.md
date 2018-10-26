@@ -68,8 +68,8 @@ below we are showing a command line output example for the 3 aforementioned meth
 json file: example
 example.json
 data/anchuras.graphml.xml
-[(250.07819689432753, <treeNode.treeNode object at 0x7fe815d7bfd0>), (660.5002560216591, <treeNode.treeNode object at 0x7fe815d8ce10>)]
-[(660.5002560216591, <treeNode.treeNode object at 0x7fe815d8ce10>)]
+[(127.1360111900787, <treeNode.treeNode object at 0x7f33cc1c8fd0>), (591.7378136374725, <treeNode.treeNode object at 0x7f33cc1d9e80>), (612.2393770939552, <treeNode.treeNode object at 0x7f33cc1d9e10>)]
+[(591.7378136374725, <treeNode.treeNode object at 0x7f33cc1d9e80>), (612.2393770939552, <treeNode.treeNode object at 0x7f33cc1d9e10>)]
 True
 4331489738 state md5: 331b41c249f9d392954ce4a36df65ca7
 4331489740 state md5: 229da16d1c640e1e81747a47bdd716fa
