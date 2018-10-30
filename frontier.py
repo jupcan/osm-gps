@@ -1,6 +1,5 @@
 from state import state
 from treeNode import treeNode
-import bisect
 from sortedcontainers import SortedDict
 
 class frontier():
