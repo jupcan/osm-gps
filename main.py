@@ -7,12 +7,12 @@ from treeNode import treeNode
 import time
 import sys
 
-def stressTest(f,p):
+"""def stressTest(f,p):
     elements = 0
     avg = 0
     maxim = 0
     minim = 9999
-    """try:
+    try:
         while True:
             try:
                 newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
@@ -63,7 +63,7 @@ def main():
         print(f._frontier)
         f.remove()
         print(f._frontier)
-        #print(p._init_state._md5)
+        print(p._init_state._md5)
         print(p._state_space.belongNode(p._init_state))
         p._state_space.successors(p._init_state)
         print(p.isGoal(p._init_state))
@@ -72,7 +72,7 @@ def main():
         start = time.time()
         print('nº elements: '+str(stressTest(f,p)))
         print('total time: %.11f' % (time.time() - start))
-        #print(f._frontier[min(f._frontier)])"""
+        print(f._frontier[min(f._frontier)]._f)"""
 
     except ValueError:
         print("Error. Not a valid input")
