@@ -8,9 +8,14 @@ whole project developed using **python3**
 sudo apt-get install python3.6
 ```
 
-also using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
+using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
 ```
 sudo apt-get install python3-lxml
+```
+
+and also **sorted containers** one to use some of the data structures it offers such as sorted lists or ordered dictionaries
+```
+python3 -m pip install sortedcontainers
 ```
 
 ## [task1](/reqs/task1.pdf)
