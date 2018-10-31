@@ -10,7 +10,7 @@ import sys
 def main():
     filename, strategy = askinfo()
     p = problem('%s.json' % filename)
-    print(p._state_space._path)
+    print(p._state_space._path.lower())
     print(p._state_space.successors(p._init_state))
 
 def askinfo():
