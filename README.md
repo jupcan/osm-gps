@@ -13,7 +13,7 @@ using **lxml library** to represent the xml files data in a tree an then generat
 sudo apt-get install python3-lxml
 ```
 
-and also **sorted containers** one to use some of the data structures it offers such as sorted lists or ordered dictionaries
+and also **sorted containers** one to use some of the data structures it offers such as ordered dictionaries
 ```
 python3 -m pip install sortedcontainers
 ```
