@@ -68,9 +68,9 @@ class stateSpace():
                     successors.append((acc, str(aux), cost))
                     new_md5 =  aux.createCode(aux._current, aux._nodes)
                     print("%s state md5: %s" % (aux._current, new_md5))
-                for tup in successors:
-                    print(tup[0], tup[1], tup[2])
-                #return successors
+                """for tup in successors:
+                    print(tup[0], tup[1], tup[2])"""
+                return successors
             else:
                 raise ValueError
         except ValueError:
