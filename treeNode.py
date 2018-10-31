@@ -5,7 +5,7 @@ class treeNode():
 	def __init__(self, parent=None, state=None, cost=0, action=0, d=0):
 		self.parent = parent
 		self._state = state #current state of the problem
-		self._cost = cost #cost from the inicial node to the current node (this one)
+		self._cost = self.parent._cost+self._state._current._cost #cost from the inicial node to the current node (this one)
 		self._action = action
-		self._d = d #depth of the node.
+		self._d = self.parent._d+1 #depth of the node.
 		self._f = random.uniform(1, 1000) #random value that determines the insertion order in the frontier

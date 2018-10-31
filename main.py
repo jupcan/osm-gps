@@ -14,22 +14,16 @@ def main():
             raise ValueError
         print(filename + ".json") #print json file name
         p = problem('%s.json' % filename)
-        tn1 = treeNode(p._init_state, 0, "", 0)
-        tn2 = treeNode(p._init_state, 1, "", 1)
-        tn3 = treeNode(p._init_state, 2, "", 2)
-        f = frontier()
-        f.insert(tn1)
-        f.insert(tn2)
-        f.insert(tn3)
-        #print(str(p._init_state))
         print(p._state_space._path)
-        f.remove()
+        strategy = int(input('strategy: '))
+        if isinstance(strategy, str) or strategy > 4 or strategy < 0:
+            raise ValueError
         print(p._state_space.successors(p._init_state))
 
     except ValueError:
         print("Error. Not a valid input.")
 
-def limsearch(self, problem, strategy, depthl):
+def limsearch(problem, strategy, depthl):
     f = frontier()
     initial = treeNode(problem._init_state)
     f.insert(initial)
@@ -43,16 +37,23 @@ def limsearch(self, problem, strategy, depthl):
             ls = problem._state_space.successors(act._state)
             ln = createTreeNodes(ls, act, depthl, strategy)
             f.insert(ln)
-    if(sol): return createSol(act);
+    if(sol): return createsol(act);
     else: return None
 
-def search(self, problem, strategy, depthl, depthi):
+def search(problem, strategy, depthl, depthi):
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl):
         sol = limsearch(problem, strategy, depthact)
         depthact += depthi
     return sol
+
+def createsol(sol, itime, etime):
+    if(sol is not None):
+        print('cost: %d\ndepth: %d\nelapsed time: %dms\ncheck out.txt for more info' % (sol._cost, sol._d, itime-etime))
+        writesol(sol)
+    else:
+        print('no solution found for the given depth limit')
 
 if __name__ == '__main__':
     main()
