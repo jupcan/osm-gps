@@ -8,20 +8,28 @@ import time
 import sys
 
 def main():
+    filename, strategy = askinfo()
+    p = problem('%s.json' % filename)
+    print(p._state_space._path)
+    print(p._state_space.successors(p._init_state))
+
+def askinfo():
     try:
         filename = input('json file: ')
         if filename.isdigit():
             raise ValueError
         print(filename + ".json") #print json file name
-        p = problem('%s.json' % filename)
-        print(p._state_space._path)
         strategy = int(input('strategy: '))
-        if isinstance(strategy, str) or strategy > 4 or strategy < 0:
+        if isinstance(strategy, str) or strategy > 5 or strategy < 0:
             raise ValueError
-        print(p._state_space.successors(p._init_state))
-
+        switch = {
+            0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
+            3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
+        print(switch[strategy])
+        return filename, strategy
     except ValueError:
         print("Error. Not a valid input.")
+        sys.exit(1)
 
 def limsearch(problem, strategy, depthl):
     f = frontier()
