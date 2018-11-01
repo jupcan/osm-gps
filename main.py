@@ -9,13 +9,18 @@ import sys
 
 def main():
     filename, strategy = askinfo()
-    p = problem('%s.json' % filename)
+    depthl = 999
+    if(strategy == 2): depthl = int(input('depth: '))
+    if(strategy == 3): depthi = int(input('depth increment: '))
+    p = problem('%s.json' % filename, strategy, depthl)
     print(p._state_space._path.lower())
-    print(p._state_space.successors(p._init_state))
-    state_init = state('234',{2,3,4})
-    tn1 = treeNode(p._init_state)
-    tn2 = treeNode(state_init, tn1)
-    print('Padre: '+tn2._parent._state._current+'\nHijo: '+tn2._state._current)
+    itime = time.time()
+    #run algorithms
+    if(strategy == 3): sol = search(p, strategy, depthl, depthi)
+    else: sol = limsearch(p, strategy, depthl)
+    etime = time.time()
+    createsol(sol, itime, etime)
+    #print(p._state_space.successors(p._init_state))
 
 def askinfo():
     try:
@@ -23,9 +28,7 @@ def askinfo():
         if filename.isdigit():
             raise ValueError
         print(filename + ".json") #print json file name
-        strategy = int(input('Strategy:\n0 - Breath-First Search\n1 - '+
-        'Depth-First Search\n2 - Deepth-Limited Search\n3 - Iterative Deepening'
-        +' Search\n4 - Uniform Cost search\n5 - A* Search\nOption: '))
+        strategy = int(input('strategy: '))
         if isinstance(strategy, str) or strategy > 5 or strategy < 0:
             raise ValueError
         switch = {
@@ -51,7 +54,7 @@ def limsearch(problem, strategy, depthl):
             ls = problem._state_space.successors(act._state)
             ln = createTreeNodes(ls, act, depthl, strategy)
             f.insert(ln)
-    if(sol): return createsol(act);
+    if(sol): return createsol(act)
     else: return None
 
 def search(problem, strategy, depthl, depthi):
