@@ -17,7 +17,7 @@ class frontier():
             print("Error. It is not a node.")
 
     def remove(self):
-        self._frontier.popitem(0)
+        return self._frontier.popitem(0)
 
     def isEmpty(self):
         if bool(self._frontier): #true if has items, false otherwise
