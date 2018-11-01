@@ -2,7 +2,7 @@ from state import state
 import random
 
 class treeNode():
-	def __init__(self, state, parent=None, cost=0, action=0, d=0):
+	def __init__(self, state, strategy, parent=None, cost=0, action=0, d=0):
 			self._parent = parent
 			self._state = state #current state of the problem
 			if parent is not None: self._cost = parent._cost + cost; self._d = parent._d+1

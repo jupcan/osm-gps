@@ -9,7 +9,7 @@ import sys
 
 def main():
     filename, strategy = askinfo()
-    depthl = 999
+    depthl = 100000
     if(strategy == 2): depthl = int(input('depth: '))
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
@@ -17,10 +17,9 @@ def main():
     itime = time.time()
     #run algorithms
     if(strategy == 3): sol = search(p, strategy, depthl, depthi)
-    else: sol = limsearch(p, strategy, depthl)
+    else: sol = limSearch(p, strategy, depthl)
     etime = time.time()
-    createsol(sol, itime, etime)
-    #print(p._state_space.successors(p._init_state))
+    createSol(sol, itime, etime)
 
 def askinfo():
     try:
@@ -40,35 +39,33 @@ def askinfo():
         print("Error. Not a valid input.")
         sys.exit(1)
 
-def limsearch(problem, strategy, depthl):
+def limSearch(problem, strategy, depthl):
     f = frontier()
-    initial = treeNode(problem._init_state)
+    initial = treeNode(problem._init_state, problem._strategy)
     f.insert(initial)
     sol = False
 
     while(not sol and not f.isEmpty()):
         act = f.remove()
-        if(problem.isGoal(act[1]._state)):
-            sol = True
+        problem._state_space.visitedList(act[1]._state)
+        if(problem.isGoal(act[1]._state)): sol = True
         else:
-            ls = problem._state_space.successors(act[1]._state)
-            ln = createTreeNodes(ls, act, depthl, strategy)
-            f.insert(ln)
-    if(sol): return createsol(act)
+            for data in problem.createTreeNodes(act[1]): f.insert(data)
+    if(sol): return act
     else: return None
 
 def search(problem, strategy, depthl, depthi):
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl):
-        sol = limsearch(problem, strategy, depthact)
+        sol = limSearch(problem, strategy, depthact)
         depthact += depthi
     return sol
 
-def createsol(sol, itime, etime):
+def createSol(sol, itime, etime):
     if(sol is not None):
         print('cost: %d\ndepth: %d\nelapsed time: %dms\ncheck out.txt for more info' % (sol._cost, sol._d, itime-etime))
-        writesol(sol)
+        writeSol(sol)
     else:
         print('no solution found for the given depth limit')
 

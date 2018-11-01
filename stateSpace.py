@@ -6,6 +6,7 @@ class stateSpace():
     def __init__(self, path):
         self._path = path
         self._keys, self._nodes, self._edges = self._readFile()
+        self._visitedList = []
 
     def _readFile(self):
         data = etree.parse(self._path)
@@ -65,13 +66,28 @@ class stateSpace():
                     """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
-                    successors.append((acc, str(aux), cost))
+                    successors.append((acc, aux, cost))
                     new_md5 =  aux.createCode(aux._current, aux._nodes)
                     print("%s state md5: %s" % (aux._current, new_md5))
-                """for tup in successors:
-                    print(tup[0], tup[1], tup[2])"""
                 return successors
             else:
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
+
+    def visitedList(self, id):
+        #input: problem state, output: visited list
+        visited = False
+        for data in self._visitedList:
+            aux = data
+            if self.equals(id, aux):
+                visited = True
+                if (id._current._f <= aux._current._f):
+                    self._visitedList.remove(data)
+                    self._visitedList.append(id)
+        if not visited: self._visitedList.append(id)
+
+    def equals(self, a, b):
+        #input: 2 problem states, output: true if both equals, false otherwise
+        if(a._current == b._current and bool(set(a._nodes).difference(b._nodes)) == False): return True
+        else: return False
