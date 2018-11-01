@@ -48,10 +48,10 @@ def limsearch(problem, strategy, depthl):
 
     while(not sol and not f.isEmpty()):
         act = f.remove()
-        if(problem.isGoal(act._state)):
+        if(problem.isGoal(act[1]._state)):
             sol = True
         else:
-            ls = problem._state_space.successors(act._state)
+            ls = problem._state_space.successors(act[1]._state)
             ln = createTreeNodes(ls, act, depthl, strategy)
             f.insert(ln)
     if(sol): return createsol(act)
