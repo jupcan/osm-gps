@@ -12,6 +12,10 @@ def main():
     p = problem('%s.json' % filename)
     print(p._state_space._path.lower())
     print(p._state_space.successors(p._init_state))
+    state_init = state('234',{2,3,4})
+    tn1 = treeNode(p._init_state)
+    tn2 = treeNode(state_init, tn1)
+    print('Padre: '+tn2._parent._state._current+'\nHijo: '+tn2._state._current)
 
 def askinfo():
     try:
