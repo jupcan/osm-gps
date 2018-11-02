@@ -53,7 +53,6 @@ def limSearch(problem, strategy, depthl):
         if(problem.isGoal(act[1]._state)): sol = True
         else:
             for data in problem.createTreeNodes(act[1]): f.insert(data)
-        print(f._frontier)
     if(sol): return act
     else: return None
 
@@ -67,6 +66,7 @@ def search(problem, strategy, depthl, depthi):
 
 def createSol(sol, itime, etime):
     if(sol is not None):
+        print(sol)
         print('cost: %d, depth: %d, elapsed time: %fms\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
         txt = open('out.txt','w')
         txt.write('cost: %d, depth: %d, elapsed time: %fms' % (sol[1]._cost, sol[1]._d, etime-itime))
