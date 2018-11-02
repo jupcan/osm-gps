@@ -27,7 +27,9 @@ def askinfo():
         if filename.isdigit():
             raise ValueError
         print(filename + ".json") #print json file name
-        strategy = int(input('strategy: '))
+        strategy = int(input('Strategy:\n0 - Breath-First Search\n1 - '+
+        'Depth-First Search\n2 - Deepth-Limited Search\n3 - Iterative Deepening'
+        +' Search\n4 - Uniform Cost search\n5 - A* Search\nOption: '))
         if isinstance(strategy, str) or strategy > 5 or strategy < 0:
             raise ValueError
         switch = {
