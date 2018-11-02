@@ -82,7 +82,7 @@ class stateSpace():
             aux = data
             if self.equals(id, aux):
                 visited = True
-                if (id._current._f <= aux._current._f):
+                if (id._md5 <= aux._md5):
                     self._visitedList.remove(data)
                     self._visitedList.append(id)
         if not visited: self._visitedList.append(id)

@@ -6,6 +6,7 @@ from state import state
 from treeNode import treeNode
 import time
 import sys
+from pprint import pprint
 
 def main():
     filename, strategy = askinfo()
@@ -27,14 +28,13 @@ def askinfo():
         if filename.isdigit():
             raise ValueError
         print(filename + ".json") #print json file name
-        strategy = int(input('Strategy:\n0 - Breath-First Search\n1 - '+
-        'Depth-First Search\n2 - Deepth-Limited Search\n3 - Iterative Deepening'
-        +' Search\n4 - Uniform Cost search\n5 - A* Search\nOption: '))
+        switch = {
+        0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
+        3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
+        print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
+        strategy = int(input('strategy: '))
         if isinstance(strategy, str) or strategy > 5 or strategy < 0:
             raise ValueError
-        switch = {
-            0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
-            3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
         print(switch[strategy])
         return filename, strategy
     except ValueError:
@@ -66,8 +66,7 @@ def search(problem, strategy, depthl, depthi):
 
 def createSol(sol, itime, etime):
     if(sol is not None):
-        print('cost: %d\ndepth: %d\nelapsed time: %dms\ncheck out.txt for more info' % (sol._cost, sol._d, itime-etime))
-        writeSol(sol)
+        print('cost: %d, depth: %d, elapsed time: %fms\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
     else:
         print('no solution found for the given depth limit')
 

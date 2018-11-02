@@ -26,7 +26,7 @@ class problem():
         states = self._state_space.successors(node._state)
         for (i, j, k) in states:
             aux = treeNode(j, self._strategy, node)
-            if not self.checkVisited(aux._state):
+            if self.checkVisited(aux._state):
                 if(self._strategy == 2 or self._strategy == 3 and aux._d >= self._depthl): pass
             else: childs.append(aux)
         return childs
@@ -36,7 +36,7 @@ class problem():
         visited_states = self._state_space._visitedList
         for data in visited_states:
             aux = data
-            if(self._state_space.equals(id, aux) and id._current._f > aux._current._f): visited = True
+            if(self._state_space.equals(id, aux) and id._md5 > aux._md5): visited = True
         return visited
 
     def isGoal(self, state):
