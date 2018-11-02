@@ -53,6 +53,7 @@ def limSearch(problem, strategy, depthl):
         if(problem.isGoal(act[1]._state)): sol = True
         else:
             for data in problem.createTreeNodes(act[1]): f.insert(data)
+        print(f._frontier)
     if(sol): return act
     else: return None
 
