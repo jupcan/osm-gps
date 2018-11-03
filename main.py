@@ -6,7 +6,7 @@ from state import state
 from treeNode import treeNode
 import time
 import sys
-from pprint import pprint
+from pprint import pprint, pformat
 
 def main():
     filename, strategy = askinfo()
@@ -43,7 +43,7 @@ def askinfo():
 
 def limSearch(problem, strategy, depthl):
     f = frontier()
-    initial = treeNode(problem._init_state, problem._strategy)
+    initial = treeNode(problem._init_state, strategy)
     f.insert(initial)
     sol = False
 
@@ -74,11 +74,21 @@ def createTreeNodes(ls, node, depthl, strategy):
 
 def createSol(sol, itime, etime):
     if(sol is not None):
+        list = []
+        act = sol[1]
+        list.append(act._action)
+        while(act._parent is not None and act._parent._action is not None):
+            list.append(act._parent._action)
+            act = act._parent
+        list.reverse()
         print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
+        pprint(list)
+
         txt = open('out.txt','w')
         line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol[1]._cost, sol[1]._d, etime-itime)
-        line2 = 'f value: %s, node: %s' % (str(sol[0]), str(sol[1]))
-        txt.writelines([line1, line2])
+        line2 = 'goal node: %s\n\n' % str(sol[1])
+        line3 = pformat(list)
+        txt.writelines([line1, line2, line3])
     else:
         print('no solution found for the given depth limit')
 
