@@ -10,7 +10,7 @@ from pprint import pprint
 
 def main():
     filename, strategy = askinfo()
-    depthl = 100000
+    depthl = 999
     if(strategy == 2): depthl = int(input('depth: '))
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
@@ -49,10 +49,11 @@ def limSearch(problem, strategy, depthl):
 
     while(not sol and not f.isEmpty()):
         act = f.remove()
-        problem._state_space.visitedList(act[1]._state)
         if(problem.isGoal(act[1]._state)): sol = True
         else:
-            for data in problem.createTreeNodes(act[1]): f.insert(data)
+            ls = problem._state_space.successors(act[1]._state)
+            ln = createTreeNodes(ls, act[1], depthl, strategy)
+            for node in ln: f.insert(node)
     if(sol): return act
     else: return None
 
@@ -64,11 +65,18 @@ def search(problem, strategy, depthl, depthi):
         depthact += depthi
     return sol
 
+def createTreeNodes(ls, node, depthl, strategy):
+    tree = []
+    for (action, result, cost) in ls:
+        s = treeNode(result, strategy, node, node._cost+float(cost), action, node._d+1)
+        tree.append(s)
+    return tree
+
 def createSol(sol, itime, etime):
     if(sol is not None):
-        print('cost: %d, depth: %d, elapsed time: %fms\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
+        print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
         txt = open('out.txt','w')
-        line1 = 'cost: %d, depth: %d, elapsed time: %fms\n' % (sol[1]._cost, sol[1]._d, etime-itime)
+        line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol[1]._cost, sol[1]._d, etime-itime)
         line2 = 'f value: %s, node: %s' % (str(sol[0]), str(sol[1]))
         txt.writelines([line1, line2])
     else:

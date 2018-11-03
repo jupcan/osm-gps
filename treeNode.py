@@ -5,7 +5,7 @@ class treeNode():
 	def __init__(self, state, strategy, parent=None, cost=0, action=0, d=0):
 			self._parent = parent
 			self._state = state #current state of the problem
-			if parent is not None: self._cost = parent._cost + cost; self._d = parent._d+1
-			else: self._cost = cost; self._d = d
+			self._cost = cost;
+			self._d = d
 			self._action = action
 			self._f = random.uniform(1, 1000) #random value that determines the insertion order in the frontier
