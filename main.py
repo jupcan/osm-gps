@@ -66,10 +66,11 @@ def search(problem, strategy, depthl, depthi):
 
 def createSol(sol, itime, etime):
     if(sol is not None):
-        print(sol)
         print('cost: %d, depth: %d, elapsed time: %fms\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
         txt = open('out.txt','w')
-        txt.write('cost: %d, depth: %d, elapsed time: %fms' % (sol[1]._cost, sol[1]._d, etime-itime))
+        line1 = 'cost: %d, depth: %d, elapsed time: %fms\n' % (sol[1]._cost, sol[1]._d, etime-itime)
+        line2 = 'f value: %s, node: %s' % (str(sol[0]), str(sol[1]))
+        txt.writelines([line1, line2])
     else:
         print('no solution found for the given depth limit')
 

@@ -88,6 +88,6 @@ class stateSpace():
         if not visited: self._visitedList.append(id)
 
     def equals(self, a, b):
-        #input: 2 problem states, output: true if both equals, false otherwise
-        if(a._current == b._current and bool(set(a._nodes).difference(b._nodes)) == False): return True
+        #input: 2 problem states, output: true if both equals
+        if(a._md5 == b._md5): return True
         else: return False
