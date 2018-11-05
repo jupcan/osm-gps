@@ -91,6 +91,8 @@ def createSol(sol, itime, etime):
         txt.writelines([line1, line2, line3])
     else:
         print('no solution found for the given depth limit')
+        txt = open('out.txt','w')
+        txt.write('no solution found for the given depth limit :(')
 
 if __name__ == '__main__':
     main()
