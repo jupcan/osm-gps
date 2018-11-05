@@ -7,7 +7,7 @@ class frontier():
         self._frontier = self._createFrontier()
 
     def _createFrontier(self):
-            frontier = SortedKeyList(key=treeNode.getf)
+            frontier = SortedKeyList(key=treeNode.getF)
             return frontier
 
     def insert(self, node):

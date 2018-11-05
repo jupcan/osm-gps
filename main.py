@@ -9,7 +9,7 @@ import time
 import sys
 
 def main():
-    filename, strategy = askinfo()
+    filename, strategy = askInfo()
     depthl = int(input('depth: '))-1
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
@@ -21,7 +21,7 @@ def main():
     etime = time.time()
     createSol(sol, itime, etime)
 
-def askinfo():
+def askInfo():
     try:
         filename = input('json file: ')
         if filename.isdigit():
@@ -68,7 +68,7 @@ def createTreeNodes(ls, node, depthl, strategy):
     tree = []
     if(depthl >= node._d):
         for (action, result, cost) in ls:
-            s = treeNode(result, strategy, node, node._cost+float(cost), action, node._d+1)
+            s = treeNode(result, strategy, node, float(cost), action)
             tree.append(s)
     return tree
 
@@ -83,17 +83,21 @@ def createSol(sol, itime, etime):
         list.reverse()
         print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, etime-itime))
         pprint(list)
+        writeSol(sol, itime, etime, list)
+    else:
+        print('no solution found for the given depth limit')
 
-        txt = open('out.txt','w')
+def writeSol(sol, itime, etime, list):
+    txt = open('out.txt','w')
+    if(sol is not None):
         line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
         txt.writelines([line1, line2, line3, line4])
     else:
-        print('no solution found for the given depth limit')
-        txt = open('out.txt','w')
         txt.write('no solution found for the given depth limit')
+    txt.close()
 
 if __name__ == '__main__':
     main()
