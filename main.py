@@ -10,7 +10,7 @@ from pprint import pprint, pformat
 
 def main():
     filename, strategy = askinfo()
-    depthl = int(input('depth: '))
+    depthl = int(input('depth: '))-1
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
     print(p._state_space._path.lower())
@@ -86,9 +86,10 @@ def createSol(sol, itime, etime):
 
         txt = open('out.txt','w')
         line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
-        line2 = 'goal node: %s\n\n' % str(sol)
-        line3 = pformat(list)
-        txt.writelines([line1, line2, line3])
+        line2 = 'goal node: %s\n' % str(sol)
+        line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
+        line4 = pformat(list)
+        txt.writelines([line1, line2, line3, line4])
     else:
         print('no solution found for the given depth limit')
         txt = open('out.txt','w')
