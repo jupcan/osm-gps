@@ -1,23 +1,23 @@
 from state import state
 from treeNode import treeNode
-from sortedcontainers import SortedDict
+from sortedcontainers import SortedKeyList
 
 class frontier():
     def __init__(self):
         self._frontier = self._createFrontier()
 
     def _createFrontier(self):
-            frontier = SortedDict()
+            frontier = SortedKeyList(key=treeNode.getf)
             return frontier
 
     def insert(self, node):
         if isinstance(node, treeNode):
-            self._frontier[node._f] = node
+            self._frontier.add(node)
         else:
             print("Error. It is not a node.")
 
     def remove(self):
-        return self._frontier.popitem(0)
+        return self._frontier.pop(0)
 
     def isEmpty(self):
         if bool(self._frontier): #true if has items, false otherwise

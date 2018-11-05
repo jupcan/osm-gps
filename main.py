@@ -10,8 +10,7 @@ from pprint import pprint, pformat
 
 def main():
     filename, strategy = askinfo()
-    depthl = 999
-    if(strategy == 2): depthl = int(input('depth: '))
+    depthl = int(input('depth: '))
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
     print(p._state_space._path.lower())
@@ -49,10 +48,10 @@ def limSearch(problem, strategy, depthl):
 
     while(not sol and not f.isEmpty()):
         act = f.remove()
-        if(problem.isGoal(act[1]._state)): sol = True
+        if(problem.isGoal(act._state)): sol = True
         else:
-            ls = problem._state_space.successors(act[1]._state)
-            ln = createTreeNodes(ls, act[1], depthl, strategy)
+            ls = problem._state_space.successors(act._state)
+            ln = createTreeNodes(ls, act, depthl, strategy)
             for node in ln: f.insert(node)
     if(sol): return act
     else: return None
@@ -67,26 +66,27 @@ def search(problem, strategy, depthl, depthi):
 
 def createTreeNodes(ls, node, depthl, strategy):
     tree = []
-    for (action, result, cost) in ls:
-        s = treeNode(result, strategy, node, node._cost+float(cost), action, node._d+1)
-        tree.append(s)
+    if(depthl >= node._d):
+        for (action, result, cost) in ls:
+            s = treeNode(result, strategy, node, node._cost+float(cost), action, node._d+1)
+            tree.append(s)
     return tree
 
 def createSol(sol, itime, etime):
     if(sol is not None):
         list = []
-        act = sol[1]
+        act = sol
         list.append(act._action)
         while(act._parent is not None and act._parent._action is not None):
             list.append(act._parent._action)
             act = act._parent
         list.reverse()
-        print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol[1]._cost, sol[1]._d, etime-itime))
+        print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, etime-itime))
         pprint(list)
 
         txt = open('out.txt','w')
-        line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol[1]._cost, sol[1]._d, etime-itime)
-        line2 = 'goal node: %s\n\n' % str(sol[1])
+        line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
+        line2 = 'goal node: %s\n\n' % str(sol)
         line3 = pformat(list)
         txt.writelines([line1, line2, line3])
     else:
