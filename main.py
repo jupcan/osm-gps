@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+from pprint import pprint, pformat
 from problem import problem
 from frontier import frontier
-from state import state
 from treeNode import treeNode
+from state import state
 import time
 import sys
-from pprint import pprint, pformat
 
 def main():
     filename, strategy = askinfo()
