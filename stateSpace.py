@@ -57,7 +57,6 @@ class stateSpace():
             if node_exists:
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
-                    #streets[data] = tuple(self._edges[data])
                     acc = "I'm in %s and I go to %s" % (data[0], data[1])
                     aux = state(data[1], id.visited(data[1], id._nodes))
                     cost = self._edges[data][1]

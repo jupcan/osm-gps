@@ -9,17 +9,17 @@ import time
 import sys
 
 def main():
-    filename, strategy = askInfo()
+    filename, strategy, pruning = askInfo()
     depthl = int(input('depth: '))-1
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename, strategy, depthl)
     print(p._state_space._path.lower())
     itime = time.time()
     #run algorithms
-    if(strategy == 3): sol = search(p, strategy, depthl, depthi)
-    else: sol = limSearch(p, strategy, depthl)
+    if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
+    else: sol = limSearch(p, strategy, depthl, pruning)
     etime = time.time()
-    createSol(sol, itime, etime)
+    createSolution(sol, itime, etime)
 
 def askInfo():
     try:
@@ -32,18 +32,23 @@ def askInfo():
         3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
         strategy = int(input('strategy: '))
-        if isinstance(strategy, str) or strategy > 5 or strategy < 0:
-            raise ValueError
+        if isinstance(strategy, str) or strategy > 5 or strategy < 0: raise ValueError
+        yes = {'yes','y'}; no = {'no','n'}
+        pruning = input('pruning(y/n): ').lower()
+        if pruning in yes: pruning = True
+        elif pruning in no: pruning = False
+        else: raise ValueError
         print(switch[strategy])
-        return filename, strategy
+        return filename, strategy, pruning
     except ValueError:
         print("Error. Not a valid input.")
         sys.exit(1)
 
-def limSearch(problem, strategy, depthl):
+def limSearch(problem, strategy, depthl, pruning):
     f = frontier()
     initial = treeNode(problem._init_state, strategy)
     f.insert(initial)
+    problem._visitedList.append(initial)
     sol = False
 
     while(not sol and not f.isEmpty()):
@@ -52,15 +57,23 @@ def limSearch(problem, strategy, depthl):
         else:
             ls = problem._state_space.successors(act._state)
             ln = createTreeNodes(ls, act, depthl, strategy)
-            for node in ln: f.insert(node)
+            if pruning:
+                for node in ln:
+                    pass
+                        """if node._state not in problem._visitedList:
+                            f.insert(node)
+                            problem._visitedList.append((node._state, node._f))
+                        elif node._state._f < problem._visitedList"""
+            else:
+                for node in ln: f.insert(node)
     if(sol): return act
     else: return None
 
-def search(problem, strategy, depthl, depthi):
+def search(problem, strategy, depthl, depthi, pruning):
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl):
-        sol = limSearch(problem, strategy, depthact)
+        sol = limSearch(problem, strategy, depthact, pruning)
         depthact += depthi
     return sol
 
@@ -72,7 +85,7 @@ def createTreeNodes(ls, node, depthl, strategy):
             tree.append(s)
     return tree
 
-def createSol(sol, itime, etime):
+def createSolution(sol, itime, etime):
     if(sol is not None):
         list = []
         act = sol
@@ -83,11 +96,11 @@ def createSol(sol, itime, etime):
         list.reverse()
         print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, etime-itime))
         pprint(list)
-        writeSol(sol, itime, etime, list)
+        writeSolution(sol, itime, etime, list)
     else:
         print('no solution found for the given depth limit')
 
-def writeSol(sol, itime, etime, list):
+def writeSolution(sol, itime, etime, list):
     txt = open('out.txt','w')
     if(sol is not None):
         line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
