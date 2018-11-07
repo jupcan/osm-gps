@@ -49,7 +49,6 @@ def limSearch(problem, strategy, depthl, pruning):
     f.insert(initial)
     problem._visitedList[initial._state._md5] = initial._f
     sol = False
-
     while(not sol and not f.isEmpty()):
         act = f.remove()
         if(problem.isGoal(act._state)): sol = True
