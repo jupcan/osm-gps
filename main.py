@@ -35,10 +35,9 @@ def askInfo():
         if isinstance(strategy, str) or strategy > 5 or strategy < 0: raise ValueError
         yes = {'yes','y'}; no = {'no','n'}
         pruning = input('pruning(y/n): ').lower()
-        if pruning in yes: pruning = True
-        elif pruning in no: pruning = False
+        if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
+        elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
         else: raise ValueError
-        print(switch[strategy])
         return filename, strategy, pruning
     except ValueError:
         print("Error. Not a valid input.")
@@ -48,7 +47,7 @@ def limSearch(problem, strategy, depthl, pruning):
     f = frontier()
     initial = treeNode(problem._init_state, strategy)
     f.insert(initial)
-    problem._visitedList.append(initial)
+    problem._visitedList[initial._state._md5] = initial._f
     sol = False
 
     while(not sol and not f.isEmpty()):
@@ -59,17 +58,12 @@ def limSearch(problem, strategy, depthl, pruning):
             ln = createTreeNodes(ls, act, depthl, strategy)
             if pruning:
                 for node in ln:
-                    if node._state not in problem._visitedList:
+                    if node._state._md5 not in problem._visitedList:
                         f.insert(node)
-                        problem._visitedList.append((node._state, node._f))
-                    else:
-                        for i, value in enumerate(problem._visitedList):
-                            if value._state._md5 == node._state._md5 and node._state._f < i._state._f:
-                                #for visited in problem._visitedList:
-                                #if node._state._md5 == visited._state._md5:
-                                f.insert(node)
-                                problem._visitedList.remove(visited)
-                                problem._visitedList.append((node._state, node._f))
+                        problem._visitedList[node._state._md5] = node._f
+                    elif abs(node._f) < abs(problem._visitedList[node._state._md5]):
+                        f.insert(node)
+                        problem._visitedList[node._state._md5] = node._f
             else:
                 for node in ln: f.insert(node)
     if(sol): return act

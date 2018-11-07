@@ -8,7 +8,7 @@ class problem():
     _file = {}
     _init_state = state
     _state_space = stateSpace
-    _visitedList = []
+    _visitedList = {}
     def __init__(self, json, strategy, depthl):
         self._json = json
         self._file = self._readJson()

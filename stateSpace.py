@@ -41,8 +41,7 @@ class stateSpace():
     def positionNode(self, id):
         #input: problem state, output: latitude&longitude[(y,x)] of current node
         try:
-            node_exists = self.belongNode(id)
-            if node_exists:
+            if self.belongNode(id):
                 return [self._nodes[id]]
             else:
                 raise ValueError
@@ -57,14 +56,13 @@ class stateSpace():
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
                     acc = "I'm in %s and I go to %s" % (data[0], data[1])
-                    aux = state(data[1], id.visited(data[1], id._nodes))
+                    aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
                     #!(heuristhic)!
                     """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
                     successors.append((acc, aux, cost))
-                    aux._md5 = aux.createCode(aux._current, aux._nodes)
                 return successors
             else:
                 raise ValueError
