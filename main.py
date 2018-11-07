@@ -59,16 +59,17 @@ def limSearch(problem, strategy, depthl, pruning):
             ln = createTreeNodes(ls, act, depthl, strategy)
             if pruning:
                 for node in ln:
-                    """if node._state not in problem._visitedList:
+                    if node._state not in problem._visitedList:
                         f.insert(node)
                         problem._visitedList.append((node._state, node._f))
                     else:
-                        for visited in problem._visitedList:
-                            if node._state._md5 == visited._state._md5:
-                                if node._state._f < visited._state._f:
-                                    f.insert(node)
-                                    problem._visitedList.remove(visited)
-                                    problem._visitedList.append((node._state, node._f))"""
+                        for i, value in enumerate(problem._visitedList):
+                            if value._state._md5 == node._state._md5 and node._state._f < i._state._f:
+                        #for visited in problem._visitedList:
+                            #if node._state._md5 == visited._state._md5:
+                                f.insert(node)
+                                problem._visitedList.remove(visited)
+                                problem._visitedList.append((node._state, node._f))
             else:
                 for node in ln: f.insert(node)
     if(sol): return act
