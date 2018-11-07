@@ -52,9 +52,9 @@ class stateSpace():
     def successors(self, id):
         #input: problem state, output: list of adjacent nodes + extra info
         try:
-            node_exists = self.belongNode(id)
+            #node_exists = self.belongNode(id)
             successors = []
-            if node_exists:
+            if self.belongNode(id):
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
                     acc = "I'm in %s and I go to %s" % (data[0], data[1])
@@ -65,7 +65,7 @@ class stateSpace():
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
                     successors.append((acc, aux, cost))
-                    new_md5 =  aux.createCode(aux._current, aux._nodes)
+                    self._md5 = aux._md5
                 return successors
             else:
                 raise ValueError

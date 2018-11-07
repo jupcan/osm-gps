@@ -65,8 +65,8 @@ def limSearch(problem, strategy, depthl, pruning):
                     else:
                         for i, value in enumerate(problem._visitedList):
                             if value._state._md5 == node._state._md5 and node._state._f < i._state._f:
-                        #for visited in problem._visitedList:
-                            #if node._state._md5 == visited._state._md5:
+                                #for visited in problem._visitedList:
+                                #if node._state._md5 == visited._state._md5:
                                 f.insert(node)
                                 problem._visitedList.remove(visited)
                                 problem._visitedList.append((node._state, node._f))
