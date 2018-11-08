@@ -55,7 +55,7 @@ class stateSpace():
             if self.belongNode(id):
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
-                    acc = "I'm in %s and I go to %s" % (data[0], data[1])
+                    acc = "I'm in %s and I go to %s" % (data[0].zfill(10), data[1].zfill(10))
                     aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
                     #!(heuristhic)!

@@ -33,7 +33,7 @@ def askInfo():
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
         strategy = int(input('strategy: '))
         if isinstance(strategy, str) or strategy > 5 or strategy < 0: raise ValueError
-        yes = {'yes','y'}; no = {'no','n'}
+        yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
         if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
         elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
@@ -72,8 +72,10 @@ def search(problem, strategy, depthl, depthi, pruning):
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl):
+        print(depthact)
         sol = limSearch(problem, strategy, depthact, pruning)
         depthact += depthi
+        print(sol)
     return sol
 
 def createTreeNodes(ls, node, depthl, strategy):
