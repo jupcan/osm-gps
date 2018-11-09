@@ -113,6 +113,25 @@ cost: 690.552000, depth: 12, elapsed time: 0.012542s
 check out.txt for more info
 ```
 
+```txt
+cost: 690.552000, depth: 12, elapsed time: 0.012542s
+goal node: <treeNode.treeNode object at 0x7f5c4a5da7f0>
+time and date: 16:41:46-09/11/2018
+
+["I'm in 4331489739 and I go to 4331489738",
+ "I'm in 4331489738 and I go to 4331489532",
+ "I'm in 4331489532 and I go to 0946409139",
+ "I'm in 0946409139 and I go to 4331489528",
+ "I'm in 4331489528 and I go to 4331489718",
+ "I'm in 4331489718 and I go to 4331489716",
+ "I'm in 4331489716 and I go to 4331489709",
+ "I'm in 4331489709 and I go to 4331489549",
+ "I'm in 4331489549 and I go to 4331489550",
+ "I'm in 4331489550 and I go to 4331489692",
+ "I'm in 4331489692 and I go to 4331489662",
+ "I'm in 4331489662 and I go to 4331489668"]
+```
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
