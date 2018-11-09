@@ -114,6 +114,7 @@ check out.txt for more info
 ```
 
 ```txt
+output.txt
 cost: 690.552000, depth: 12, elapsed time: 0.012542s
 goal node: <treeNode.treeNode object at 0x7f5c4a5da7f0>
 time and date: 16:41:46-09/11/2018
