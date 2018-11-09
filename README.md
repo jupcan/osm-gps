@@ -86,12 +86,14 @@ that is, for the initial state we look for its succesors updating each time the 
 delivered [task2 documentation](/docs/task2.pdf)
 
 ## task3
-basic version of the search algorithms
+basic version of the [search algorithms][i15]
 - breath-first search
 - depth-first search, depth-limited search and iterative deepening dearch
 - uniform cost
 
-we need all classes defined in **task2** and some input values asked to the user to generate a txt file containing a sequence of states corresponding to the path solution if exists.
+we need all classes defined in **task2** and some input values asked to the user to generate a [txt file][i16] containing a sequence of states corresponding to the path solution if exists for each of the algorithms mentioned before.
+
+if
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
@@ -102,3 +104,6 @@ we need all classes defined in **task2** and some input values asked to the user
 [i12]: https://github.com/jupcan/osm-gps/issues/12
 [i13]: https://github.com/jupcan/osm-gps/issues/13
 [i14]: https://github.com/jupcan/osm-gps/issues/14
+[i15]: https://github.com/jupcan/osm-gps/issues/19
+[i16]: https://github.com/jupcan/osm-gps/issues/20
+[i17]: https://github.com/jupcan/osm-gps/issues/22
