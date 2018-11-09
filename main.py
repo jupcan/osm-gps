@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 from pprint import pprint, pformat
 from problem import problem
 from frontier import frontier
@@ -12,7 +12,7 @@ def main():
     filename, strategy, pruning = askInfo()
     depthl = int(input('depth: '))-1
     if(strategy == 3): depthi = int(input('depth increment: '))
-    p = problem('%s.json' % filename, strategy, depthl)
+    p = problem('%s.json' % filename)
     print(p._state_space._path.lower())
     itime = time.time()
     #run algorithms
@@ -54,7 +54,7 @@ def limSearch(problem, strategy, depthl, pruning):
         if(problem.isGoal(act._state)): sol = True
         else:
             ls = problem._state_space.successors(act._state)
-            ln = createTreeNodes(ls, act, depthl, strategy)
+            ln = problem.createTreeNodes(ls, act, depthl, strategy)
             if pruning:
                 for node in ln:
                     if node._state._md5 not in problem._visitedList:
@@ -77,14 +77,6 @@ def search(problem, strategy, depthl, depthi, pruning):
         depthact += depthi
         print(sol)
     return sol
-
-def createTreeNodes(ls, node, depthl, strategy):
-    tree = []
-    if(depthl >= node._d):
-        for (action, result, cost) in ls:
-            s = treeNode(result, strategy, node, float(cost), action)
-            tree.append(s)
-    return tree
 
 def createSolution(sol, itime, etime):
     if(sol is not None):
