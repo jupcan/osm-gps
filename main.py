@@ -1,81 +1,109 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+from pprint import pprint, pformat
 from problem import problem
 from frontier import frontier
-from state import state
 from treeNode import treeNode
+from state import state
 import time
 import sys
 
-def stressTest(f,p):
-    elements = 0
-    avg = 0
-    maxim = 0
-    minim = 9999
-    """try:
-        while True:
-            try:
-                newState = state(str(int(p._init_state._current)+elements), p._init_state._nodes)
-                if(elements == 0):
-                    node = treeNode(p._init_state, 0, "", elements)
-                else:
-                    node = treeNode(newState, 0, "", elements)
-                start = time.time()
-                f.insert(node)
-                end = time.time()
-                elements+=1
-                timer = end - start
-                avg += timer
-                if(timer > maxim):
-                    maxim = timer
-                if(timer < minim):
-                    minim = timer
-            except MemoryError:
-                print("full memory")
-                print('nº elements: '+elements)
-                print('min time: %.11f' % minim)
-                print('max time: %.11f' %  maxim)
-                print('avg time: %.11f' % (avg/elements))
-                break
-    except KeyboardInterrupt:
-            print('avg time: %.11f' % (avg/elements))
-            print('min time: %.11f' % minim)
-            print('max time: %.11f' %  maxim)
-            return elements
-    return elements"""
-
 def main():
+    filename, strategy, pruning = askInfo()
+    depthl = int(input('depth: '))-1
+    if(strategy == 3): depthi = int(input('depth increment: '))
+    p = problem('%s.json' % filename)
+    print(p._state_space._path.lower())
+    itime = time.time()
+    #run algorithms
+    if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
+    else: sol = limSearch(p, strategy, depthl, pruning)
+    etime = time.time()
+    createSolution(sol, itime, etime)
+
+def askInfo():
     try:
         filename = input('json file: ')
         if filename.isdigit():
             raise ValueError
         print(filename + ".json") #print json file name
-        p = problem('%s.json' % filename)
-        tn1 = treeNode(p._init_state, 0, "", 0)
-        tn2 = treeNode(p._init_state, 1, "", 1)
-        tn3 = treeNode(p._init_state, 2, "", 2)
-        f = frontier()
-        f.insert(tn1)
-        f.insert(tn2)
-        f.insert(tn3)
-        #print(str(p._init_state))
-        print(p._state_space._path)
-        print(f._frontier)
-        f.remove()
-        print(f._frontier)
-        #print(p._init_state._md5)
-        print(p._state_space.belongNode(p._init_state))
-        p._state_space.successors(p._init_state)
-        print(p.isGoal(p._init_state))
-
-        """print('Waiting for memory error...or process abort (ctrl+c)')
-        start = time.time()
-        print('nº elements: '+str(stressTest(f,p)))
-        print('total time: %.11f' % (time.time() - start))
-        #print(f._frontier[min(f._frontier)])"""
-
+        switch = {
+        0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
+        3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
+        print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
+        strategy = int(input('strategy: '))
+        if isinstance(strategy, str) or strategy > 5 or strategy < 0: raise ValueError
+        yes = {'y','yes','yay'}; no = {'n','no','nay'}
+        pruning = input('pruning(y/n): ').lower()
+        if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
+        elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
+        else: raise ValueError
+        return filename, strategy, pruning
     except ValueError:
-        print("Error. Not a valid input")
+        print("Error. Not a valid input.")
+        sys.exit(1)
+
+def limSearch(problem, strategy, depthl, pruning):
+    f = frontier()
+    initial = treeNode(problem._init_state, strategy)
+    f.insert(initial)
+    problem._visitedList[initial._state._md5] = initial._f
+    sol = False
+    while(not sol and not f.isEmpty()):
+        act = f.remove()
+        if(problem.isGoal(act._state)): sol = True
+        else:
+            ls = problem._state_space.successors(act._state)
+            ln = problem.createTreeNodes(ls, act, depthl, strategy)
+            if pruning:
+                for node in ln:
+                    if node._state._md5 not in problem._visitedList:
+                        f.insert(node)
+                        problem._visitedList[node._state._md5] = node._f
+                    elif abs(node._f) < abs(problem._visitedList[node._state._md5]):
+                        f.insert(node)
+                        problem._visitedList[node._state._md5] = node._f
+            else:
+                for node in ln: f.insert(node)
+    if(sol): return act
+    else: return None
+
+def search(problem, strategy, depthl, depthi, pruning):
+    depthact = depthi
+    sol = None
+    while(not sol and depthact <= depthl+1):
+        print(depthact)
+        sol = limSearch(problem, strategy, depthact, pruning)
+        print(sol)
+        depthact += depthi
+    return sol
+
+def createSolution(sol, itime, etime):
+    if(sol is not None):
+        list = []
+        act = sol
+        list.append(act._action)
+        while(act._parent is not None and act._parent._action is not None):
+            list.append(act._parent._action)
+            act = act._parent
+        list.reverse()
+        print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, etime-itime))
+        pprint(list)
+        writeSolution(sol, itime, etime, list)
+    else:
+        print('no solution found for the given depth limit')
+
+def writeSolution(sol, itime, etime, list):
+    txt = open('out.txt','w')
+    if(sol is not None):
+        line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
+        line2 = 'goal node: %s\n' % str(sol)
+        line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
+        line4 = pformat(list)
+        txt.writelines([line1, line2, line3, line4])
+    else:
+        txt.write('no solution found for the given depth limit')
+    txt.close()
 
 if __name__ == '__main__':
     main()

@@ -41,8 +41,7 @@ class stateSpace():
     def positionNode(self, id):
         #input: problem state, output: latitude&longitude[(y,x)] of current node
         try:
-            node_exists = self.belongNode(id)
-            if node_exists:
+            if self.belongNode(id):
                 return [self._nodes[id]]
             else:
                 raise ValueError
@@ -52,25 +51,19 @@ class stateSpace():
     def successors(self, id):
         #input: problem state, output: list of adjacent nodes + extra info
         try:
-            node_exists = self.belongNode(id)
             successors = []
-            if node_exists:
+            if self.belongNode(id):
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
-                    #streets[data] = tuple(self._edges[data])
-                    acc = "I'm in %s and I go to %s" % (data[0], data[1])
-                    aux = state(data[1], id.visited(data[1], id._nodes))
+                    acc = "I'm in %s and I go to %s" % (data[0].zfill(10), data[1].zfill(10))
+                    aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
                     #!(heuristhic)!
                     """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
-                    successors.append((acc, str(aux), cost))
-                    new_md5 =  aux.createCode(aux._current, aux._nodes)
-                    print("%s state md5: %s" % (aux._current, new_md5))
-                for tup in successors:
-                    print(tup[0], tup[1], tup[2])
-                #return successors
+                    successors.append((acc, aux, cost))
+                return successors
             else:
                 raise ValueError
         except ValueError:

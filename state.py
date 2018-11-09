@@ -21,5 +21,8 @@ class state():
         else:
             return old_list
 
+    def updateCode(self, aux):
+        self._md5 = self.createCode(aux._current, aux._nodes)
+
     def __str__(self):
         return f'({self._current}, {self._nodes})'

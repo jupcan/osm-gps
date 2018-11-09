@@ -8,14 +8,19 @@ whole project developed using **python3**
 sudo apt-get install python3.6
 ```
 
-also using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
+using **lxml library** to represent the xml files data in a tree an then generate our own internal representation of it
 ```
 sudo apt-get install python3-lxml
 ```
 
+and also **sorted containers** one to use some of the data structures it offers such as ordered dictionaries
+```
+python3 -m pip install sortedcontainers
+```
+
 ## [task1](/reqs/task1.pdf)
 generation of a internal representation of a graph with geographical data from osm
-given a file in format grahml, the students must write a class ”graph” containing:
+given a file in format grahml
 - a **[constructor][i5]**, that receives as parameter the name of the file graphml
 - methods: **[belongNode][i6]**, **[positionNode][i7]** and **[adjacentNode][i8]**
 
@@ -80,6 +85,59 @@ that is, for the initial state we look for its succesors updating each time the 
 
 delivered [task2 documentation](/docs/task2.pdf)
 
+## task3
+basic version of the [search algorithms][i15]
+- breath-first search
+- depth-first search, depth-limited search and iterative deepening dearch
+- uniform cost
+
+we need all classes defined in **task2** and some input values asked to the user to generate a [txt file][i16] containing a sequence of states corresponding to the path solution if exists for each of the algorithms mentioned before. we have also implemented a [visited list][i17] to be able to run all the algorithms with pruning which makes them much more efficient and fast.
+
+here we have a possible inputs combination to our code and its corresponding output file
+
+```python
+json file: example
+example.json
+0: breath-first search
+1: depth-first search
+2: depth-limited search
+3: iterative deepening search
+4: uniform cost search
+5: a* search
+strategy: 0
+pruning(y/n): y
+breath-first search w/ pruning
+depth: 999
+data/anchuras.graphml.xml
+cost: 690.552000, depth: 12, elapsed time: 0.012542s
+check out.txt for more info
+```
+
+```txt
+output.txt
+cost: 690.552000, depth: 12, elapsed time: 0.012542s
+goal node: <treeNode.treeNode object at 0x7f5c4a5da7f0>
+time and date: 16:41:46-09/11/2018
+
+["I'm in 4331489739 and I go to 4331489738",
+ "I'm in 4331489738 and I go to 4331489532",
+ "I'm in 4331489532 and I go to 0946409139",
+ "I'm in 0946409139 and I go to 4331489528",
+ "I'm in 4331489528 and I go to 4331489718",
+ "I'm in 4331489718 and I go to 4331489716",
+ "I'm in 4331489716 and I go to 4331489709",
+ "I'm in 4331489709 and I go to 4331489549",
+ "I'm in 4331489549 and I go to 4331489550",
+ "I'm in 4331489550 and I go to 4331489692",
+ "I'm in 4331489692 and I go to 4331489662",
+ "I'm in 4331489662 and I go to 4331489668"]
+```
+the generated file includes the cost of the solution, the depth where it is found and the time spent to reach it alongside all the actions path printed in order; i go from node1 to node2 and so on until we have passed throught all the desired nodes and reached the goal applying the given algorithm, if no solution is found an error is printed instead both on console and file.
+
+delivered [task3 documentation](/docs/task3.pdf)
+
+## [task4](/reqs/task4.pdf)
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
@@ -89,3 +147,6 @@ delivered [task2 documentation](/docs/task2.pdf)
 [i12]: https://github.com/jupcan/osm-gps/issues/12
 [i13]: https://github.com/jupcan/osm-gps/issues/13
 [i14]: https://github.com/jupcan/osm-gps/issues/14
+[i15]: https://github.com/jupcan/osm-gps/issues/19
+[i16]: https://github.com/jupcan/osm-gps/issues/20
+[i17]: https://github.com/jupcan/osm-gps/issues/22
