@@ -131,6 +131,7 @@ time and date: 16:41:46-09/11/2018
  "I'm in 4331489692 and I go to 4331489662",
  "I'm in 4331489662 and I go to 4331489668"]
 ```
+***txt generated file*
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
