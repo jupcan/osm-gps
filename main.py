@@ -71,11 +71,11 @@ def limSearch(problem, strategy, depthl, pruning):
 def search(problem, strategy, depthl, depthi, pruning):
     depthact = depthi
     sol = None
-    while(not sol and depthact <= depthl):
+    while(not sol and depthact <= depthl+1):
         print(depthact)
         sol = limSearch(problem, strategy, depthact, pruning)
-        depthact += depthi
         print(sol)
+        depthact += depthi
     return sol
 
 def createSolution(sol, itime, etime):

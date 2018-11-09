@@ -20,7 +20,7 @@ python3 -m pip install sortedcontainers
 
 ## [task1](/reqs/task1.pdf)
 generation of a internal representation of a graph with geographical data from osm
-given a file in format grahml, the students must write a class ”graph” containing:
+given a file in format grahml
 - a **[constructor][i5]**, that receives as parameter the name of the file graphml
 - methods: **[belongNode][i6]**, **[positionNode][i7]** and **[adjacentNode][i8]**
 
@@ -84,6 +84,14 @@ True
 that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state and printing the frontier of the problem once inserting three treeNode object examples and removing one of them.
 
 delivered [task2 documentation](/docs/task2.pdf)
+
+## task3
+basic version of the search algorithms
+- breath-first search
+- depth-first search, depth-limited search and iterative deepening dearch
+- uniform cost
+
+we need all classes defined in task2 and some input values asked to the user to generate a txt file containing a sequence of states corresponding to the path solution if exists.
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
