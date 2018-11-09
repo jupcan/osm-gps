@@ -91,7 +91,7 @@ basic version of the search algorithms
 - depth-first search, depth-limited search and iterative deepening dearch
 - uniform cost
 
-we need all classes defined in task2 and some input values asked to the user to generate a txt file containing a sequence of states corresponding to the path solution if exists.
+we need all classes defined in **task2** and some input values asked to the user to generate a txt file containing a sequence of states corresponding to the path solution if exists.
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
