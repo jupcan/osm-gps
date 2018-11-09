@@ -93,6 +93,26 @@ basic version of the [search algorithms][i15]
 
 we need all classes defined in **task2** and some input values asked to the user to generate a [txt file][i16] containing a sequence of states corresponding to the path solution if exists for each of the algorithms mentioned before. we have also implemented a [visited list][i17] to be able to tun all the algorithms with pruning whicch makes then much more efficient and fast.
 
+here we have a possible inputs combination to our code and its output file
+
+```python
+json file: example
+example.json
+0: breath-first search
+1: depth-first search
+2: depth-limited search
+3: iterative deepening search
+4: uniform cost search
+5: a* search
+strategy: 0
+pruning(y/n): y
+breath-first search w/ pruning
+depth: 999
+data/anchuras.graphml.xml
+cost: 690.552000, depth: 12, elapsed time: 0.012542s
+check out.txt for more info
+```
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
