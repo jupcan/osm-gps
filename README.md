@@ -91,7 +91,7 @@ basic version of the [search algorithms][i15]
 - depth-first search, depth-limited search and iterative deepening dearch
 - uniform cost
 
-we need all classes defined in **task2** and some input values asked to the user to generate a [txt file][i16] containing a sequence of states corresponding to the path solution if exists for each of the algorithms mentioned before. we have also implemented a [visited list][i17] to be able to tun all the algorithms with pruning whicch makes then much more efficient and fast.
+we need all classes defined in **task2** and some input values asked to the user to generate a [txt file][i16] containing a sequence of states corresponding to the path solution if exists for each of the algorithms mentioned before. we have also implemented a [visited list][i17] to be able to run all the algorithms with pruning which makes them much more efficient and fast.
 
 here we have a possible inputs combination to our code and its corresponding output file
 
