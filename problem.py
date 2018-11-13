@@ -25,9 +25,9 @@ class problem():
             return True
 
     def createTreeNodes(self, ls, node, depthl, strategy):
-        tree = []
+        nodes = []
         if(depthl >= node._d):
             for (action, result, cost) in ls:
                 s = treeNode(result, strategy, node, float(cost), action)
-                tree.append(s)
-        return tree
+                nodes.append(s)
+        return nodes
