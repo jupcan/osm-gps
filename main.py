@@ -17,9 +17,9 @@ def main():
     itime = time.time()
     #run algorithms
     if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
-    else: sol = limSearch(p, strategy, depthl, pruning)
+    else: sol, num_f = limSearch(p, strategy, depthl, pruning)
     etime = time.time()
-    createSolution(sol, itime, etime)
+    createSolution(sol, itime, etime, num_f)
 
 def askInfo():
     try:
@@ -45,8 +45,10 @@ def askInfo():
 
 def limSearch(problem, strategy, depthl, pruning):
     f = frontier()
+    num_f = 0
     initial = treeNode(problem._init_state, strategy)
     f.insert(initial)
+    num_f += 1
     problem._visitedList[initial._state._md5] = initial._f
     sol = False
     while(not sol and not f.isEmpty()):
@@ -59,13 +61,15 @@ def limSearch(problem, strategy, depthl, pruning):
                 for node in ln:
                     if node._state._md5 not in problem._visitedList:
                         f.insert(node)
+                        num_f += 1
                         problem._visitedList[node._state._md5] = node._f
                     elif abs(node._f) < abs(problem._visitedList[node._state._md5]):
                         f.insert(node)
+                        num_f += 1
                         problem._visitedList[node._state._md5] = node._f
             else:
                 for node in ln: f.insert(node)
-    if(sol): return act
+    if(sol): return act, num_f
     else: return None
 
 def search(problem, strategy, depthl, depthi, pruning):
@@ -78,7 +82,7 @@ def search(problem, strategy, depthl, depthi, pruning):
         depthact += depthi
     return sol
 
-def createSolution(sol, itime, etime):
+def createSolution(sol, itime, etime, num_f):
     if(sol is not None):
         list = []
         act = sol
@@ -87,16 +91,15 @@ def createSolution(sol, itime, etime):
             list.append(act._parent._action)
             act = act._parent
         list.reverse()
-        print('cost: %f, depth: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, etime-itime))
-        pprint(list)
-        writeSolution(sol, itime, etime, list)
+        print('cost: %f, depth: %d, elements: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
+        writeSolution(sol, itime, etime, num_f, list)
     else:
         print('no solution found for the given depth limit')
 
-def writeSolution(sol, itime, etime, list):
+def writeSolution(sol, itime, etime, num_f, list):
     txt = open('out.txt','w')
     if(sol is not None):
-        line1 = 'cost: %f, depth: %d, elapsed time: %fs\n' % (sol._cost, sol._d, etime-itime)
+        line1 = 'cost: %f, depth: %d, elements: %d, elapsed time: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
