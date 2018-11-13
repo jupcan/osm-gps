@@ -47,8 +47,7 @@ def limSearch(problem, strategy, depthl, pruning):
     f = frontier()
     num_f = 0
     initial = treeNode(problem._init_state, strategy)
-    f.insert(initial)
-    num_f += 1
+    f.insert(initial); num_f += 1
     problem._visitedList[initial._state._md5] = initial._f
     sol = False
     while(not sol and not f.isEmpty()):
@@ -60,12 +59,10 @@ def limSearch(problem, strategy, depthl, pruning):
             if pruning:
                 for node in ln:
                     if node._state._md5 not in problem._visitedList:
-                        f.insert(node)
-                        num_f += 1
+                        f.insert(node); num_f += 1
                         problem._visitedList[node._state._md5] = node._f
                     elif abs(node._f) < abs(problem._visitedList[node._state._md5]):
-                        f.insert(node)
-                        num_f += 1
+                        f.insert(node); num_f += 1
                         problem._visitedList[node._state._md5] = node._f
             else:
                 for node in ln: f.insert(node)
