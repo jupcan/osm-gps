@@ -14,7 +14,7 @@ class problem():
         self._visitedList = {}
 
     def _readJson(self):
-        with open(self._json) as json_data:
+        with open('json/' + self._json) as json_data:
             return json.load(json_data)
 
     def isGoal(self, state):
