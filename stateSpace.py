@@ -50,8 +50,8 @@ class stateSpace():
 
     def distance(self, node1, node2):
         """
-        :param idNode1: node id string
-        :param idNode2: node id string
+        :param node1: node id string
+        :param node2: node id string
         :return: distance (meters) between idNode1 and idNode2
         """
         (lng1, lat1) = self.positionNode(node1)
