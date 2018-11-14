@@ -3,7 +3,6 @@ from stateSpace import stateSpace
 from treeNode import treeNode
 import json
 import hashlib
-import math
 
 class problem():
     def __init__(self, json):
@@ -28,7 +27,7 @@ class problem():
     def createTreeNodes(self, ls, node, depthl, strategy):
         nodes = []
         if(depthl >= node._d):
-            for (action, result, cost) in ls:
-                s = treeNode(result, strategy, node, float(cost), action)
+            for (action, result, cost, heu) in ls:
+                s = treeNode(result, strategy, node, float(cost), action, heu)
                 nodes.append(s)
         return nodes
