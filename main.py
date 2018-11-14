@@ -88,7 +88,7 @@ def createSolution(sol, itime, etime, num_f):
             list.append(act._parent._action)
             act = act._parent
         list.reverse()
-        print('cost: %f, depth: %d, elements: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
+        print('cost: %.3f, depth: %d, elements: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         writeSolution(sol, itime, etime, num_f, list)
     else:
         print('no solution found for the given depth limit')
@@ -96,7 +96,7 @@ def createSolution(sol, itime, etime, num_f):
 def writeSolution(sol, itime, etime, num_f, list):
     txt = open('out.txt','w')
     if(sol is not None):
-        line1 = 'cost: %f, depth: %d, elements: %d, elapsed time: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
+        line1 = 'cost: %.3f, depth: %d, elements: %d, elapsed time: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
