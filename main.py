@@ -11,9 +11,11 @@ import sys
 def main():
     filename, strategy, depthl, pruning = askInfo()
     if(strategy == 3): depthi = int(input('depth increment: '))
+
     p = problem('%s.json' % filename)
     print(p._state_space._path.lower())
     itime = time.time()
+
     #run algorithms
     if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
     else: sol, num_f = limSearch(p, strategy, depthl, pruning)
@@ -30,13 +32,16 @@ def askInfo():
         0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
         3: 'iterative deepening search', 4: 'uniform cost search', 5: 'greedy search', 6: 'a* search'}
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
+
         strategy = int(input('strategy: '))
         if isinstance(strategy, str) or strategy > 6 or strategy < 0: raise ValueError
+
         yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
         if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
         elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
         else: raise ValueError
+
         depthl = int(input('depth: '))-1
         if isinstance(depthl, str): raise ValueError
         return filename, strategy, depthl, pruning
