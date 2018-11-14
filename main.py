@@ -14,8 +14,8 @@ def main():
 
     p = problem('%s.json' % filename)
     print(p._state_space._path.lower())
-    itime = time.time()
 
+    itime = time.time()
     #run algorithms
     if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
     else: sol, num_f = limSearch(p, strategy, depthl, pruning)

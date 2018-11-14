@@ -49,11 +49,6 @@ class stateSpace():
             print("Error. The node does not exist.")
 
     def distance(self, node1, node2):
-        """
-        :param node1: node id string
-        :param node2: node id string
-        :return: distance (meters) between idNode1 and idNode2
-        """
         (lng1, lat1) = self.positionNode(node1)
         (lng2, lat2) = self.positionNode(node2)
         earth_radius = 6371009
