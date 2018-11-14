@@ -58,9 +58,9 @@ class stateSpace():
         (lng2, lat2) = self.positionNode(node2)
         earth_radius = 6371009
 
-        phi1 = math.radians(float(lat1)); phi2 = math.radians(float(lat2)); d_phi = phi2 - phi1
-        theta1 = math.radians(float(lng1)); theta2 = math.radians(float(lng2)); d_theta = theta2 - theta1
-
+        phi1 = math.radians(float(lat1)); phi2 = math.radians(float(lat2))
+        theta1 = math.radians(float(lng1)); theta2 = math.radians(float(lng2))
+        d_phi = phi2 - phi1; d_theta = theta2 - theta1
         h = math.sin(d_phi/2)**2 +math.cos(phi1)*math.cos(phi2)*math.sin(d_theta/2)**2
         h = min(1.0, h) #protect against floating point errors
         arc = 2*math.asin(math.sqrt(h))
