@@ -1,6 +1,5 @@
 from lxml import etree
 from state import state
-import math
 
 class stateSpace():
     def __init__(self, path):
@@ -42,11 +41,32 @@ class stateSpace():
         #input: problem state, output: latitude&longitude[(y,x)] of current node
         try:
             if self.belongNode(id):
-                return [self._nodes[id]]
+                return self._nodes[id]
             else:
                 raise ValueError
         except ValueError:
             print("Error. The node does not exist.")
+
+    def distance(self, idNode1, ideNode2):
+        """
+        :param idNode1: node id string
+        :param idNode2: node id string
+        :return: distance (meters) between idNode1 and idNode2
+        """
+        (lng1, lat1) = self.positionNode(idNode1)
+        (lng2, lat2) = self.positionNode(idNode2)
+        earth_radius = 6371009
+
+        phi1 = math.radians(lat1); phi2 = math.radians(lat2); d_phi = phi2 - phi1
+        theta1 = math.radians(lng1); theta2 = math.radians(lng2); d_theta = theta2 - theta1
+
+        h = math.sin(d_phi/2)**2 +math.cos(phi1)*math.cos(phi2)*math.sin(d_theta/2)**2
+        h = min(1.0, h) #protect against floating point errors
+        arc = 2*math.asin(math.sqrt(h))
+
+        #return distance in units of earth_radius
+        dist = arc*earth_radius
+        return dist
 
     def successors(self, id):
         #input: problem state, output: list of adjacent nodes + extra info
@@ -59,6 +79,8 @@ class stateSpace():
                     aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
                     #!(heuristhic)!
+                    print(self.positionNode(aux))
+                    #heu = self.distance()
                     """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
                     dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
                     cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""

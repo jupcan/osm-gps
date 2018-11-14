@@ -3,6 +3,7 @@ from stateSpace import stateSpace
 from treeNode import treeNode
 import json
 import hashlib
+import math
 
 class problem():
     def __init__(self, json):

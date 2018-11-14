@@ -9,8 +9,7 @@ import time
 import sys
 
 def main():
-    filename, strategy, pruning = askInfo()
-    depthl = int(input('depth: '))-1
+    filename, strategy, depthl, pruning = askInfo()
     if(strategy == 3): depthi = int(input('depth increment: '))
     p = problem('%s.json' % filename)
     print(p._state_space._path.lower())
@@ -29,16 +28,18 @@ def askInfo():
         print(filename + ".json") #print json file name
         switch = {
         0: 'breath-first search', 1: 'depth-first search', 2: 'depth-limited search',\
-        3: 'iterative deepening search', 4: 'uniform cost search', 5: 'a* search'}
+        3: 'iterative deepening search', 4: 'uniform cost search', 5: 'greedy search', 6: 'a* search'}
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
         strategy = int(input('strategy: '))
-        if isinstance(strategy, str) or strategy > 5 or strategy < 0: raise ValueError
+        if isinstance(strategy, str) or strategy > 6 or strategy < 0: raise ValueError
         yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
         if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
         elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
         else: raise ValueError
-        return filename, strategy, pruning
+        depthl = int(input('depth: '))-1
+        if isinstance(depthl, str): raise ValueError
+        return filename, strategy, depthl, pruning
     except ValueError:
         print("Error. Not a valid input.")
         sys.exit(1)
@@ -88,7 +89,7 @@ def createSolution(sol, itime, etime, num_f):
             list.append(act._parent._action)
             act = act._parent
         list.reverse()
-        print('cost: %.3f, depth: %d, elements: %d, elapsed time: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
+        print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         writeSolution(sol, itime, etime, num_f, list)
     else:
         print('no solution found for the given depth limit')
@@ -96,7 +97,7 @@ def createSolution(sol, itime, etime, num_f):
 def writeSolution(sol, itime, etime, num_f, list):
     txt = open('out.txt','w')
     if(sol is not None):
-        line1 = 'cost: %.3f, depth: %d, elements: %d, elapsed time: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
+        line1 = 'cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
