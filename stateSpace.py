@@ -41,7 +41,7 @@ class stateSpace():
         #input: problem state, output: latitude&longitude[(y,x)] of current node
         try:
             if self.belongNode(id):
-                return self._nodes[id]
+                return self._nodes[id._current]
             else:
                 raise ValueError
         except ValueError:
