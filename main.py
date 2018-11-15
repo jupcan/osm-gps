@@ -5,6 +5,7 @@ from problem import problem
 from frontier import frontier
 from treeNode import treeNode
 from state import state
+import mapnik
 import time
 import sys
 
@@ -96,6 +97,7 @@ def createSolution(sol, itime, etime, num_f):
         list.reverse()
         print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         writeSolution(sol, itime, etime, num_f, list)
+        #createMap()
     else:
         print('no solution found for the given depth limit')
 
@@ -110,6 +112,12 @@ def writeSolution(sol, itime, etime, num_f, list):
     else:
         txt.write('no solution found for the given depth limit')
     txt.close()
+
+"""def createMap():
+    map = mapnik.Map(600, 300)
+    mapnik.load_map(map, 'world.xml')
+    map.zoom_all()
+    mapnik.render_to_file(map, 'test.svg', 'svg')"""
 
 if __name__ == '__main__':
     main()
