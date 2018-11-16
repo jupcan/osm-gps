@@ -5,8 +5,8 @@ from problem import problem
 from frontier import frontier
 from treeNode import treeNode
 from state import state
-from yattag import Doc
 from subprocess import call
+from lxml import etree
 import time
 import sys
 
@@ -90,6 +90,7 @@ def search(problem, strategy, depthl, depthi, pruning):
     return sol
 
 def createSolution(sol, itime, etime, num_f):
+    txt = open('solu/out.txt','w')
     if(sol is not None):
         list = []
         act = sol
@@ -99,24 +100,17 @@ def createSolution(sol, itime, etime, num_f):
             act = act._parent
         list.reverse()
         print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
-        writeSolution(sol, itime, etime, num_f, list)
-    else:
-        print('no solution found for the given depth limit')
-
-def writeSolution(sol, itime, etime, num_f, list):
-    txt = open('solu/out.txt','w')
-    if(sol is not None):
         line1 = 'cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
         txt.writelines([line1, line2, line3, line4])
     else:
+        print('no solution found for the given depth limit')
         txt.write('no solution found for the given depth limit')
     txt.close()
 
 def createGpx(problem, sol):
-    gpx = open('solu/out.gpx','w')
     if(sol is not None):
         list = []
         act = sol
@@ -126,17 +120,17 @@ def createGpx(problem, sol):
             act = act._parent
         list.reverse()
 
-    doc, tag, text = Doc().tagtext()
-    doc.asis('<?xml version="1.0" encoding="UTF-8"?>\n')
-    with tag('gpx', version='1.0'):
-        with tag('trk'):
-            with tag('name'):
-                text('solgpx')
-            with tag('trkseg'):
-                text('\n')
-                for n in list:
-                    with tag('trkpt', lat=n[0], lon=n[1]): text('\n')
-    gpx.write(doc.getvalue())
+    gpx = open('solu/out.gpx','wb')
+    root = etree.Element('gpx', version='1.0'); root.text = '\n'
+    trk = etree.SubElement(root, 'trk');
+    name = etree.SubElement(trk, 'name'); name.text = 'out.gpx'
+    trkseg = etree.SubElement(trk, 'trkseg'); trkseg.text = '\n'
+    for n in list:
+        trkpt = etree.SubElement(trkseg, 'trkpt', lat=n[0].zfill(10), lon=n[1].zfill(10)); trkpt.tail = '\n'
+        date = etree.SubElement(trkpt, 'time'); date.text = time.strftime('%Y-%m-%dT%H:%M:%S')
+    doc = etree.ElementTree(root)
+    doc.write(gpx, xml_declaration=True, encoding='utf-8')
+    gpx.close()
 
 if __name__ == '__main__':
     main()
