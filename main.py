@@ -4,8 +4,8 @@ from pprint import pprint, pformat
 from problem import problem
 from frontier import frontier
 from treeNode import treeNode
-from state import state
 from subprocess import call
+from state import state
 from lxml import etree
 import time
 import sys
