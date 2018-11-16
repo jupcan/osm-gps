@@ -123,8 +123,9 @@ def createGpx(list):
             with tag('name'):
                 text('solgpx')
             with tag('trkseg'):
+                text('\n')
                 for n in list:
-                    with tag('trkpt', lat='39.4026419', lon='-3.1254799'): text('')
+                    with tag('trkpt', lat='39.4026419', lon='-3.1254799'): text('\n')
     gpx.write(doc.getvalue())
 
 if __name__ == '__main__':
