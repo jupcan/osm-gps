@@ -23,7 +23,7 @@ def main():
     else: sol, num_f = limSearch(p, strategy, depthl, pruning)
     etime = time.time()
     createSolution(sol, itime, etime, num_f)
-    createGpx(p, sol)
+    createGpx(p, sol, itime, etime, num_f)
     call(['solu/gpx2svg', '-i', 'solu/out.gpx', '-o', 'solu/out.svg'])
 
 def askInfo():
@@ -110,20 +110,29 @@ def createSolution(sol, itime, etime, num_f):
         txt.write('no solution found for the given depth limit')
     txt.close()
 
-def createGpx(problem, sol):
+def createGpx(problem, sol, itime, etime, num_f):
     if(sol is not None):
-        list = []
+        list, points = [], []
         act = sol
         list.append(problem._state_space.positionNode(act._state._current))
         while(act._parent is not None and act._parent._action is not None):
             list.append(problem._state_space.positionNode(act._parent._state._current))
             act = act._parent
         list.reverse()
+        points.append(problem._init_state._current)
+        for i in problem._init_state._nodes: points.append(i)
 
     gpx = open('solu/out.gpx','wb')
     root = etree.Element('gpx', version='1.0'); root.text = '\n'
-    trk = etree.SubElement(root, 'trk');
-    name = etree.SubElement(trk, 'name'); name.text = 'out.gpx'
+    for n in points:
+        wpt = etree.SubElement(root, 'wpt', lat=problem._state_space.positionNode(n)[0], lon=problem._state_space.positionNode(n)[1]); wpt.tail = '\n'
+        w_name = etree.SubElement(wpt, 'name'); w_name.text = n
+        w_desc = etree.SubElement(wpt, 'desc'); w_desc.text = problem._state_space.positionNode(n)[0] + ', ' + problem._state_space.positionNode(n)[1]
+    trk = etree.SubElement(root, 'trk')
+    t_name = etree.SubElement(trk, 'name'); t_name.text = 'out.gpx'; t_name.tail = '\n'
+    desc = etree.SubElement(trk, 'desc'); desc.text = 'cost: %.3f, depth: %d, scxty: %d, tcxty: %fs' % (sol._cost, sol._d, num_f, etime-itime); desc.tail = '\n'
+    link = etree.SubElement(trk, 'link', href='http://www.uclm.es')
+    text = link = etree.SubElement(link, 'text'); text.text = 'uclm project'
     trkseg = etree.SubElement(trk, 'trkseg'); trkseg.text = '\n'
     for n in list:
         trkpt = etree.SubElement(trkseg, 'trkpt', lat=n[0].zfill(10), lon=n[1].zfill(10)); trkpt.tail = '\n'
