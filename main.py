@@ -6,6 +6,7 @@ from frontier import frontier
 from treeNode import treeNode
 from state import state
 from yattag import Doc
+from subprocess import call
 import time
 import sys
 
@@ -22,6 +23,8 @@ def main():
     else: sol, num_f = limSearch(p, strategy, depthl, pruning)
     etime = time.time()
     createSolution(sol, itime, etime, num_f)
+    createGpx(p, sol)
+    call(['solu/gpx2svg', '-i', 'solu/out.gpx', '-o', 'solu/out.svg'])
 
 def askInfo():
     try:
@@ -97,12 +100,11 @@ def createSolution(sol, itime, etime, num_f):
         list.reverse()
         print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         writeSolution(sol, itime, etime, num_f, list)
-        createGpx(list)
     else:
         print('no solution found for the given depth limit')
 
 def writeSolution(sol, itime, etime, num_f, list):
-    txt = open('out.txt','w')
+    txt = open('solu/out.txt','w')
     if(sol is not None):
         line1 = 'cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
         line2 = 'goal node: %s\n' % str(sol)
@@ -113,11 +115,19 @@ def writeSolution(sol, itime, etime, num_f, list):
         txt.write('no solution found for the given depth limit')
     txt.close()
 
-def createGpx(list):
-    gpx = open('out.gpx','w')
+def createGpx(problem, sol):
+    gpx = open('solu/out.gpx','w')
+    if(sol is not None):
+        list = []
+        act = sol
+        list.append(problem._state_space.positionNode(act._state._current))
+        while(act._parent is not None and act._parent._action is not None):
+            list.append(problem._state_space.positionNode(act._parent._state._current))
+            act = act._parent
+        list.reverse()
+
     doc, tag, text = Doc().tagtext()
     doc.asis('<?xml version="1.0" encoding="UTF-8"?>\n')
-
     with tag('gpx', version='1.0'):
         with tag('trk'):
             with tag('name'):
@@ -125,7 +135,7 @@ def createGpx(list):
             with tag('trkseg'):
                 text('\n')
                 for n in list:
-                    with tag('trkpt', lat='39.4026419', lon='-3.1254799'): text('\n')
+                    with tag('trkpt', lat=n[0], lon=n[1]): text('\n')
     gpx.write(doc.getvalue())
 
 if __name__ == '__main__':
