@@ -101,7 +101,7 @@ def createSolution(sol, itime, etime, num_f):
         list.reverse()
         print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         line1 = 'cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\n' % (sol._cost, sol._d, num_f, etime-itime)
-        line2 = 'goal node: %s\n' % str(sol)
+        line2 = 'goal node: %s - %s\n' % (sol, sol._state._current)
         line3 = time.strftime('time and date: %H:%M:%S-%d/%m/%Y\n\n')
         line4 = pformat(list)
         txt.writelines([line1, line2, line3, line4])
