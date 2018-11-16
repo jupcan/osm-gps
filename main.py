@@ -5,7 +5,7 @@ from problem import problem
 from frontier import frontier
 from treeNode import treeNode
 from state import state
-import mapnik
+from yattag import Doc
 import time
 import sys
 
@@ -97,7 +97,7 @@ def createSolution(sol, itime, etime, num_f):
         list.reverse()
         print('cost: %.3f, depth: %d, spatialcxty: %d, temporalcxty: %fs\ncheck out.txt for more info' % (sol._cost, sol._d, num_f, etime-itime))
         writeSolution(sol, itime, etime, num_f, list)
-        #createMap()
+        createGpx(list)
     else:
         print('no solution found for the given depth limit')
 
@@ -113,11 +113,19 @@ def writeSolution(sol, itime, etime, num_f, list):
         txt.write('no solution found for the given depth limit')
     txt.close()
 
-"""def createMap():
-    map = mapnik.Map(600, 300)
-    mapnik.load_map(map, 'world.xml')
-    map.zoom_all()
-    mapnik.render_to_file(map, 'test.svg', 'svg')"""
+def createGpx(list):
+    gpx = open('out.gpx','w')
+    doc, tag, text = Doc().tagtext()
+    doc.asis('<?xml version="1.0" encoding="UTF-8"?>\n')
+
+    with tag('gpx', version='1.0'):
+        with tag('trk'):
+            with tag('name'):
+                text('solgpx')
+            with tag('trkseg'):
+                for n in list:
+                    with tag('trkpt', lat='39.4026419', lon='-3.1254799'): text('')
+    gpx.write(doc.getvalue())
 
 if __name__ == '__main__':
     main()
