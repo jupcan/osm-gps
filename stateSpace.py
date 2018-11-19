@@ -1,6 +1,7 @@
 from lxml import etree
 from state import state
 import math
+import sys
 
 class stateSpace():
     def __init__(self, path):
@@ -33,10 +34,8 @@ class stateSpace():
 
     def belongNode(self, id):
         #input: osm node, output: true/false if in nodes
-        if id in self._nodes:
-            return True
-        else:
-            return False
+        if id in self._nodes: return True
+        else: return False
 
     def positionNode(self, id):
         #input: osm node, output: latitude&longitude(y,x) of current node
@@ -46,7 +45,7 @@ class stateSpace():
             else:
                 raise ValueError
         except ValueError:
-            print("Error. The node does not exist.")
+            print("error. the node does not exist"); sys.exit(1)
 
     def distance(self, node1, node2):
         (lng1, lat1) = self.positionNode(node1)
@@ -80,4 +79,4 @@ class stateSpace():
             else:
                 raise ValueError
         except ValueError:
-            print("Error. The node does not exist.")
+            print("error. the node does not belong to given json"); sys.exit(1)

@@ -50,7 +50,7 @@ def askInfo():
         if isinstance(depthl, str): raise ValueError
         return filename, strategy, depthl, pruning
     except ValueError:
-        print("Error. Not a valid input.")
+        print("error. not a valid input")
         sys.exit(1)
 
 def limSearch(problem, strategy, depthl, pruning):
