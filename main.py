@@ -7,11 +7,10 @@ from treeNode import treeNode
 from subprocess import call
 from state import state
 from lxml import etree
-import time
-import sys
+import time, sys, gc, os
 
 def main():
-    filename, strategy, depthl, pruning = askInfo()
+    filename, strategy, depthl, pruning, stat = askInfo()
     if(strategy == 3): depthi = int(input('depth increment: '))
 
     p = problem('%s.json' % filename)
@@ -23,7 +22,7 @@ def main():
     else: sol, num_f = limSearch(p, strategy, depthl, pruning)
     etime = time.time()
     createSolution(sol, itime, etime, num_f)
-    createGpx(p, sol, itime, etime, num_f)
+    createGpx(p, sol, itime, etime, num_f, stat)
     call(['solu/gpx2svg', '-i', 'solu/out.gpx', '-o', 'solu/out.svg'])
 
 def askInfo():
@@ -42,13 +41,13 @@ def askInfo():
 
         yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
-        if pruning in yes: pruning = True; print(switch[strategy] + ' w/ pruning')
-        elif pruning in no: pruning = False; print(switch[strategy] + ' w/o pruning')
+        if pruning in yes: pruning = True; stat = switch[strategy] + ' w/ pruning'; print(stat)
+        elif pruning in no: pruning = False; stat = switch[strategy] + ' w/o pruning'; print(stat)
         else: raise ValueError
 
         depthl = int(input('depth: '))-1
         if isinstance(depthl, str): raise ValueError
-        return filename, strategy, depthl, pruning
+        return filename, strategy, depthl, pruning, stat
     except ValueError:
         print("error. not a valid input")
         sys.exit(1)
@@ -110,7 +109,7 @@ def createSolution(sol, itime, etime, num_f):
         txt.write('no solution found for the given depth limit')
     txt.close()
 
-def createGpx(problem, sol, itime, etime, num_f):
+def createGpx(problem, sol, itime, etime, num_f, stat):
     if(sol is not None):
         list, points = [], []
         act = sol
@@ -130,7 +129,7 @@ def createGpx(problem, sol, itime, etime, num_f):
         w_desc = etree.SubElement(wpt, 'desc'); w_desc.text = problem._state_space.positionNode(n)[0] + ', ' + problem._state_space.positionNode(n)[1]
     trk = etree.SubElement(root, 'trk')
     t_name = etree.SubElement(trk, 'name'); t_name.text = 'out.gpx'; t_name.tail = '\n'
-    desc = etree.SubElement(trk, 'desc'); desc.text = 'cost: %.3f, depth: %d, scxty: %d, tcxty: %fs' % (sol._cost, sol._d, num_f, etime-itime); desc.tail = '\n'
+    desc = etree.SubElement(trk, 'desc'); desc.text = '%s, cost: %.3f, depth: %d, scxty: %d, tcxty: %fs' % (stat, sol._cost, sol._d, num_f, etime-itime); desc.tail = '\n'
     link = etree.SubElement(trk, 'link', href='http://www.uclm.es')
     text = link = etree.SubElement(link, 'text'); text.text = 'uclm project'
     trkseg = etree.SubElement(trk, 'trkseg'); trkseg.text = '\n'
