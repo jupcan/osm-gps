@@ -1,6 +1,6 @@
 # osm-gps
 **a3 group** intelligent systems lab project  
-> designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
+> designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from openstreetmap - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
 ## installation
 whole project developed using **python3**
@@ -139,8 +139,9 @@ delivered [task3 documentation](/docs/task3.pdf)
 
 Addition of greedy and a* searches using as heuristic for a concrete state: h(state) = minimum distance between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
 
-As an added feature, we have also generated a sequence of images representing the solution, that is, for a given algorithm solution we are creating a **[gpx][i18]** file, representing it as a track and adding as waypoints the nodes we have to go through, that can be shown graphically in multiple [track drawing websites][i19], different [software][i20] or uploaded directly to [open street map][i22] as stated in osm wiki. finally we are also generating a locally stored svg image as a way to see a _more human friendly_ representation of the solution, it is computed converting the previous gps file with [gpx2svg][i21] open source script, shoutout to its creator.
+As an added feature, we have also generated a sequence of images representing the solution, that is, for a given algorithm solution we are creating a **[gpx][i18]** file, representing it as a track and adding as waypoints the nodes we have to go through, that can be shown graphically in multiple [track drawing websites][i19], different [software][i20] or uploaded directly to [openstreetmap][i22] as stated in osm wiki. finally we are also generating a locally stored svg image as a way to see a _more human friendly_ representation of the solution, it is computed converting the previous gps file with [gpx2svg][i21] open source script, shoutout to its creator.
 
+![sol on gpx visualizer](solu/out.jpg)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
