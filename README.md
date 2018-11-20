@@ -137,7 +137,7 @@ delivered [task3 documentation](/docs/task3.pdf)
 
 ## task4
 
-Addition of greedy and a* searches using as heuristic for a concrete state: h(state) = minimum distance between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
+Addition of **greedy** and **a* searches** using as heuristic for a concrete state: h(state) = minimum distance between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
 
 As an added feature, we have also generated a sequence of images representing the solution, that is, for a given algorithm solution we are creating a **[gpx][i18]** file, representing it as a track and adding as waypoints the nodes we have to go through, that can be shown graphically in multiple [track drawing websites][i19], different [software][i20] or uploaded directly to [openstreetmap][i22] as stated in osm wiki. finally we are also generating a locally stored [svg image](solu/out.svg) as a way to see a _more human friendly_ representation of the solution, it is computed converting the previous gps file with [gpx2svg][i21] os script, shoutout to its creator.
 
