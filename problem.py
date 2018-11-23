@@ -14,7 +14,7 @@ class problem():
         self._visitedList = {}
 
     def _readJson(self):
-        with open(self._json) as json_data:
+        with open('json/' + self._json) as json_data:
             return json.load(json_data)
 
     def isGoal(self, state):
@@ -25,9 +25,9 @@ class problem():
             return True
 
     def createTreeNodes(self, ls, node, depthl, strategy):
-        tree = []
+        nodes = []
         if(depthl >= node._d):
-            for (action, result, cost) in ls:
-                s = treeNode(result, strategy, node, float(cost), action)
-                tree.append(s)
-        return tree
+            for (action, result, cost, heu) in ls:
+                s = treeNode(result, strategy, node, float(cost), action, heu)
+                nodes.append(s)
+        return nodes

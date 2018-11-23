@@ -1,6 +1,7 @@
 from lxml import etree
 from state import state
 import math
+import sys
 
 class stateSpace():
     def __init__(self, path):
@@ -32,39 +33,50 @@ class stateSpace():
         return keys, nodes, edges
 
     def belongNode(self, id):
-        #input: problem state, output: true/false if current in nodes
-        if id._current in self._nodes:
-            return True
-        else:
-            return False
+        #input: osm node, output: true/false if in nodes
+        if id in self._nodes: return True
+        else: return False
 
     def positionNode(self, id):
-        #input: problem state, output: latitude&longitude[(y,x)] of current node
+        #input: osm node, output: latitude&longitude(y,x) of current node
         try:
             if self.belongNode(id):
-                return [self._nodes[id]]
+                return self._nodes[id]
             else:
                 raise ValueError
         except ValueError:
-            print("Error. The node does not exist.")
+            print("error. the node does not exist"); sys.exit(1)
+
+    def distance(self, node1, node2):
+        (lng1, lat1) = self.positionNode(node1)
+        (lng2, lat2) = self.positionNode(node2)
+        earth_radius = 6371009
+
+        phi1 = math.radians(float(lat1)); phi2 = math.radians(float(lat2))
+        theta1 = math.radians(float(lng1)); theta2 = math.radians(float(lng2))
+        d_phi = phi2 - phi1; d_theta = theta2 - theta1
+        h = math.sin(d_phi/2)**2 +math.cos(phi1)*math.cos(phi2)*math.sin(d_theta/2)**2
+        h = min(1.0, h) #protect against floating point errors
+        arc = 2*math.asin(math.sqrt(h))
+
+        #return distance in units of earth_radius
+        dist = arc*earth_radius
+        return dist
 
     def successors(self, id):
         #input: problem state, output: list of adjacent nodes + extra info
         try:
             successors = []
-            if self.belongNode(id):
+            if self.belongNode(id._current):
                 adjacents = [key for key in self._edges.keys() if id._current in key[0]]
                 for data in adjacents:
-                    acc = "I'm in %s and I go to %s" % (data[0].zfill(10), data[1].zfill(10))
+                    acc = "I'm in %s and I go to %s c/%s" % (data[0].zfill(10), data[1].zfill(10), self._edges[data][0])
                     aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
-                    #!(heuristhic)!
-                    """orig = [self.positionNode(data[0])[0][0], self.positionNode(data[0])[0][1]]
-                    dest = [self.positionNode(data[1])[0][0], self.positionNode(data[1])[0][1]]
-                    cost = math.hypot(float(dest[0]) - float(orig[0]), float(dest[1]) - float(orig[1]))"""
-                    successors.append((acc, aux, cost))
+                    heu = self.distance(data[0], data[1])
+                    successors.append((acc, aux, cost, heu))
                 return successors
             else:
                 raise ValueError
         except ValueError:
-            print("Error. The node does not exist.")
+            print("error. the node does not belong to given json"); sys.exit(1)

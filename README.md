@@ -1,6 +1,6 @@
 # osm-gps
 **a3 group** intelligent systems lab project  
-> designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from open street map - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
+> designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from openstreetmap - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
 
 ## installation
 whole project developed using **python3**
@@ -103,40 +103,46 @@ example.json
 2: depth-limited search
 3: iterative deepening search
 4: uniform cost search
-5: a* search
 strategy: 0
 pruning(y/n): y
 breath-first search w/ pruning
 depth: 999
 data/anchuras.graphml.xml
-cost: 690.552000, depth: 12, elapsed time: 0.012542s
+cost: 690.552, depth: 13, spatialcxty: 183, temporalcxty: 0.016545s
 check out.txt for more info
 ```
 
 ```txt
 output.txt
-cost: 690.552000, depth: 12, elapsed time: 0.012542s
-goal node: <treeNode.treeNode object at 0x7f5c4a5da7f0>
-time and date: 16:41:46-09/11/2018
+cost: 690.552, depth: 13, spatialcxty: 183, temporalcxty: 0.016545s
+goal node: <treeNode.treeNode object at 0x7fc831f3bd68> - 4331489668
+time and date: 19:39:02-19/11/2018
 
-["I'm in 4331489739 and I go to 4331489738",
- "I'm in 4331489738 and I go to 4331489532",
- "I'm in 4331489532 and I go to 0946409139",
- "I'm in 0946409139 and I go to 4331489528",
- "I'm in 4331489528 and I go to 4331489718",
- "I'm in 4331489718 and I go to 4331489716",
- "I'm in 4331489716 and I go to 4331489709",
- "I'm in 4331489709 and I go to 4331489549",
- "I'm in 4331489549 and I go to 4331489550",
- "I'm in 4331489550 and I go to 4331489692",
- "I'm in 4331489692 and I go to 4331489662",
- "I'm in 4331489662 and I go to 4331489668"]
+["I'm in 4331489739 and I go to 4331489738 c/Barrio Nuevo",
+ "I'm in 4331489738 and I go to 4331489532 c/Barrio Nuevo",
+ "I'm in 4331489532 and I go to 0946409139 c/sinNombre",
+ "I'm in 0946409139 and I go to 4331489528 c/sinNombre",
+ "I'm in 4331489528 and I go to 4331489718 c/Calle Arroyo",
+ "I'm in 4331489718 and I go to 4331489716 c/Calle Arroyo",
+ "I'm in 4331489716 and I go to 4331489709 c/Plaza España",
+ "I'm in 4331489709 and I go to 4331489549 c/Calle Amirola",
+ "I'm in 4331489549 and I go to 4331489550 c/Calle José María del Moral",
+ "I'm in 4331489550 and I go to 4331489692 c/Calle José María del Moral",
+ "I'm in 4331489692 and I go to 4331489662 c/Calle Periodista Antonio Herrero",
+ "I'm in 4331489662 and I go to 4331489668 c/Calle Periodista Antonio Herrero"]
 ```
 the generated file includes the cost of the solution, the depth where it is found and the time spent to reach it alongside all the actions path printed in order; i go from node1 to node2 and so on until we have passed throught all the desired nodes and reached the goal applying the given algorithm, if no solution is found an error is printed instead both on console and file.
 
 delivered [task3 documentation](/docs/task3.pdf)
 
-## [task4](/reqs/task4.pdf)
+## task4
+
+Addition of **greedy** and __a*__ searches using as heuristic for a concrete state: _h(state) = minimum distance_ between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
+
+As an added feature, we have also generated a sequence of images representing the solution, that is, for a given algorithm solution we are creating a **[gpx][i18]** file, representing it as a track and adding as waypoints the nodes we have to go through, that can be shown graphically in multiple [track drawing websites][i19], different [software][i20] or uploaded directly to [openstreetmap][i22] as stated in osm wiki. finally we are also generating a locally stored [svg image](solu/out.svg) as a way to see a _more human friendly_ representation of the solution, it is computed converting the previous gps file with [gpx2svg][i21] os script, shoutout to its creator.
+
+>![sol on gpx visualizer](solu/out.gif)
+a* search algorithm output as gpx for [problema.json](json/problema.json) file shown in [gpx visualizer][i23] website
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
@@ -150,3 +156,9 @@ delivered [task3 documentation](/docs/task3.pdf)
 [i15]: https://github.com/jupcan/osm-gps/issues/19
 [i16]: https://github.com/jupcan/osm-gps/issues/20
 [i17]: https://github.com/jupcan/osm-gps/issues/22
+[i18]: https://wiki.openstreetmap.org/wiki/GPX
+[i19]: https://wiki.openstreetmap.org/wiki/Track_drawing_websites
+[i20]: https://wiki.openstreetmap.org/wiki/Software
+[i21]: https://nasauber.de/opensource/gpx2svg/
+[i22]: https://www.openstreetmap.org
+[i23]: http://www.gpsvisualizer.com
