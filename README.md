@@ -143,6 +143,7 @@ As an added feature, we have also generated a sequence of images representing th
 
 >![sol on gpx visualizer](solu/out.gif)
 a* search algorithm output as gpx for [problema.json](json/problema.json) file shown in [gpx visualizer][i23] website
+
 delivered [task4 documentation](/docs/task4.pdf)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
