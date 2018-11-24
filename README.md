@@ -1,5 +1,5 @@
-# osm-gps [![uclm](https://img.shields.io/badge/uclm-project-red.svg?logo=github&longCache=true&logoColor=white&colorB=B20032&style=flat-square)](https://www.uclm.es)
-[![uclm](https://img.shields.io/badge/uclm-project-red.svg?logo=github&longCache=true&logoColor=white&colorB=B20032&style=for-the-badge)](https://www.uclm.es)
+# osm-gps
+[![uclm](https://img.shields.io/badge/uclm-project-red.svg?logo=github&longCache=true&logoColor=white&colorB=B00735&style=for-the-badge)](https://www.uclm.es)
 
 **a3 group** intelligent systems lab project  
 > designment and developement of an agent program to find the optimal route for a vehicle that circulates through a set of places of a town using data from openstreetmap - [uclm](https://www.uclm.es/) computer science | [osm](https://www.openstreetmap.org) grahml data
