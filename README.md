@@ -143,7 +143,7 @@ Addition of **greedy** and __a*__ searches using as heuristic for a concrete sta
 
 As an added feature, we have also generated a sequence of images representing the solution, that is, for a given algorithm solution we are creating a **[gpx][i18]** file, representing it as a track and adding as waypoints the nodes we have to go through, that can be shown graphically in multiple [track drawing websites][i19], different [software][i20] or uploaded directly to [openstreetmap][i22] as stated in osm wiki. finally we are also generating a locally stored [svg image](solu/out.svg) as a way to see a _more human friendly_ representation of the solution, it is computed converting the previous gps file with [gpx2svg][i21] os script, shoutout to its creator.
 
->![sol on gpx visualizer](solu/out.gif)
+>![sol on gpx visualizer](solu/out.jpg)
 a* search algorithm output as gpx for [problema.json](json/problema.json) file shown in [gpx visualizer][i23] website
 
 delivered [task4 documentation](/docs/task4.pdf)
