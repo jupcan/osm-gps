@@ -42,10 +42,10 @@ class problem():
         return dist
 
     def createTreeNodes(self, ls, node, depthl, strategy):
-        nodes = []
-        heu = min([self.distance(self._init_state._current, n) for n in self._init_state._nodes])
+        nodes = []; heu = 0
         if(depthl >= node._d):
             for (action, result, cost) in ls:
+                if result._nodes: heu = min([self.distance(result._current, n) for n in result._nodes])
                 s = treeNode(result, strategy, node, float(cost), action, heu)
                 nodes.append(s)
         return nodes

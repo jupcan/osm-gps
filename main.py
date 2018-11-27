@@ -74,7 +74,7 @@ def limSearch(problem, strategy, depthl, pruning):
                         f.insert(node); num_f += 1
                         problem._visitedList[node._state._md5] = node._f
             else:
-                for node in ln: f.insert(node)
+                for node in ln: f.insert(node); num_f += 1
     if(sol): return act, num_f
     else: return None
 
