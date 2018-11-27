@@ -114,7 +114,7 @@ def createGpx(problem, sol, itime, etime, num_f, stat):
         list, points = [], []
         act = sol
         list.append(problem._state_space.positionNode(act._state._current))
-        while(act._parent is not None and act._parent._action is not None):
+        while(act._parent is not None):
             list.append(problem._state_space.positionNode(act._parent._state._current))
             act = act._parent
         list.reverse()

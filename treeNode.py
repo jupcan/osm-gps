@@ -8,6 +8,7 @@ class treeNode():
 		if parent is not None: self._cost = parent._cost+cost; self._d = parent._d+1
 		else: self._cost = cost; self._d = d
 		self._action = action
+		self._h = h
 		switch = {0: d, 1: -d, 2: -d, 3: -d, 4: self._cost, 5: h, 6: h+self._cost}
 		self._f = switch[strategy]
 

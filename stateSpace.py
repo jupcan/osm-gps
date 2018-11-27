@@ -1,6 +1,5 @@
 from lxml import etree
 from state import state
-import math
 import sys
 
 class stateSpace():
@@ -47,22 +46,6 @@ class stateSpace():
         except ValueError:
             print("error. the node does not exist"); sys.exit(1)
 
-    def distance(self, node1, node2):
-        (lng1, lat1) = self.positionNode(node1)
-        (lng2, lat2) = self.positionNode(node2)
-        earth_radius = 6371009
-
-        phi1 = math.radians(float(lat1)); phi2 = math.radians(float(lat2))
-        theta1 = math.radians(float(lng1)); theta2 = math.radians(float(lng2))
-        d_phi = phi2 - phi1; d_theta = theta2 - theta1
-        h = math.sin(d_phi/2)**2 +math.cos(phi1)*math.cos(phi2)*math.sin(d_theta/2)**2
-        h = min(1.0, h) #protect against floating point errors
-        arc = 2*math.asin(math.sqrt(h))
-
-        #return distance in units of earth_radius
-        dist = arc*earth_radius
-        return dist
-
     def successors(self, id):
         #input: problem state, output: list of adjacent nodes + extra info
         try:
@@ -73,8 +56,7 @@ class stateSpace():
                     acc = "I'm in %s and I go to %s c/%s" % (data[0].zfill(10), data[1].zfill(10), self._edges[data][0])
                     aux = state(data[1], id.visited(data[1], id._nodes)) #creates new ._md5
                     cost = self._edges[data][1]
-                    heu = self.distance(data[0], data[1])
-                    successors.append((acc, aux, cost, heu))
+                    successors.append((acc, aux, cost))
                 return successors
             else:
                 raise ValueError
