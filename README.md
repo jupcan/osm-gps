@@ -152,7 +152,11 @@ delivered [task4 documentation](/docs/task4.pdf)
 
 As a final task, we have implemented the use of a new heuristic(h0) better than the one we have had until now(h1). to understand it better, we are using the example below.
 
-given a state **(x,[a,b,c])**: its h1 = min_distance((x,a),(x,b),(x,c))
+given a state **(x,[a,b,c])**:
+- h1 = min_distance((x,a),(x,b),(x,c))
+- h0 = h1 + min_distance((a,b),(a,c))
+
+by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller we running the program with some examples.
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
