@@ -148,6 +148,12 @@ a* search algorithm output as gpx for [problema.json](json/problema.json) file s
 
 delivered [task4 documentation](/docs/task4.pdf)
 
+## task5
+
+As a final task, we have implemented the use of a new heuristic(h0) better than the one we have had until now(h1). to understand it better, we are using the example below.
+
+given a state **(x,[a,b,c])**: its h1 = min_distance((x,a),(x,b),(x,c))
+
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
 [i7]: https://github.com/jupcan/osm-gps/issues/7
