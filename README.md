@@ -154,9 +154,11 @@ As a final task, we have implemented the use of a new heuristic(h0) better than 
 
 given a state **(x, [a, b, c])**:
 - h1 = min_distance((x, a),(x, b),(x, c))
-- h0 = h1 + min_distance((a, b),(a, c))
+- h0 = h1 + min_distance((a, b), (a, c))
 
 by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller we running the program.
+
+delivered [final documentation](/docs/doc.pdf)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
