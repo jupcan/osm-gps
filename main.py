@@ -10,7 +10,7 @@ from lxml import etree
 import time, sys, gc, os
 
 def main():
-    filename, strategy, depthl, pruning, stat = askInfo()
+    filename, strategy, depthl, pruning, stat, heu = askInfo()
     if(strategy == 3): depthi = int(input('depth increment: '))
 
     p = problem('%s.json' % filename)
@@ -18,8 +18,8 @@ def main():
 
     itime = time.time()
     #run algorithms
-    if(strategy == 3): sol = search(p, strategy, depthl, depthi, pruning)
-    else: sol, num_f = limSearch(p, strategy, depthl, pruning)
+    if(strategy == 3): sol, num_f = search(p, strategy, depthl, depthi, pruning, heu)
+    else: sol, num_f = limSearch(p, strategy, depthl, pruning, heu)
     etime = time.time()
     createSolution(sol, itime, etime, num_f)
     createGpx(p, sol, itime, etime, num_f, stat)
@@ -36,8 +36,9 @@ def askInfo():
         3: 'iterative deepening search', 4: 'uniform cost search', 5: 'greedy search', 6: 'a* search'}
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
 
-        strategy = int(input('strategy: '))
+        strategy = int(input('strategy: ')); heu = 'h'
         if isinstance(strategy, str) or strategy > 6 or strategy < 0: raise ValueError
+        if(strategy == 5 or strategy == 6): heu = input('heuristic(h0/h1): ').lower()
 
         yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
@@ -47,13 +48,13 @@ def askInfo():
 
         depthl = int(input('depth: '))-1
         if isinstance(depthl, str): raise ValueError
-        return filename, strategy, depthl, pruning, stat
+        return filename, strategy, depthl, pruning, stat, heu
     except ValueError:
         print("error. not a valid input")
         sys.exit(1)
 
-def limSearch(problem, strategy, depthl, pruning):
-    f = frontier()
+def limSearch(problem, strategy, depthl, pruning, heu):
+    f = frontier(); problem._visitedList = {}
     num_f = 0
     initial = treeNode(problem._init_state, strategy)
     f.insert(initial); num_f += 1
@@ -64,7 +65,7 @@ def limSearch(problem, strategy, depthl, pruning):
         if(problem.isGoal(act._state)): sol = True
         else:
             ls = problem._state_space.successors(act._state)
-            ln = problem.createTreeNodes(ls, act, depthl, strategy)
+            ln = problem.createTreeNodes(ls, act, depthl, strategy, heu)
             if pruning:
                 for node in ln:
                     if node._state._md5 not in problem._visitedList:
@@ -78,13 +79,11 @@ def limSearch(problem, strategy, depthl, pruning):
     if(sol): return act, num_f
     else: return None
 
-def search(problem, strategy, depthl, depthi, pruning):
+def search(problem, strategy, depthl, depthi, pruning, heu):
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl+1):
-        print(depthact)
-        sol = limSearch(problem, strategy, depthact, pruning)
-        print(sol)
+        sol = limSearch(problem, strategy, depthact, pruning, heu)
         depthact += depthi
     return sol
 

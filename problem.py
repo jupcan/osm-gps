@@ -41,11 +41,13 @@ class problem():
         dist = arc*earth_radius
         return dist
 
-    def createTreeNodes(self, ls, node, depthl, strategy):
-        nodes = []; heu = 0
+    def createTreeNodes(self, ls, node, depthl, strategy, heu):
+        nodes = []; h = 0
         if(depthl >= node._d):
             for (action, result, cost) in ls:
-                if result._nodes: heu = min([self.distance(result._current, n) for n in result._nodes])
-                s = treeNode(result, strategy, node, float(cost), action, heu)
+                if result._nodes:
+                    if heu == 'h1': h = min([self.distance(result._current, n) for n in result._nodes])
+                    else: h = sum([self.distance(result._current, n) for n in result._nodes])
+                s = treeNode(result, strategy, node, float(cost), action, h)
                 nodes.append(s)
         return nodes
