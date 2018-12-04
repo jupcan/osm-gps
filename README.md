@@ -153,8 +153,8 @@ delivered [task4 documentation](/docs/task4.pdf)
 As a final task, we have implemented the use of a new heuristic(h0) better than the one we have had until now(h1)
 
 given a state **(x, [a, b, c])**:
-- h1 = min_distance((x, a),(x, b),(x, c))
-- h0 = h1 + min_distance((a, b), (a, c))
+- h1 = [min_distance][i24]((x, a),(x, b),(x, c))
+- h0 = h1 + [min_distance][i24]((a, b), (a, c))
 
 by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller we running the program.
 
@@ -178,3 +178,4 @@ delivered [final documentation](/docs/doc.pdf)
 [i21]: https://nasauber.de/opensource/gpx2svg/
 [i22]: https://www.openstreetmap.org
 [i23]: http://www.gpsvisualizer.com
+[i24]: https://github.com/jupcan/osm-gps/issues/26
