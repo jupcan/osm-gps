@@ -1,6 +1,7 @@
 from state import state
 from stateSpace import stateSpace
 from treeNode import treeNode
+import itertools
 import json
 import math
 import hashlib
@@ -46,8 +47,12 @@ class problem():
         if(depthl >= node._d):
             for (action, result, cost) in ls:
                 if result._nodes:
-                    if heu == 'h1': h = min([self.distance(result._current, n) for n in result._nodes])
-                    else: h = sum([self.distance(result._current, n) for n in result._nodes])
+                    dmin = min([self.distance(result._current, n) for n in result._nodes])
+                    if heu == 'h1':
+                        h = dmin
+                    elif heu == 'h0':
+                        for a, b in itertools.combinations(result._nodes, 2):
+                            h = dmin+min([self.distance(a, b)])
                 s = treeNode(result, strategy, node, float(cost), action, h)
                 nodes.append(s)
         return nodes

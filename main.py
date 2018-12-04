@@ -36,9 +36,10 @@ def askInfo():
         3: 'iterative deepening search', 4: 'uniform cost search', 5: 'greedy search', 6: 'a* search'}
         print("\n".join("{}: {}".format(k, v) for k, v in switch.items()))
 
-        strategy = int(input('strategy: ')); heu = 'h'
+        strategy = int(input('strategy: ')); heu = 'h0'
         if isinstance(strategy, str) or strategy > 6 or strategy < 0: raise ValueError
         if(strategy == 5 or strategy == 6): heu = input('heuristic(h0/h1): ').lower()
+        if not (heu == 'h1' or heu == 'h0'): raise ValueError
 
         yes = {'y','yes','yay'}; no = {'n','no','nay'}
         pruning = input('pruning(y/n): ').lower()
