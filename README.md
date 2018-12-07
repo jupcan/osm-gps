@@ -47,7 +47,6 @@ True
  ('827212358', '827212476'): ('Calle Atalaya', '42.912')}
 0.0003237724304199219 seconds
 ```
-delivered [task1 documentation](/docs/task1.pdf)  
 
 ## [task2](/reqs/task2.pdf)
 definition of the problem and implementation of the frontier
@@ -84,8 +83,6 @@ True
 [("I'm in 4331489739 and I go to 4331489738", "(4331489738, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '48.137'), ("I'm in 4331489739 and I go to 4331489740", "(4331489740, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '108.841'), ("I'm in 4331489739 and I go to 4331489763", "(4331489763, ['4331489528', '4331489668', '4331489711', '4762868815', '4928063625'])", '63.11')]
 ```
 that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state and printing the frontier of the problem once inserting three treeNode object examples and removing one of them.
-
-delivered [task2 documentation](/docs/task2.pdf)
 
 ## task3
 basic version of the [search algorithms][i15]
@@ -135,8 +132,6 @@ time and date: 19:39:02-19/11/2018
 ```
 the generated file includes the cost of the solution, the depth where it is found and the time spent to reach it alongside all the actions path printed in order; i go from node1 to node2 and so on until we have passed throught all the desired nodes and reached the goal applying the given algorithm, if no solution is found an error is printed instead both on console and file.
 
-delivered [task3 documentation](/docs/task3.pdf)
-
 ## task4
 
 addition of **greedy** and __a*__ searches using as heuristic for a concrete state: _h(state) = minimum distance_ between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
@@ -145,8 +140,6 @@ as an added feature, we have also generated a sequence of images representing th
 
 >![sol on gpx visualizer](solu/out.gif)
 a* search algorithm output as gpx for [problema.json](json/problema.json) file shown in [gpx visualizer][i23] website
-
-delivered [task4 documentation](/docs/task4.pdf)
 
 ## task5
 
@@ -158,7 +151,7 @@ given a state **(x, [a, b, c])**:
 
 by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller when running the program.
 
-delivered [final documentation](/docs/doc.pdf)
+delivered [final documentation](/docs/osm-gps.pdf)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
