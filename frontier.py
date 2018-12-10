@@ -14,7 +14,7 @@ class frontier():
         if isinstance(node, treeNode):
             self._frontier.add(node)
         else:
-            print("Error. It is not a node.")
+            print("error. it is not a node")
 
     def remove(self):
         return self._frontier.pop(0)
