@@ -127,12 +127,14 @@ def createGpx(problem, sol, itime, etime, num_f, stat):
         wpt = etree.SubElement(root, 'wpt', lat=problem._state_space.positionNode(n)[0], lon=problem._state_space.positionNode(n)[1]); wpt.tail = '\n'
         w_name = etree.SubElement(wpt, 'name'); w_name.text = n
         w_desc = etree.SubElement(wpt, 'desc'); w_desc.text = problem._state_space.positionNode(n)[0] + ', ' + problem._state_space.positionNode(n)[1]
+
     trk = etree.SubElement(root, 'trk')
     t_name = etree.SubElement(trk, 'name'); t_name.text = 'out.gpx'; t_name.tail = '\n'
     desc = etree.SubElement(trk, 'desc'); desc.text = '%s, cost: %.3f, depth: %d, scxty: %d, tcxty: %fs' % (stat, sol._cost, sol._d, num_f, etime-itime); desc.tail = '\n'
     link = etree.SubElement(trk, 'link', href='http://www.uclm.es')
     text = link = etree.SubElement(link, 'text'); text.text = 'uclm project'
     trkseg = etree.SubElement(trk, 'trkseg'); trkseg.text = '\n'
+
     for n in list:
         trkpt = etree.SubElement(trkseg, 'trkpt', lat=n[0].zfill(10), lon=n[1].zfill(10)); trkpt.tail = '\n'
         date = etree.SubElement(trkpt, 'time'); date.text = time.strftime('%Y-%m-%dT%H:%M:%S')
