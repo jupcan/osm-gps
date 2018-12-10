@@ -151,7 +151,7 @@ given a state **(x, [a, b, c])**:
 
 by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller when running the program.
 
-delivered [final documentation](/docs/osm-gps.pdf)
+delivered [final documentation](/doc/osm-gps.pdf)
 
 [i5]: https://github.com/jupcan/osm-gps/issues/5
 [i6]: https://github.com/jupcan/osm-gps/issues/6
