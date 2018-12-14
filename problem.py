@@ -16,17 +16,26 @@ class problem():
         self._visitedList = {}
 
     def _readJson(self):
+        """
+        :return: json data from file
+        """
         with open('json/' + self._json) as json_data:
             return json.load(json_data)
 
     def isGoal(self, state):
-        #input: state, output: true/false if list of nodes is empty
-        if bool(state._nodes): #true if has items, false otherwise
-            return False
-        else:
-            return True
+        """
+        :param state: state class object
+        :return: true/false if its list of nodes is empty
+        """
+        if bool(state._nodes): return False
+        else: return True
 
     def distance(self, node1, node2):
+        """
+        :param node1: osm node id string
+        :param node2: osm node id string
+        :return: distance (meters) between node1 and node2
+        """
         (lng1, lat1) = self._state_space.positionNode(node1)
         (lng2, lat2) = self._state_space.positionNode(node2)
         earth_radius = 6371009
@@ -43,6 +52,14 @@ class problem():
         return dist
 
     def createTreeNodes(self, ls, node, depthl, strategy, heu):
+        """
+        :param ls: list successors for a given state
+        :param node: actual node string
+        :param depthl: depth limit int
+        :param strategy: strategy int
+        :param heu: heuristic string
+        :return: list of all problem's nodes
+        """
         nodes = []; h = 0
         if(depthl >= node._d):
             for (action, result, cost) in ls:

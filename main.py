@@ -26,6 +26,10 @@ def main():
     call(['solu/gpx2svg', '-i', 'solu/out.gpx', '-o', 'solu/out.svg'])
 
 def askInfo():
+    """
+    :return: all user inputs needed to run the program
+    :raises ValueError: not entering a valid input
+    """
     try:
         filename = input('json file: ')
         if filename.isdigit():
@@ -55,6 +59,14 @@ def askInfo():
         sys.exit(1)
 
 def limSearch(problem, strategy, depthl, pruning, heu):
+    """
+    :param problem: problem class object
+    :param strategy: strategy int
+    :param depthl: depth limit int
+    :param pruning: pruning option boolean
+    :param heu: heuristic string
+    :return: goal node and number of elements in the frontier
+    """
     f = frontier(); problem._visitedList = {}
     num_f = 0
     initial = treeNode(problem._init_state, strategy)
@@ -81,6 +93,15 @@ def limSearch(problem, strategy, depthl, pruning, heu):
     else: return None
 
 def search(problem, strategy, depthl, depthi, pruning, heu):
+    """
+    :param problem: problem class object
+    :param strategy: strategy int
+    :param depthl: depth limit int
+    :param depthi: depth limit increment
+    :param pruning: pruning option boolean
+    :param heu: heuristic string
+    :return: path to the problem's solution
+    """
     depthact = depthi
     sol = None
     while(not sol and depthact <= depthl+1):
@@ -89,6 +110,13 @@ def search(problem, strategy, depthl, depthi, pruning, heu):
     return sol
 
 def createSolution(sol, itime, etime, num_f):
+    """
+    creates txt file with the solution + statistics
+    :param sol: problem solution
+    :param itime: initial time
+    :param etime: end time
+    :param num_f: number of elements in the frontier
+    """
     txt = open('solu/out.txt','w')
     if(sol is not None):
         list = []
@@ -110,6 +138,15 @@ def createSolution(sol, itime, etime, num_f):
     txt.close()
 
 def createGpx(problem, sol, itime, etime, num_f, stat):
+    """
+    creates gpx(xml) file representing the solution
+    :param problem: problem class object
+    :param sol: problem solution
+    :param itime: initial time
+    :param etime: end time
+    :param num_f: number of elements in the frontier
+    :param stat: strategy string
+    """
     if(sol is not None):
         list, points = [], []
         act = sol

@@ -13,4 +13,7 @@ class treeNode():
 		self._f = switch[strategy] #factory pattern
 
 	def getF(self):
+		"""
+		return: node's f value
+		"""
 		return self._f

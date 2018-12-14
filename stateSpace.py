@@ -8,6 +8,9 @@ class stateSpace():
         self._keys, self._nodes, self._edges = self._readFile()
 
     def _readFile(self):
+        """
+        :return: data from xml loaded into data structures
+        """
         data = etree.parse(self._path)
         root = data.getroot()
         ns = {'n': 'http://graphml.graphdrawing.org/xmlns'}
@@ -32,12 +35,19 @@ class stateSpace():
         return keys, nodes, edges
 
     def belongNode(self, id):
-        #input: osm node, output: true/false if in nodes
+        """
+        :param id: osm node id string
+        :return: true/false if in nodes
+        """
         if id in self._nodes: return True
         else: return False
 
     def positionNode(self, id):
-        #input: osm node, output: latitude&longitude(y,x) of current node
+        """
+        :param id: osm node id string
+        :return: latitude&longitude(y,x) of the node
+        :raises ValueError: not entering a valid node id
+        """
         try:
             if self.belongNode(id):
                 return self._nodes[id]
@@ -47,7 +57,11 @@ class stateSpace():
             print("error. the node does not exist"); sys.exit(1)
 
     def successors(self, id):
-        #input: problem state, output: list of adjacent nodes + extra info
+        """
+        :param id: state class object
+        :return: list of successors for given state + info(acc,aux,cost)
+        :raises ValueError: not entering a valid state for given json
+        """
         try:
             successors = []
             if self.belongNode(id._current):
@@ -61,4 +75,4 @@ class stateSpace():
             else:
                 raise ValueError
         except ValueError:
-            print("error. the node does not belong to given json"); sys.exit(1)
+            print("error. the state does not belong to given json"); sys.exit(1)
