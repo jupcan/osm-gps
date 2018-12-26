@@ -20,7 +20,7 @@ and also **sorted containers** one to use some of the data structures it offers 
 python3 -m pip install sortedcontainers
 ```
 
-## [task1](/reqs/task1.pdf)
+## [task1](https://github.com/jupcan/osm-gps/tree/task1)
 generation of a internal representation of a graph with geographical data from osm
 given a file in format grahml
 - a **[constructor][i5]**, that receives as parameter the name of the file graphml
@@ -48,7 +48,7 @@ True
 0.0003237724304199219 seconds
 ```
 
-## [task2](/reqs/task2.pdf)
+## [task2](https://github.com/jupcan/osm-gps/tree/task2)
 definition of the problem and implementation of the frontier
 - creation and organization of the code in more detailed classes: **[state][i10]**, **[state space][i11]**, **[frontier][i14]**, **[treeNode][i13]** and **[problem][i12]**
 - use of new technologies such as .json and .md5 for some inputs/outputs of certain classes  
@@ -84,7 +84,7 @@ True
 ```
 that is, for the initial state we look for its succesors updating each time the state by checking if the node im at the moment is in the state space and removing it from the list if so. also generating the new md5 representation of each state and printing the frontier of the problem once inserting three treeNode object examples and removing one of them.
 
-## task3
+## [task3](https://github.com/jupcan/osm-gps/tree/task3)
 basic version of the [search algorithms][i15]
 - breath-first search
 - depth-first search, depth-limited search and iterative deepening dearch
@@ -132,7 +132,7 @@ time and date: 19:39:02-19/11/2018
 ```
 the generated file includes the cost of the solution, the depth where it is found and the time spent to reach it alongside all the actions path printed in order; i go from node1 to node2 and so on until we have passed throught all the desired nodes and reached the goal applying the given algorithm, if no solution is found an error is printed instead both on console and file.
 
-## task4
+## [task4](https://github.com/jupcan/osm-gps/tree/task1)
 
 addition of **greedy** and __a*__ searches using as heuristic for a concrete state: _h(state) = minimum distance_ between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
 
