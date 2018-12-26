@@ -132,7 +132,7 @@ time and date: 19:39:02-19/11/2018
 ```
 the generated file includes the cost of the solution, the depth where it is found and the time spent to reach it alongside all the actions path printed in order; i go from node1 to node2 and so on until we have passed throught all the desired nodes and reached the goal applying the given algorithm, if no solution is found an error is printed instead both on console and file.
 
-## [task4](https://github.com/jupcan/osm-gps/tree/task1)
+## [task4](https://github.com/jupcan/osm-gps/tree/task4)
 
 addition of **greedy** and __a*__ searches using as heuristic for a concrete state: _h(state) = minimum distance_ between the osm node of current state and any node in the list of nodes to be traveled (computed by means of straight line distance in meters).
 
