@@ -143,7 +143,7 @@ a* search algorithm output as gpx for [problema.json](json/problema.json) file s
 
 ## task5
 
-as a final task, we have implemented the use of a new heuristic(h0) better than the one we have had until now(h1)
+as a final task, we have implemented the use of a new heuristic (h0) better than the one we have had until now (h1)
 
 given a state **(x, [a, b, c])**:
 - h1 = [min_distance][i24]((x, a),(x, b),(x, c))
