@@ -147,7 +147,7 @@ as a final task, we have implemented the use of a new heuristic (h0) better than
 
 given a state **(x, [a, b, c])**:
 - h1 = [min_distance][i24]((x, a),(x, b),(x, c))
-- h0 = h1 + [min_distance][i24]((a, b), (a, c))
+- h0 = h1 + [min_distance][i24]((a, b),(a, c))
 
 by adding another minimum distance with current node the first one to be visited, we obtain  a bigger heuristic closer to the real cost of the path thus a better one to consider, we can appreciate a spacial complexity smaller when running the program.
 
